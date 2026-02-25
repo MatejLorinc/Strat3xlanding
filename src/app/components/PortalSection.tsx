@@ -1,4 +1,4 @@
-import imgRectangle5 from "figma:asset/3ad0cbf86082bb5c0deed567f95b0ba4f3a3b0bb.png";
+import imgRectangle5 from "@/assets/3ad0cbf86082bb5c0deed567f95b0ba4f3a3b0bb.png";
 import { imgRectangle6146 } from "../../imports/svg-76oh5";
 
 const sidebarItems = [

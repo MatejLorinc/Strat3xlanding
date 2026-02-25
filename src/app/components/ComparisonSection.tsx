@@ -1,5 +1,5 @@
 import svgPaths from "../../imports/svg-59wapeqsll";
-import imgRectangle5 from "figma:asset/3ad0cbf86082bb5c0deed567f95b0ba4f3a3b0bb.png";
+import imgRectangle5 from "@/assets/3ad0cbf86082bb5c0deed567f95b0ba4f3a3b0bb.png";
 import { imgRectangle6138, imgEllipse1 } from "../../imports/svg-76oh5";
 
 export function ComparisonSection() {

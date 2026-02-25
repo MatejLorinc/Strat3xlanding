@@ -1,8 +1,8 @@
 import svgPaths from "../../imports/svg-59wapeqsll";
 import { img21421 } from "../../imports/svg-76oh5";
-import img21422 from "figma:asset/9b1d2ddbf19b0238d4280b485f192cb251cc412e.png";
-import img299071 from "figma:asset/833c20c5b36b9a1249674a86d21094fb642f86ad.png";
-import img275361 from "figma:asset/04f5ba96c056b3e085d330d72f09fb171a91a27d.png";
+import img21422 from "@/assets/9b1d2ddbf19b0238d4280b485f192cb251cc412e.png";
+import img299071 from "@/assets/833c20c5b36b9a1249674a86d21094fb642f86ad.png";
+import img275361 from "@/assets/04f5ba96c056b3e085d330d72f09fb171a91a27d.png";
 
 export function TeamSection() {
   return (

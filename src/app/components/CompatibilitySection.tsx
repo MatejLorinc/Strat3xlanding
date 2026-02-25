@@ -1,5 +1,5 @@
 import { useState } from "react";
-import imgRectangle from "figma:asset/320b8c287414bc6a4263c44fb04247eb957ea265.png";
+import imgRectangle from "@/assets/320b8c287414bc6a4263c44fb04247eb957ea265.png";
 import { imgRectangle8 } from "../../imports/svg-76oh5";
 
 export function CompatibilitySection() {

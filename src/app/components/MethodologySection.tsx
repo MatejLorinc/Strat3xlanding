@@ -1,5 +1,5 @@
-import imgRectangle from "figma:asset/320b8c287414bc6a4263c44fb04247eb957ea265.png";
-import imgRectangle5 from "figma:asset/3ad0cbf86082bb5c0deed567f95b0ba4f3a3b0bb.png";
+import imgRectangle from "@/assets/320b8c287414bc6a4263c44fb04247eb957ea265.png";
+import imgRectangle5 from "@/assets/3ad0cbf86082bb5c0deed567f95b0ba4f3a3b0bb.png";
 import { imgRectangle7 } from "../../imports/svg-76oh5";
 
 const leftCards = [

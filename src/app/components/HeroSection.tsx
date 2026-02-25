@@ -1,6 +1,6 @@
 import svgPaths from "../../imports/svg-59wapeqsll";
-import imgRectangle from "figma:asset/320b8c287414bc6a4263c44fb04247eb957ea265.png";
-import imgRectangle4 from "figma:asset/1f7cbf18e91bd11d865e7e7dd625df2af6bb157d.png";
+import imgRectangle from "@/assets/320b8c287414bc6a4263c44fb04247eb957ea265.png";
+import imgRectangle4 from "@/assets/1f7cbf18e91bd11d865e7e7dd625df2af6bb157d.png";
 import { imgRectangle3, imgVector } from "../../imports/svg-76oh5";
 
 export function HeroSection() {

@@ -1,6 +1,6 @@
 import svgPaths from "../../imports/svg-59wapeqsll";
-import imgRectangle2 from "figma:asset/237f5127621aac5fb508fd8af02ad944505f7f78.png";
-import imgDottedWorldMapGrayColorIsolatedWhite1 from "figma:asset/0e1644e0a7d4153de2a407721bc9408b9eb68e17.png";
+import imgRectangle2 from "@/assets/237f5127621aac5fb508fd8af02ad944505f7f78.png";
+import imgDottedWorldMapGrayColorIsolatedWhite1 from "@/assets/0e1644e0a7d4153de2a407721bc9408b9eb68e17.png";
 import { imgRectangle1 } from "../../imports/svg-76oh5";
 
 export function Footer() {

@@ -1,5 +1,5 @@
 import svgPaths from "../../imports/svg-59wapeqsll";
-import imgRectangle2 from "figma:asset/237f5127621aac5fb508fd8af02ad944505f7f78.png";
+import imgRectangle2 from "@/assets/237f5127621aac5fb508fd8af02ad944505f7f78.png";
 import { imgRectangle1 } from "../../imports/svg-76oh5";
 
 export function Header() {

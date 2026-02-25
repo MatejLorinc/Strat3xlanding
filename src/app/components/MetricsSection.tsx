@@ -1,5 +1,5 @@
 import svgPaths from "../../imports/svg-59wapeqsll";
-import imgRectangle4 from "figma:asset/1f7cbf18e91bd11d865e7e7dd625df2af6bb157d.png";
+import imgRectangle4 from "@/assets/1f7cbf18e91bd11d865e7e7dd625df2af6bb157d.png";
 
 export function MetricsSection() {
   return (

@@ -17,7 +17,7 @@ import { CareersSection } from './components/CareersSection';
 import { FaqSection } from './components/FaqSection';
 import { CompatibilitySection } from './components/CompatibilitySection';
 import { Footer } from './components/Footer';
-import imgRectangle from "figma:asset/320b8c287414bc6a4263c44fb04247eb957ea265.png";
+import imgRectangle from "@/assets/320b8c287414bc6a4263c44fb04247eb957ea265.png";
 
 export default function App() {
   return (
