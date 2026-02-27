@@ -62,19 +62,12 @@ function KdoJsmeCard() {
           className="absolute bg-[rgba(120,120,120,0.89)] blur-[2px] h-[344px] left-0 rounded-[9px] top-0 w-[684px] mask-alpha mask-intersect mask-no-clip mask-no-repeat mask-position-[0px_0px] mask-size-[684px_344px]"
           style={{ maskImage: `url('${imgRectangle6138}')` }}
         />
-        <div className="absolute flex inset-[-51.74%_-63.6%_-25%_-4.53%] items-center justify-center mix-blend-hard-light">
-          <div className="flex-none h-[608px] rotate-180 w-[1150px]">
-            <div
-              className="relative size-full mask-alpha mask-intersect mask-no-clip mask-no-repeat mask-position-[31px_178px] mask-size-[684px_344px]"
-              style={{ maskImage: `url('${imgRectangle6138}')` }}
-            >
-              <img
-                alt=""
-                className="absolute backdrop-blur-[7.6px] inset-0 max-w-none object-cover opacity-80 pointer-events-none size-full"
-                src={imgRectangle5}
-              />
-            </div>
-          </div>
+        <div className="absolute inset-0 mix-blend-hard-light">
+          <img
+            alt=""
+            className="absolute backdrop-blur-[7.6px] inset-0 w-full h-full object-cover opacity-80 pointer-events-none"
+            src={imgRectangle5}
+          />
         </div>
       </div>
 

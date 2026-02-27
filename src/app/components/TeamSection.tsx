@@ -34,7 +34,7 @@ export function TeamSection() {
             <DepartmentBar label="Business &amp; Sales" />
 
             {/* Photo area with mask */}
-            <div className="inline-grid grid-cols-[max-content] grid-rows-[max-content] place-items-start relative shrink-0 leading-[0]">
+            <div className="inline-grid grid-cols-[max-content] grid-rows-[max-content] place-items-start relative shrink-0 leading-[0] w-full max-w-[418px] h-[345px] overflow-hidden">
               <div
                 className="col-start-1 row-start-1 relative pointer-events-none"
                 style={{
@@ -74,7 +74,7 @@ export function TeamSection() {
               />
               <div className="flex flex-col justify-center size-full">
                 <div className="flex flex-col gap-[16px] items-start justify-center pl-[40px] relative size-full text-black">
-                  <div className="flex flex-col gap-[16px] items-start w-[158px]">
+                  <div className="flex flex-col gap-[16px] items-start w-full whitespace-nowrap">
                     <p className="font-['Sora'] font-extrabold text-[26px] tracking-[-0.78px] leading-normal w-full">
                       Jan Dědic
                     </p>
@@ -102,7 +102,7 @@ export function TeamSection() {
             <DepartmentBar label="Technologie &amp; Systémy" />
 
             {/* Photo area with mask */}
-            <div className="inline-grid grid-cols-[max-content] grid-rows-[max-content] place-items-start relative shrink-0 leading-[0]">
+            <div className="inline-grid grid-cols-[max-content] grid-rows-[max-content] place-items-start relative shrink-0 leading-[0] w-full max-w-[418px] h-[345px] overflow-hidden">
               <div
                 className="col-start-1 row-start-1 relative pointer-events-none"
                 style={{
@@ -138,7 +138,7 @@ export function TeamSection() {
               />
               <div className="flex flex-col justify-center size-full">
                 <div className="flex flex-col gap-[16px] items-start justify-center pl-[40px] relative size-full text-black">
-                  <div className="flex flex-col gap-[16px] items-start w-[158px]">
+                  <div className="flex flex-col gap-[16px] items-start w-full whitespace-nowrap">
                     <p className="font-['Sora'] font-extrabold text-[26px] tracking-[-0.78px] leading-normal shrink-0">
                       Štěpán Svoboda
                     </p>
@@ -167,7 +167,7 @@ export function TeamSection() {
             <DepartmentBar label="Marketing &amp; Automatizace" />
 
             {/* Photo area with mask */}
-            <div className="inline-grid grid-cols-[max-content] grid-rows-[max-content] place-items-start relative shrink-0 leading-[0]">
+            <div className="inline-grid grid-cols-[max-content] grid-rows-[max-content] place-items-start relative shrink-0 leading-[0] w-full max-w-[418px] h-[345px] overflow-hidden">
               <div
                 className="col-start-1 row-start-1 relative pointer-events-none"
                 style={{
@@ -203,7 +203,7 @@ export function TeamSection() {
               />
               <div className="flex flex-col justify-center size-full">
                 <div className="flex flex-col gap-[16px] items-start justify-center pl-[40px] relative size-full text-black">
-                  <div className="flex flex-col gap-[16px] items-start w-[158px]">
+                  <div className="flex flex-col gap-[16px] items-start w-full whitespace-nowrap">
                     <p className="font-['Sora'] font-extrabold text-[26px] tracking-[-0.78px] leading-normal shrink-0">
                       Mikuláš Lysek
                     </p>
