@@ -1,8 +1,8 @@
 export function CtaBannerSection() {
   return (
-    <section className="relative w-full pb-20">
-      <div className="max-w-[1400px] mx-auto px-8">
-        <div className="bg-[#171717] flex flex-col md:flex-row gap-8 md:gap-0 items-center justify-between h-auto md:h-[244px] px-8 md:px-20 py-12 md:py-0">
+    <section className="relative w-full pb-12 lg:pb-20">
+      <div className="max-w-[1400px] mx-auto px-6 lg:px-8">
+        <div className="bg-[#171717] flex flex-col md:flex-row gap-8 md:gap-0 items-center justify-between h-auto md:h-[244px] px-6 md:px-20 py-10 md:py-0">
           <p className="font-['Sora'] font-extrabold text-[26px] text-white tracking-[-0.78px] uppercase leading-normal w-full md:w-[493px]">
             {"Chcete vidět podobnou křivku "}
             <br className="hidden md:block" />u svého businessu?

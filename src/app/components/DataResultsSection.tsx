@@ -5,7 +5,6 @@ interface ChartCardData {
   title: string;
   growth: string;
   chartPaths: { green: string; gray: string };
-  borderClasses: string;
 }
 
 const chartCards: ChartCardData[] = [
@@ -17,7 +16,6 @@ const chartCards: ChartCardData[] = [
       green: "pff39900",
       gray: "p11bcf7c0",
     },
-    borderClasses: "border-[0.4px] border-[#a9a9a9]",
   },
   {
     tag: "Offline → Online",
@@ -27,7 +25,6 @@ const chartCards: ChartCardData[] = [
       green: "",
       gray: "p293a7100",
     },
-    borderClasses: "border-r-[0.4px] border-t-[0.4px] border-[#a9a9a9]",
   },
   {
     tag: "Regulované odvětví",
@@ -37,7 +34,6 @@ const chartCards: ChartCardData[] = [
       green: "p24e95b00",
       gray: "p26e7b680",
     },
-    borderClasses: "border-b-[0.4px] border-l-[0.4px] border-r-[0.4px] border-[#a9a9a9]",
   },
   {
     tag: "Funded Startup",
@@ -47,36 +43,57 @@ const chartCards: ChartCardData[] = [
       green: "p65da480",
       gray: "p34506d00",
     },
-    borderClasses: "border-b-[0.4px] border-r-[0.4px] border-t-[0.4px] border-[#a9a9a9]",
   },
 ];
 
 const months = ["Úno.", "Bře.", "Dub.", "Kvě.", "Čvn.", "Čvc.", "Srp.", "Zář.", "Říj.", "Lis.", "Pro."];
 
+// Desktop borders: 2×2 grid layout
+// [0,0] all sides | [0,1] right+top
+// [1,0] bottom+left+right | [1,1] bottom+right+top
+const desktopBorderStyles: Record<number, string> = {
+  0: "lg:border-[0.4px]",
+  1: "lg:border-r-[0.4px] lg:border-t-[0.4px]",
+  2: "lg:border-b-[0.4px] lg:border-l-[0.4px] lg:border-r-[0.4px]",
+  3: "lg:border-b-[0.4px] lg:border-r-[0.4px] lg:border-t-[0.4px]",
+};
+
+// Mobile borders: single column stacking
+// Card 0: all sides
+// Card 1: all sides
+// Card 2: bottom+left+right (shares top with card 1)
+// Card 3: all sides
+const mobileBorderStyles: Record<number, string> = {
+  0: "border-[0.4px]",
+  1: "border-[0.4px]",
+  2: "border-b-[0.4px] border-l-[0.4px] border-r-[0.4px]",
+  3: "border-[0.4px]",
+};
+
 export function DataResultsSection() {
   return (
-    <section className="relative w-full py-20">
+    <section className="relative w-full py-12 lg:py-20">
       {/* Decorative line */}
-      <div className="max-w-[1400px] mx-auto px-8 mb-20">
+      <div className="max-w-[1400px] mx-auto px-6 lg:px-8 mb-12 lg:mb-20">
         <div className="w-full h-[0.4px] flex justify-between">
-          <div className="w-[379px] h-[0.4px] bg-[#a9a9a9]" />
-          <div className="w-[379px] h-[0.4px] bg-[#a9a9a9]" />
+          <div className="w-[30%] lg:w-[379px] h-[0.4px] bg-[#a9a9a9]" />
+          <div className="w-[30%] lg:w-[379px] h-[0.4px] bg-[#a9a9a9]" />
         </div>
       </div>
 
-      <div className="max-w-[1400px] mx-auto px-8">
+      <div className="max-w-[1400px] mx-auto px-6 lg:px-8">
         {/* Section Header */}
-        <div className="flex flex-col gap-[28px] items-center text-center mb-20">
-          <div className="flex flex-col gap-[32px] items-center uppercase w-[722px]">
+        <div className="flex flex-col gap-[21px] lg:gap-[28px] items-center text-center mb-12 lg:mb-20">
+          <div className="flex flex-col gap-[26px] lg:gap-[32px] items-center uppercase w-full max-w-[722px]">
             <p className="font-['Sora'] font-semibold text-[11px] text-black tracking-[2.2px] leading-[17px] w-full">
               Reálné výsledky
             </p>
-            <p className="font-['Sora'] font-extrabold text-[52px] text-black tracking-[-1.56px] leading-normal w-full">
+            <p className="font-['Sora'] font-extrabold text-[32px] lg:text-[52px] text-black tracking-[-0.96px] lg:tracking-[-1.56px] leading-normal w-full">
               Data, která mluví za nás
             </p>
           </div>
           <p
-            className="font-['Noto_Sans'] font-normal text-[17px] text-black leading-[32px] w-[722px]"
+            className="font-['Noto_Sans'] font-normal text-[17px] text-black leading-[32px] w-full max-w-[722px]"
             style={{ fontVariationSettings: "'CTGR' 0, 'wdth' 100" }}
           >
             Každý graf zobrazuje vývoj klienta před naším vstupem a po něm.
@@ -84,7 +101,7 @@ export function DataResultsSection() {
         </div>
 
         {/* Chart Grid - 2x2 */}
-        <div className="grid grid-cols-2 w-[1400px] mx-auto">
+        <div className="flex flex-col items-center lg:grid lg:grid-cols-2 w-full max-w-[1400px] mx-auto">
           {chartCards.map((card, index) => (
             <ChartCard key={index} data={card} index={index} />
           ))}
@@ -96,10 +113,10 @@ export function DataResultsSection() {
 
 function ChartCard({ data, index }: { data: ChartCardData; index: number }) {
   return (
-    <div className={`relative flex flex-col gap-[33px] h-[396px] items-center justify-center px-[27px] py-[38px] w-[700px] ${data.borderClasses}`}>
+    <div className={`relative flex flex-col gap-[28px] lg:gap-[33px] h-[346px] lg:h-[396px] overflow-hidden items-start lg:items-center justify-start lg:justify-center pl-[25px] lg:px-[27px] pt-[17px] lg:py-[38px] w-full lg:w-[700px] border-solid border-[#a9a9a9] ${mobileBorderStyles[index]} lg:border-0 ${desktopBorderStyles[index]}`}>
       {/* Header: Tag + Title + Growth */}
-      <div className="flex justify-between items-end w-full">
-        <div className="flex flex-col gap-[20px] items-start w-[187px]">
+      <div className="flex justify-between items-end w-full pr-[25px] lg:pr-0">
+        <div className="flex flex-col gap-[16px] lg:gap-[20px] items-start w-auto lg:w-[187px]">
           <div className="bg-[#eff2f8] flex h-[32px] items-center justify-center px-[12px]">
             <p className="font-['Sora'] font-semibold text-[11px] text-black tracking-[2.2px] uppercase leading-[17px] whitespace-nowrap">
               {data.tag}
@@ -109,8 +126,8 @@ function ChartCard({ data, index }: { data: ChartCardData; index: number }) {
             {data.title}
           </p>
         </div>
-        <div className="flex flex-col gap-[10px] items-end text-right uppercase w-[216px]">
-          <p className="font-['Sora'] font-extrabold text-[52px] text-black tracking-[-1.56px] leading-normal w-full">
+        <div className="flex flex-col gap-[10px] items-end text-right uppercase w-auto lg:w-[216px]">
+          <p className="font-['Sora'] font-extrabold text-[32px] lg:text-[52px] text-black tracking-[-0.96px] lg:tracking-[-1.56px] leading-normal w-full">
             {data.growth}
           </p>
           <p className="font-['Sora'] font-semibold text-[11px] text-black tracking-[2.2px] leading-[19px] w-full">
@@ -120,8 +137,8 @@ function ChartCard({ data, index }: { data: ChartCardData; index: number }) {
       </div>
 
       {/* Chart Area */}
-      <div className="flex flex-col gap-[14px] items-start w-[554px]">
-        <div className="relative w-[554px] h-[110px]">
+      <div className="flex flex-col gap-[14px] items-start w-full lg:max-w-[554px]">
+        <div className="relative w-full lg:max-w-[554px] h-[80px] lg:h-[110px]">
           {/* Chart lines */}
           <div className="absolute inset-0">
             <svg className="block size-full" fill="none" preserveAspectRatio="none" viewBox={getChartViewBox(index)}>
@@ -157,7 +174,7 @@ function ChartCard({ data, index }: { data: ChartCardData; index: number }) {
           </div>
 
           {/* Dashed vertical line - "Vstup STRAT3X" */}
-          <div className="absolute left-[133px] top-0 flex flex-col items-center">
+          <div className="absolute left-[24%] lg:left-[133px] top-0 flex flex-col items-center">
             <p
               className="font-['Noto_Sans'] font-medium text-[13px] text-black text-center leading-[32px] w-[99px]"
               style={{ fontVariationSettings: "'CTGR' 0, 'wdth' 100" }}
@@ -187,7 +204,7 @@ function ChartCard({ data, index }: { data: ChartCardData; index: number }) {
         {/* Month labels */}
         <div className="flex flex-col gap-[12px] items-end w-full text-[13px] text-black leading-[32px]">
           <div
-            className="flex items-center justify-between w-full font-['Noto_Sans'] font-medium"
+            className="flex items-center gap-[2px] lg:gap-0 lg:justify-between w-full font-['Noto_Sans'] font-medium"
             style={{ fontVariationSettings: "'CTGR' 0, 'wdth' 100" }}
           >
             {months.map((m) => (

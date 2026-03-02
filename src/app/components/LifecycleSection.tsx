@@ -5,17 +5,17 @@ export function LifecycleSection() {
     <section className="h-auto lg:h-[582px] overflow-clip relative w-full">
       <div className="flex flex-col lg:flex-row gap-[60px] lg:gap-[142px] items-start justify-center w-full pb-[80px] pt-[120px] px-6 xl:px-0 max-w-[1400px] mx-auto">
         {/* Left column - header */}
-        <div className="flex flex-col gap-[28px] items-start shrink-0 text-black w-full lg:w-[468px]">
-          <div className="flex flex-col gap-[32px] items-start uppercase w-full">
+        <div className="flex flex-col gap-[28px] items-center lg:items-start shrink-0 text-black w-full lg:w-[468px]">
+          <div className="flex flex-col gap-[32px] items-center lg:items-start uppercase w-full text-center lg:text-left">
             <p className="font-['Sora'] font-semibold leading-[17px] text-[11px] tracking-[2.2px] w-full">
               Komplexní ekosystém
             </p>
-            <p className="font-['Sora'] font-extrabold leading-normal text-[52px] tracking-[-1.56px] w-full lg:w-[468px]">
+            <p className="font-['Sora'] font-extrabold leading-[44px] lg:leading-normal text-[32px] lg:text-[52px] tracking-[-0.96px] lg:tracking-[-1.56px] w-[333px] lg:w-[468px]">
               Celý životní cyklus online byznysu
             </p>
           </div>
           <p
-            className="font-['Noto_Sans'] text-[17px] leading-[32px] w-full lg:w-[345px]"
+            className="font-['Noto_Sans'] text-[17px] leading-[31px] lg:leading-[32px] text-center lg:text-left w-[325px] lg:w-[345px]"
             style={{ fontVariationSettings: "'CTGR' 0, 'wdth' 100" }}
           >
             Od strategie po hlubokou automatizaci. Vše pod jednou střechou.

@@ -1,4 +1,4 @@
-import imgRectangle4 from "@/assets/1f7cbf18e91bd11d865e7e7dd625df2af6bb157d.png";
+import imgRectangle4 from "figma:asset/1f7cbf18e91bd11d865e7e7dd625df2af6bb157d.png";
 import svgPaths from "../../imports/svg-59wapeqsll";
 import { imgG283 } from "../../imports/svg-76oh5";
 
@@ -12,12 +12,12 @@ export function TechnologySection() {
             <p className="font-['Sora'] font-semibold text-[11px] tracking-[2.2px] leading-[17px] w-full">
               Technologie
             </p>
-            <p className="font-['Sora'] font-extrabold text-[52px] tracking-[-1.56px] leading-normal w-full">
+            <p className="font-['Sora'] font-extrabold text-[32px] lg:text-[52px] tracking-[-0.96px] lg:tracking-[-1.56px] leading-[45px] lg:leading-normal w-[297px] lg:w-full">
               Data-Driven přístup
             </p>
           </div>
           <p
-            className="font-['Noto_Sans'] text-[17px] leading-[32px] w-full"
+            className="font-['Noto_Sans'] text-[17px] leading-[32px] w-[270px] lg:w-full"
             style={{ fontVariationSettings: "'CTGR' 0, 'wdth' 100" }}
           >
             Každé rozhodnutí podložené daty. Vlastní vývoj nástrojů pro
@@ -26,13 +26,13 @@ export function TechnologySection() {
         </div>
 
         {/* Main Content Area */}
-        <div className="flex gap-[54px] items-center w-full max-w-[1392px] mx-auto px-6 xl:px-0">
+        <div className="flex flex-col xl:flex-row gap-[54px] items-center w-full max-w-[1392px] mx-auto px-6 xl:px-0">
           {/* Left Content */}
           <div className="flex flex-col gap-[60px] items-start w-full max-w-[1006px]">
             {/* Top feature row */}
-            <div className="flex flex-col lg:flex-row gap-[60px] lg:gap-[246px] items-start lg:items-center w-full">
-              <div className="flex flex-col gap-[24px] items-start w-full max-w-[494px]">
-                <div className="flex flex-col gap-[28px] items-start max-w-[384px]">
+            <div className="flex flex-col lg:flex-row gap-[60px] lg:gap-[246px] items-center lg:items-center w-full">
+              <div className="flex flex-col gap-[24px] items-center lg:items-start w-full max-w-[494px]">
+                <div className="flex flex-col gap-[28px] items-center lg:items-start w-full max-w-[384px]">
                   {/* Gradient bar */}
                   <div className="h-[3px] w-[63px] rounded-[33px] overflow-hidden relative">
                     <img
@@ -42,12 +42,12 @@ export function TechnologySection() {
                       style={{ position: "absolute", objectFit: "cover" }}
                     />
                   </div>
-                  <p className="font-['Sora'] font-extrabold text-[35px] text-black tracking-[-1.05px] uppercase leading-[49px]">
+                  <p className="font-['Sora'] font-extrabold text-[26px] lg:text-[35px] text-black tracking-[-0.78px] lg:tracking-[-1.05px] uppercase leading-[40px] lg:leading-[49px] text-center lg:text-left w-full">
                     Pokročilá datová analytika
                   </p>
                 </div>
                 <p
-                  className="font-['Noto_Sans'] text-[17px] text-black tracking-[-0.34px] leading-[32px] w-full"
+                  className="font-['Noto_Sans'] text-[15px] lg:text-[17px] text-black tracking-[-0.34px] leading-[24px] lg:leading-[32px] text-center lg:text-left w-[293px] lg:w-full"
                   style={{ fontVariationSettings: "'CTGR' 0, 'wdth' 100" }}
                 >
                   Vlastní tým datových specialistů. Nejde jen o měření – jde o
@@ -57,11 +57,11 @@ export function TechnologySection() {
               </div>
 
               {/* Stat block */}
-              <div className="relative w-[264px] h-[164px] bg-[#171717] shrink-0">
-                <p className="absolute left-[76px] top-[30px] font-['Sora'] font-bold text-[42px] text-white text-center tracking-[-1.68px] uppercase leading-normal">
+              <div className="relative w-full max-w-[348px] lg:max-w-none lg:w-[264px] h-[164px] bg-[#171717] shrink-0">
+                <p className="absolute left-1/2 -translate-x-1/2 lg:translate-x-0 lg:left-[76px] top-[30px] font-['Sora'] font-bold text-[42px] text-white text-center tracking-[-1.68px] uppercase leading-normal">
                   100 %
                 </p>
-                <p className="absolute left-[32px] top-[94px] font-['Sora'] font-semibold text-[11px] text-white text-center tracking-[2.2px] uppercase leading-[20px] opacity-61 w-[210px]">
+                <p className="absolute left-1/2 -translate-x-1/2 lg:translate-x-0 lg:left-[32px] top-[94px] font-['Sora'] font-semibold text-[11px] text-white text-center tracking-[2.2px] uppercase leading-[20px] opacity-61 w-[210px]">
                   rozhodnutí podložených daty
                 </p>
               </div>
@@ -195,20 +195,20 @@ function TechCard({
   description: string;
 }) {
   return (
-    <div className="relative bg-white flex flex-col h-[168px] items-center justify-center shrink-0 w-full sm:w-[503px]">
+    <div className="relative bg-white flex flex-col h-[187px] lg:h-[168px] items-center justify-center shrink-0 w-full sm:w-[503px]">
       <div
         aria-hidden="true"
         className="absolute border-[#c9c6c6] border-[0.4px] border-solid inset-0 pointer-events-none"
       />
-      <div className="flex flex-col items-start w-[408.406px]">
+      <div className="flex flex-col items-start w-full max-w-[408.406px] px-6 sm:px-0">
         <div className="flex gap-[32px] h-[98px] items-start w-full">
           <div className="shrink-0 mt-[4px]">{icon}</div>
-          <div className="flex flex-col gap-[12px] items-start text-black w-[336.406px]">
+          <div className="flex flex-col gap-[12px] items-start text-black w-full max-w-[336.406px]">
             <p className="font-['Sora'] font-bold text-[22px] tracking-[-0.22px] leading-[38px]">
               {title}
             </p>
             <p
-              className="font-['Noto_Sans'] text-[15px] leading-[24px] w-[336.406px]"
+              className="font-['Noto_Sans'] text-[15px] leading-[24px] w-full max-w-[336.406px]"
               style={{ fontVariationSettings: "'CTGR' 0, 'wdth' 100" }}
             >
               {description}

@@ -53,7 +53,7 @@ export function FaqSection() {
               <p className="font-['Sora'] font-semibold leading-[17px] text-[11px] tracking-[2.2px] w-full">
                 Časté dotazy
               </p>
-              <p className="font-['Sora'] font-extrabold leading-normal text-[52px] tracking-[-1.56px] w-full">
+              <p className="font-['Sora'] font-extrabold leading-normal text-[32px] lg:text-[52px] tracking-[-0.96px] lg:tracking-[-1.56px] w-full">
                 Co vás zajímá
               </p>
             </div>

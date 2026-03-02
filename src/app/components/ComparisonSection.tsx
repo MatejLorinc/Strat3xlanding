@@ -1,23 +1,23 @@
 import svgPaths from "../../imports/svg-59wapeqsll";
-import imgRectangle5 from "@/assets/3ad0cbf86082bb5c0deed567f95b0ba4f3a3b0bb.png";
+import imgRectangle5 from "figma:asset/3ad0cbf86082bb5c0deed567f95b0ba4f3a3b0bb.png";
 import { imgRectangle6138, imgEllipse1 } from "../../imports/svg-76oh5";
 
 export function ComparisonSection() {
   return (
-    <section className="relative w-full py-20 overflow-hidden">
-      <div className="max-w-[1400px] mx-auto px-8">
+    <section className="relative w-full py-12 lg:py-20 overflow-hidden">
+      <div className="max-w-[1400px] mx-auto px-6 lg:px-8">
         {/* Section Heading */}
-        <div className="flex flex-col gap-[124px] items-center w-full">
-          <div className="font-['Sora'] font-extrabold text-center tracking-[-2.46px] uppercase whitespace-nowrap">
-            <p className="mb-0 text-[68px] leading-[50px]">
+        <div className="flex flex-col gap-[60px] lg:gap-[124px] items-center w-full">
+          <div className="font-['Sora'] font-extrabold text-center tracking-[-2.46px] uppercase">
+            <p className="mb-0 text-[56px] lg:text-[68px] leading-[50px]">
               <span className="text-[#e8e8e8]">nejsme agentura</span>
               <span>{" "}</span>
             </p>
-            <p className="text-[82px] leading-[50px] text-black">Jsme váš partner.</p>
+            <p className="text-[61px] lg:text-[82px] leading-[50px] text-black">Jsme váš partner.</p>
           </div>
 
           {/* Cards Row */}
-          <div className="flex gap-[32px] items-center w-full">
+          <div className="flex flex-col lg:flex-row gap-[24px] lg:gap-[32px] items-center w-full">
             {/* Left Card - Kdo jsme */}
             <KdoJsmeCard />
 
@@ -27,8 +27,8 @@ export function ComparisonSection() {
         </div>
 
         {/* Description text */}
-        <div className="flex justify-center mt-20">
-          <p className="font-['Noto_Sans'] font-normal text-[17px] text-black text-center w-[594px] leading-[32px]" style={{ fontVariationSettings: "'CTGR' 0, 'wdth' 100" }}>
+        <div className="flex justify-center mt-12 lg:mt-20">
+          <p className="font-['Noto_Sans'] font-normal text-[17px] text-black text-center w-[332px] lg:w-full max-w-[594px] leading-[32px]" style={{ fontVariationSettings: "'CTGR' 0, 'wdth' 100" }}>
             <span>{"Díky způsobu spolupráce a odměňování navázaného na ziskovost máme "}</span>
             <span className="font-bold" style={{ fontVariationSettings: "'CTGR' 100, 'wdth' 100" }}>{"stejný zájem jako vy. "}</span>
             <span>Táhneme za stejnou stranu provazu.</span>
@@ -55,30 +55,79 @@ const kdoNejsmeItems = [
 
 function KdoJsmeCard() {
   return (
-    <div className="relative h-[344px] rounded-[9px] shrink-0 w-[684px] shadow-[0px_0px_15px_0px_rgba(0,0,0,0.25)]">
+    <div className="relative min-h-[344px] lg:h-[344px] rounded-[9px] shrink-0 w-full max-w-[349px] lg:max-w-none lg:w-[684px] shadow-[0px_0px_15px_0px_rgba(0,0,0,0.25)]">
       {/* Background with glassmorphism */}
       <div className="absolute inset-0 rounded-[9px] overflow-hidden">
+        {/* Gray base - Mobile */}
         <div
-          className="absolute bg-[rgba(120,120,120,0.89)] blur-[2px] h-[344px] left-0 rounded-[9px] top-0 w-[684px] mask-alpha mask-intersect mask-no-clip mask-no-repeat mask-position-[0px_0px] mask-size-[684px_344px]"
-          style={{ maskImage: `url('${imgRectangle6138}')` }}
+          className="lg:hidden absolute bg-[rgba(120,120,120,0.89)] blur-[2px] h-[577px] left-0 rounded-[9px] top-0 w-[684px]"
+          style={{
+            maskImage: `url('${imgRectangle6138}')`,
+            maskSize: '349px 437px',
+            maskPosition: '0px 0px',
+            maskRepeat: 'no-repeat',
+          }}
         />
-        <div className="absolute inset-0 mix-blend-hard-light">
-          <img
-            alt=""
-            className="absolute backdrop-blur-[7.6px] inset-0 w-full h-full object-cover opacity-80 pointer-events-none"
-            src={imgRectangle5}
-          />
+        {/* Gray base - Desktop */}
+        <div
+          className="hidden lg:block absolute bg-[rgba(120,120,120,0.89)] blur-[2px] h-[344px] left-0 rounded-[9px] top-0 w-[684px]"
+          style={{
+            maskImage: `url('${imgRectangle6138}')`,
+            maskSize: '684px 344px',
+            maskPosition: '0px 0px',
+            maskRepeat: 'no-repeat',
+          }}
+        />
+        {/* Colorful gradient - Mobile */}
+        <div className="lg:hidden absolute flex inset-[-65.7%_-183.67%_-58.72%_-4.58%] items-center justify-center mix-blend-hard-light">
+          <div className="flex-none h-[772px] rotate-180 w-[1006px]">
+            <div
+              className="relative size-full"
+              style={{
+                maskImage: `url('${imgRectangle6138}')`,
+                maskSize: '349px 437px',
+                maskPosition: '16px 226px',
+                maskRepeat: 'no-repeat',
+              }}
+            >
+              <img
+                alt=""
+                className="absolute backdrop-blur-[7.6px] inset-0 max-w-none object-cover opacity-80 pointer-events-none size-full"
+                src={imgRectangle5}
+              />
+            </div>
+          </div>
+        </div>
+        {/* Colorful gradient - Desktop */}
+        <div className="hidden lg:flex absolute inset-[-51.74%_-63.6%_-25%_-4.53%] items-center justify-center mix-blend-hard-light">
+          <div className="flex-none h-[608px] rotate-180 w-[1150px]">
+            <div
+              className="relative size-full"
+              style={{
+                maskImage: `url('${imgRectangle6138}')`,
+                maskSize: '684px 344px',
+                maskPosition: '31px 178px',
+                maskRepeat: 'no-repeat',
+              }}
+            >
+              <img
+                alt=""
+                className="absolute backdrop-blur-[7.6px] inset-0 max-w-none object-cover opacity-80 pointer-events-none size-full"
+                src={imgRectangle5}
+              />
+            </div>
+          </div>
         </div>
       </div>
 
       {/* Content */}
-      <div className="absolute inset-0 flex flex-col gap-[34px] pl-[50px] pt-[40px] rounded-[9px] shadow-[0px_0px_6.3px_0px_rgba(0,0,0,0.15)]">
+      <div className="absolute inset-0 flex flex-col gap-[24px] lg:gap-[34px] pl-[35px] lg:pl-[50px] pt-[42px] lg:pt-[40px] rounded-[9px] shadow-[0px_0px_6.3px_0px_rgba(0,0,0,0.15)]">
         <p className="font-['Sora'] font-extrabold text-[23px] text-white tracking-[-0.69px] uppercase w-full">
           kdo jsme
         </p>
         <div className="flex flex-col gap-2">
           {kdoJsmeItems.map((item, index) => (
-            <div key={index} className="flex gap-5 items-center">
+            <div key={index} className="flex gap-5 items-start">
               <div className="h-[13px] shrink-0 w-[7px] relative">
                 <div className="absolute inset-[-0.77%_-1.43%]">
                   <svg className="block size-full" fill="none" preserveAspectRatio="none" viewBox="0 0 7.2 13.2">
@@ -86,7 +135,7 @@ function KdoJsmeCard() {
                   </svg>
                 </div>
               </div>
-              <p className="font-['Noto_Sans'] font-bold text-[17px] text-white leading-[32px]" style={{ fontVariationSettings: "'CTGR' 100, 'wdth' 100" }}>
+              <p className="font-['Noto_Sans'] font-bold text-[17px] text-white leading-[24px] lg:leading-[32px]" style={{ fontVariationSettings: "'CTGR' 100, 'wdth' 100" }}>
                 {item}
               </p>
             </div>
@@ -125,17 +174,17 @@ function KdoJsmeCard() {
 
 function KdoNejsmeCard() {
   return (
-    <div className="relative h-[344px] rounded-[9px] shrink-0 w-[683px]">
+    <div className="relative min-h-[443px] lg:min-h-0 lg:h-[344px] rounded-[9px] shrink-0 w-full max-w-[345px] lg:max-w-none lg:w-[683px]">
       <div aria-hidden="true" className="absolute border-2 border-solid border-white inset-[-2px] pointer-events-none rounded-[11px] shadow-[0px_0px_15px_0px_rgba(0,0,0,0.1)]" />
 
       {/* Dark background content */}
-      <div className="absolute bg-[rgba(110,110,110,0.2)] flex flex-col gap-[34px] h-[344px] items-start pl-[50px] pt-[40px] right-[-1px] rounded-[9px] top-0 w-[684px]">
+      <div className="absolute bg-[rgba(110,110,110,0.2)] flex flex-col gap-[24px] lg:gap-[34px] h-full items-start pl-[33px] lg:pl-[50px] pt-[40px] right-0 lg:right-[-1px] rounded-[9px] top-0 w-full lg:w-[684px]">
         <p className="font-['Sora'] font-extrabold text-[23px] text-white tracking-[-0.69px] uppercase w-full">
           kdo nejsme
         </p>
         <div className="flex flex-col gap-2">
           {kdoNejsmeItems.map((item, index) => (
-            <div key={index} className="flex gap-5 items-center">
+            <div key={index} className="flex gap-5 items-start">
               <div className="h-[13px] shrink-0 w-[7px] relative">
                 <div className="absolute inset-[-0.77%_-1.43%]">
                   <svg className="block size-full" fill="none" preserveAspectRatio="none" viewBox="0 0 7.2 13.2">
@@ -143,7 +192,7 @@ function KdoNejsmeCard() {
                   </svg>
                 </div>
               </div>
-              <p className="font-['Noto_Sans'] font-bold text-[17px] text-white leading-[32px]" style={{ fontVariationSettings: "'CTGR' 100, 'wdth' 100" }}>
+              <p className="font-['Noto_Sans'] font-bold text-[17px] text-white leading-[24px] lg:leading-[32px]" style={{ fontVariationSettings: "'CTGR' 100, 'wdth' 100" }}>
                 {item}
               </p>
             </div>

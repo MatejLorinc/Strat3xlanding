@@ -1,6 +1,6 @@
-import img41641 from "@/assets/1ae7eb4f61ade708f7114d50825956cbed9c81a3.png";
-import img255402 from "@/assets/c137d10fde9bfceb8fe155765a39a643cd1e631b.png";
-import img2437921 from "@/assets/4b725ea6e43c85fd0b312c10b6227e4d5c25b560.png";
+import img41641 from "figma:asset/1ae7eb4f61ade708f7114d50825956cbed9c81a3.png";
+import img255402 from "figma:asset/c137d10fde9bfceb8fe155765a39a643cd1e631b.png";
+import img2437921 from "figma:asset/4b725ea6e43c85fd0b312c10b6227e4d5c25b560.png";
 
 export function PartnersSection() {
   return (
@@ -12,7 +12,7 @@ export function PartnersSection() {
             <p className="font-['Sora'] font-semibold leading-[17px] text-[11px] tracking-[2.2px] w-full">
               Ideální partneři
             </p>
-            <p className="font-['Sora'] font-extrabold leading-normal text-[52px] tracking-[-1.56px] w-full">
+            <p className="font-['Sora'] font-extrabold leading-normal text-[32px] lg:text-[52px] tracking-[-0.96px] lg:tracking-[-1.56px] w-full">
               S kým spolupracujeme
             </p>
           </div>

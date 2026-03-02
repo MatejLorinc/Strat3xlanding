@@ -1,4 +1,4 @@
-import imgRectangle5 from "@/assets/3ad0cbf86082bb5c0deed567f95b0ba4f3a3b0bb.png";
+import imgRectangle5 from "figma:asset/3ad0cbf86082bb5c0deed567f95b0ba4f3a3b0bb.png";
 import { imgRectangle6146 } from "../../imports/svg-76oh5";
 
 const sidebarItems = [
@@ -15,20 +15,20 @@ const sidebarItems = [
 
 export function PortalSection() {
   return (
-    <section className="relative w-full py-20 overflow-hidden">
-      <div className="max-w-[1400px] mx-auto px-8">
+    <section className="relative w-full py-12 lg:py-20 overflow-hidden">
+      <div className="max-w-[1400px] mx-auto px-6 lg:px-8">
         {/* Section Header */}
-        <div className="flex flex-col gap-[32px] items-center text-center mb-20">
+        <div className="flex flex-col gap-[32px] items-center text-center mb-12 lg:mb-20">
           <p className="font-['Sora'] font-semibold text-[11px] text-black tracking-[2.2px] uppercase leading-[17px]">
             interaktivní ukázka
           </p>
-          <p className="font-['Sora'] font-extrabold text-[52px] text-black tracking-[-1.56px] uppercase leading-normal w-[948px]">
+          <p className="font-['Sora'] font-extrabold text-[32px] lg:text-[52px] text-black tracking-[-0.96px] lg:tracking-[-1.56px] uppercase leading-normal w-full max-w-[948px]">
             Vyzkoušejte si klientský portál
           </p>
         </div>
 
         {/* Portal Preview */}
-        <div className="relative w-[1399px] h-[639px] mx-auto rounded-lg overflow-hidden">
+        <div className="relative w-full max-w-[1399px] h-[400px] sm:h-[500px] lg:h-[639px] mx-auto rounded-lg overflow-hidden">
           {/* Background effect */}
           <div className="absolute inset-0">
             <div
@@ -77,7 +77,7 @@ export function PortalSection() {
             {/* Portal content area */}
             <div className="flex flex-1">
               {/* Sidebar */}
-              <div className="w-[200px] bg-white/10 backdrop-blur-md border-r border-white/10 flex flex-col pt-6 px-4 gap-1">
+              <div className="hidden sm:flex w-[200px] bg-white/10 backdrop-blur-md border-r border-white/10 flex-col pt-6 px-4 gap-1">
                 {/* Logo placeholder */}
                 <div className="mb-6 px-2">
                   <div className="h-[20px] w-[100px] bg-white/20 rounded" />
@@ -98,8 +98,8 @@ export function PortalSection() {
               </div>
 
               {/* Main content placeholder */}
-              <div className="flex-1 p-8">
-                <div className="grid grid-cols-3 gap-4 mb-6">
+              <div className="flex-1 p-4 sm:p-8">
+                <div className="grid grid-cols-2 sm:grid-cols-3 gap-4 mb-6">
                   <div className="bg-white/10 backdrop-blur-sm rounded-lg h-[100px] p-4">
                     <div className="h-3 w-20 bg-white/20 rounded mb-3" />
                     <div className="h-8 w-16 bg-white/30 rounded" />

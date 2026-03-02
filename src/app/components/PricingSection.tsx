@@ -1,5 +1,5 @@
 import svgPaths from "../../imports/svg-59wapeqsll";
-import imgRectangle5 from "@/assets/3ad0cbf86082bb5c0deed567f95b0ba4f3a3b0bb.png";
+import imgRectangle5 from "figma:asset/3ad0cbf86082bb5c0deed567f95b0ba4f3a3b0bb.png";
 
 interface ChecklistItem {
   label: string;
@@ -38,7 +38,7 @@ export function PricingSection() {
               <p className="font-['Sora'] font-semibold text-[11px] tracking-[2.2px] leading-[17px] w-full">
                 Cenový model
               </p>
-              <p className="font-['Sora'] font-extrabold text-[52px] tracking-[-1.56px] leading-normal w-full">
+              <p className="font-['Sora'] font-extrabold text-[32px] lg:text-[52px] tracking-[-0.96px] lg:tracking-[-1.56px] leading-normal w-full">
                 Share on Growth
               </p>
             </div>
@@ -52,12 +52,12 @@ export function PricingSection() {
           </div>
 
           {/* Statement Banner */}
-          <div className="bg-[#171717] relative flex flex-col gap-[10px] h-[202px] items-center justify-center shrink-0 w-full max-w-[1400px] mx-auto">
+          <div className="bg-[#171717] relative flex flex-col gap-[10px] h-auto py-[40px] lg:py-0 lg:h-[202px] items-center justify-center shrink-0 w-full max-w-[1400px] mx-auto">
             <div
               aria-hidden="true"
               className="absolute border border-[#a038b6] border-solid inset-0 pointer-events-none"
             />
-            <p className="font-['Sora'] font-bold text-[37px] text-white text-center tracking-[-0.37px] leading-[65px] w-full px-6">
+            <p className="font-['Sora'] font-bold text-[28px] lg:text-[37px] text-white text-center tracking-[-0.37px] leading-[42px] lg:leading-[65px] w-full px-6">
               Do zisku jdeme, až když jdete vy.
             </p>
             <p

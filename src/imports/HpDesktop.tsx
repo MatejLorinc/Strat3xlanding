@@ -1,16 +1,16 @@
 import svgPaths from "./svg-59wapeqsll";
-import imgRectangle from "@/assets/320b8c287414bc6a4263c44fb04247eb957ea265.png";
-import imgRectangle2 from "@/assets/237f5127621aac5fb508fd8af02ad944505f7f78.png";
-import imgRectangle4 from "@/assets/1f7cbf18e91bd11d865e7e7dd625df2af6bb157d.png";
-import imgRectangle5 from "@/assets/3ad0cbf86082bb5c0deed567f95b0ba4f3a3b0bb.png";
-import imgShoptetLogoPrimaryPng1 from "@/assets/0787b06cd1272748b0adc4a99998f28b2cfd5a2b.png";
-import img41641 from "@/assets/1ae7eb4f61ade708f7114d50825956cbed9c81a3.png";
-import img255402 from "@/assets/c137d10fde9bfceb8fe155765a39a643cd1e631b.png";
-import img2437921 from "@/assets/4b725ea6e43c85fd0b312c10b6227e4d5c25b560.png";
-import img21422 from "@/assets/9b1d2ddbf19b0238d4280b485f192cb251cc412e.png";
-import img299071 from "@/assets/833c20c5b36b9a1249674a86d21094fb642f86ad.png";
-import img275361 from "@/assets/04f5ba96c056b3e085d330d72f09fb171a91a27d.png";
-import imgDottedWorldMapGrayColorIsolatedWhite1 from "@/assets/0e1644e0a7d4153de2a407721bc9408b9eb68e17.png";
+import imgRectangle from "figma:asset/320b8c287414bc6a4263c44fb04247eb957ea265.png";
+import imgRectangle2 from "figma:asset/237f5127621aac5fb508fd8af02ad944505f7f78.png";
+import imgRectangle4 from "figma:asset/1f7cbf18e91bd11d865e7e7dd625df2af6bb157d.png";
+import imgRectangle5 from "figma:asset/3ad0cbf86082bb5c0deed567f95b0ba4f3a3b0bb.png";
+import imgShoptetLogoPrimaryPng1 from "figma:asset/0787b06cd1272748b0adc4a99998f28b2cfd5a2b.png";
+import img41641 from "figma:asset/1ae7eb4f61ade708f7114d50825956cbed9c81a3.png";
+import img255402 from "figma:asset/c137d10fde9bfceb8fe155765a39a643cd1e631b.png";
+import img2437921 from "figma:asset/4b725ea6e43c85fd0b312c10b6227e4d5c25b560.png";
+import img21422 from "figma:asset/9b1d2ddbf19b0238d4280b485f192cb251cc412e.png";
+import img299071 from "figma:asset/833c20c5b36b9a1249674a86d21094fb642f86ad.png";
+import img275361 from "figma:asset/04f5ba96c056b3e085d330d72f09fb171a91a27d.png";
+import imgDottedWorldMapGrayColorIsolatedWhite1 from "figma:asset/0e1644e0a7d4153de2a407721bc9408b9eb68e17.png";
 import { imgRectangle1, imgRectangle3, imgVector, imgRectangle6138, imgEllipse1, imgRectangle6146, imgRectangle6, imgG127, imgG271, imgRectangle7, imgG283, imgRectangle6147, img21421, imgG2515, imgRectangle8 } from "./svg-76oh5";
 
 function Group() {

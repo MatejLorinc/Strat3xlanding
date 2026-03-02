@@ -1,5 +1,5 @@
 import { useState } from "react";
-import imgRectangle from "@/assets/320b8c287414bc6a4263c44fb04247eb957ea265.png";
+import imgRectangle from "figma:asset/320b8c287414bc6a4263c44fb04247eb957ea265.png";
 import { imgRectangle8 } from "../../imports/svg-76oh5";
 
 export function CompatibilitySection() {
@@ -24,11 +24,19 @@ export function CompatibilitySection() {
       <div className="relative bg-[#171717] w-full max-w-[1400px] mx-auto overflow-hidden">
         {/* Background decorative elements */}
         <div className="absolute inset-0 pointer-events-none">
-          <div className="absolute inset-0 mix-blend-screen opacity-50">
+          <div
+            className="absolute right-0 bottom-0 w-[1790px] h-[825px] mix-blend-screen opacity-50"
+            style={{
+              maskImage: `url('${imgRectangle8}')`,
+              maskSize: "1400px 1300px",
+              maskRepeat: "no-repeat",
+              maskPosition: "1175px -678px",
+            }}
+          >
             <div className="absolute inset-0 opacity-70 overflow-hidden pointer-events-none">
               <img
                 alt=""
-                className="absolute inset-0 w-full h-full object-cover"
+                className="absolute left-0 max-w-none size-full top-0"
                 src={imgRectangle}
               />
             </div>
@@ -52,7 +60,7 @@ export function CompatibilitySection() {
               <p className="font-['Sora'] font-semibold leading-[17px] text-[11px] tracking-[2.2px] w-full">
                 Ověření kompatibility
               </p>
-              <p className="font-['Sora'] font-extrabold leading-normal text-[52px] tracking-[-1.56px] w-full">
+              <p className="font-['Sora'] font-extrabold leading-normal text-[28px] sm:text-[36px] lg:text-[52px] tracking-[-0.96px] lg:tracking-[-1.56px] w-full">
                 Zjistěte, zda jsme pro vás
               </p>
             </div>

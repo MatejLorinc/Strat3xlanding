@@ -1,18 +1,40 @@
 import svgPaths from "../../imports/svg-59wapeqsll";
-import imgRectangle2 from "@/assets/237f5127621aac5fb508fd8af02ad944505f7f78.png";
+import imgRectangle2 from "figma:asset/237f5127621aac5fb508fd8af02ad944505f7f78.png";
 import { imgRectangle1 } from "../../imports/svg-76oh5";
+import { useState } from "react";
 
 export function Header() {
+  const [menuOpen, setMenuOpen] = useState(false);
+
   return (
-    <header className="w-full py-10">
-      <div className="max-w-[1400px] mx-auto px-8 flex items-center justify-between">
+    <header className="w-full py-6 lg:py-10">
+      <div className="max-w-[1400px] mx-auto px-6 lg:px-8 flex items-center justify-between">
         {/* Logo */}
         <div className="flex-shrink-0">
           <LogoGradient />
         </div>
 
-        {/* Navigation and Actions */}
-        <div className="flex items-center gap-12">
+        {/* Mobile hamburger */}
+        <button
+          className="lg:hidden relative size-[30px]"
+          onClick={() => setMenuOpen(!menuOpen)}
+          aria-label="Toggle menu"
+        >
+          <svg className="block size-full" fill="none" viewBox="0 0 30 30">
+            {menuOpen ? (
+              <path d="M8 8L22 22M22 8L8 22" stroke="black" strokeWidth="2.5" strokeLinecap="round" />
+            ) : (
+              <>
+                <rect x="3" y="6" width="24" height="3" rx="1.5" fill="black" />
+                <rect x="3" y="13.5" width="24" height="3" rx="1.5" fill="black" />
+                <rect x="9" y="21" width="18" height="3" rx="1.5" fill="black" />
+              </>
+            )}
+          </svg>
+        </button>
+
+        {/* Navigation and Actions - Desktop */}
+        <div className="hidden lg:flex items-center gap-12">
           {/* Main Navigation */}
           <nav className="flex items-center gap-7 font-['Sora'] font-semibold text-[13px] text-black text-center tracking-[-0.26px] uppercase">
             <a href="#" className="hover:opacity-70 transition-opacity">O nás</a>
@@ -47,6 +69,23 @@ export function Header() {
             <span className="font-['Sora'] font-bold text-[12px] text-white text-center tracking-[-0.24px] uppercase">ověřit kompatibilitu</span>
           </button>
         </div>
+
+        {/* Mobile menu overlay */}
+        {menuOpen && (
+          <div className="fixed inset-0 top-[76px] bg-white z-50 lg:hidden flex flex-col items-center pt-8 gap-6">
+            <nav className="flex flex-col items-center gap-6 font-['Sora'] font-semibold text-[15px] text-black tracking-[-0.26px] uppercase">
+              <a href="#" className="hover:opacity-70 transition-opacity" onClick={() => setMenuOpen(false)}>O nás</a>
+              <a href="#" className="hover:opacity-70 transition-opacity" onClick={() => setMenuOpen(false)}>Služby</a>
+              <a href="#" className="hover:opacity-70 transition-opacity" onClick={() => setMenuOpen(false)}>Metodika</a>
+              <a href="#" className="hover:opacity-70 transition-opacity" onClick={() => setMenuOpen(false)}>Technologie</a>
+              <a href="#" className="hover:opacity-70 transition-opacity" onClick={() => setMenuOpen(false)}>Tým</a>
+              <a href="#" className="hover:opacity-70 transition-opacity" onClick={() => setMenuOpen(false)}>Kontakt</a>
+            </nav>
+            <button className="bg-black h-11 px-[34px] rounded-[62px]">
+              <span className="font-['Sora'] font-bold text-[12px] text-white text-center tracking-[-0.24px] uppercase">ověřit kompatibilitu</span>
+            </button>
+          </div>
+        )}
       </div>
     </header>
   );

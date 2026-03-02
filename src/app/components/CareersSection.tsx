@@ -63,7 +63,7 @@ export function CareersSection() {
               <p className="font-['Sora'] font-semibold leading-[17px] text-[11px] tracking-[2.2px] w-full">
                 kariéra
               </p>
-              <p className="font-['Sora'] font-extrabold leading-normal text-[52px] tracking-[-1.56px] w-full">
+              <p className="font-['Sora'] font-extrabold leading-normal text-[32px] lg:text-[52px] tracking-[-0.96px] lg:tracking-[-1.56px] w-full">
                 Přidej se k nám
               </p>
             </div>
@@ -78,7 +78,7 @@ export function CareersSection() {
           </div>
 
           {/* Right: Stats */}
-          <div className="flex gap-[30px] items-end flex-wrap">
+          <div className="grid grid-cols-2 sm:flex gap-[20px] sm:gap-[30px] items-end">
             <StatItem
               icon={<TeamIcon />}
               value="15+"
@@ -191,7 +191,7 @@ function StatItem({
       className={`flex flex-col gap-[10px] items-center shrink-0 ${width}`}
     >
       {icon}
-      <p className="font-['Sora'] font-extrabold leading-normal text-[52px] text-black tracking-[-1.56px] uppercase">
+      <p className="font-['Sora'] font-extrabold leading-normal text-[36px] lg:text-[52px] text-black tracking-[-1.08px] lg:tracking-[-1.56px] uppercase">
         {value}
       </p>
       <p className="font-['Sora'] font-semibold leading-[17px] text-[11px] text-black text-center tracking-[2.2px] uppercase">

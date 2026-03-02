@@ -1,5 +1,5 @@
-import imgRectangle from "@/assets/320b8c287414bc6a4263c44fb04247eb957ea265.png";
-import imgRectangle5 from "@/assets/3ad0cbf86082bb5c0deed567f95b0ba4f3a3b0bb.png";
+import imgRectangle from "figma:asset/320b8c287414bc6a4263c44fb04247eb957ea265.png";
+import imgRectangle5 from "figma:asset/3ad0cbf86082bb5c0deed567f95b0ba4f3a3b0bb.png";
 import { imgRectangle7 } from "../../imports/svg-76oh5";
 
 const leftCards = [
@@ -52,7 +52,7 @@ export function MethodologySection() {
             <p className="font-['Sora'] font-semibold text-[11px] tracking-[2.2px] leading-[17px] w-full">
               Metodika spolupráce
             </p>
-            <p className="font-['Sora'] font-extrabold text-[52px] tracking-[-1.56px] leading-normal w-full">
+            <p className="font-['Sora'] font-extrabold text-[32px] lg:text-[52px] tracking-[-0.96px] lg:tracking-[-1.56px] leading-normal w-full">
               Cesta k úspěchu
             </p>
           </div>
@@ -206,13 +206,27 @@ export function MethodologySection() {
               style={{ height: `${rightCards[1].height}px` }}
             >
               {/* Background gradient decoration */}
-              <div className="absolute inset-0 rounded-[9px] overflow-hidden pointer-events-none">
-                <img
-                  alt=""
-                  className="absolute inset-0 w-full h-full object-cover opacity-70 blur-[7.6px]"
-                  src={imgRectangle5}
-                />
-                <div className="absolute bg-[rgba(98,98,98,0.05)] inset-0" />
+              <div className="absolute inset-[-30.26%_-41.54%_-32.1%_-18.65%] flex items-center justify-center pointer-events-none">
+                <div className="flex-none h-[440px] rotate-180 w-[833px]">
+                  <div
+                    className="blur-[7.6px] relative size-full"
+                    style={{
+                      maskImage: `url('${imgRectangle7}')`,
+                      maskSize: "519px 271px",
+                      maskPosition: "97px 82px",
+                      maskRepeat: "no-repeat",
+                    }}
+                  >
+                    <div className="absolute inset-0 pointer-events-none">
+                      <img
+                        alt=""
+                        className="absolute max-w-none object-cover opacity-70 size-full"
+                        src={imgRectangle5}
+                      />
+                      <div className="absolute bg-[rgba(98,98,98,0.05)] inset-0" />
+                    </div>
+                  </div>
+                </div>
               </div>
 
               <div className="absolute bg-transparent flex flex-col items-start justify-center left-0 pl-[42px] py-[40.5px] rounded-[9px] top-px w-[520px] h-full">
