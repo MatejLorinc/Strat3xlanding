@@ -78,7 +78,7 @@ export function CareersSection() {
           </div>
 
           {/* Right: Stats */}
-          <div className="grid grid-cols-2 sm:flex gap-[20px] sm:gap-[30px] items-end">
+          <div className="grid grid-cols-2 sm:flex gap-[20px] sm:gap-[30px] items-start">
             <StatItem
               icon={<TeamIcon />}
               value="15+"
@@ -190,7 +190,9 @@ function StatItem({
     <div
       className={`flex flex-col gap-[10px] items-center shrink-0 ${width}`}
     >
-      {icon}
+      <div className="h-[32px] flex items-end justify-center">
+        {icon}
+      </div>
       <p className="font-['Sora'] font-extrabold leading-normal text-[36px] lg:text-[52px] text-black tracking-[-1.08px] lg:tracking-[-1.56px] uppercase">
         {value}
       </p>
@@ -203,14 +205,12 @@ function StatItem({
 
 function TeamIcon() {
   return (
-    <div className="inline-grid relative">
-      <div className="relative size-[15px]">
-        <svg className="block size-full" fill="none" viewBox="0 0 15 15">
-          <circle cx="7.5" cy="7.5" fill="#84D3C5" r="7.5" />
-        </svg>
-      </div>
+    <div className="h-[32px] relative shrink-0 w-[41px]">
+      <svg className="absolute left-0 bottom-0" width="15" height="15" fill="none" viewBox="0 0 15 15">
+        <circle cx="7.5" cy="7.5" fill="#84D3C5" r="7.5" />
+      </svg>
       <svg
-        className="absolute left-[12%] top-0"
+        className="absolute right-0 top-0"
         width="41"
         height="30"
         fill="none"
@@ -268,19 +268,24 @@ function ProjectsIcon() {
 
 function LocationIcon() {
   return (
-    <div className="inline-grid relative">
-      <div className="relative size-[15px] mt-[17px]">
-        <svg className="block size-full" fill="none" viewBox="0 0 15 15">
-          <circle cx="7.5" cy="7.5" fill="#84D3C5" r="7.5" />
-        </svg>
-      </div>
+    <div className="h-[32px] relative shrink-0 w-[32px]">
+      <svg className="block size-full" fill="none" viewBox="0 0 32 32">
+        <circle cx="8.5" cy="24.5" r="7.5" fill="#84D3C5" />
+        <mask id="mask0_42_4861" style={{ maskType: "luminance" }} maskUnits="userSpaceOnUse" x="0" y="0" width="32" height="29">
+          <path d="M0 3.8147e-06H32V29H0V3.8147e-06Z" fill="white" />
+        </mask>
+        <g mask="url(#mask0_42_4861)">
+          <path d="M16 28.1504C12.25 23.0527 5.6875 16.1426 5.6875 10.1953C5.6875 5.04209 10.3137 0.849613 16 0.849613C21.6863 0.849613 26.3125 5.04209 26.3125 10.1953C26.3125 16.1426 19.75 23.0527 16 28.1504Z" stroke="black" strokeWidth="1.6" strokeMiterlimit="10" strokeLinecap="round" strokeLinejoin="round" />
+          <path d="M16 14.4434C13.4154 14.4434 11.3125 12.5376 11.3125 10.1953C11.3125 7.85305 13.4154 5.94727 16 5.94727C18.5846 5.94727 20.6875 7.85305 20.6875 10.1953C20.6875 12.5376 18.5846 14.4434 16 14.4434Z" stroke="black" strokeWidth="1.6" strokeMiterlimit="10" strokeLinecap="round" strokeLinejoin="round" />
+        </g>
+      </svg>
     </div>
   );
 }
 
 function PositionsIcon() {
   return (
-    <div className="h-[31px] relative shrink-0 w-[36px]">
+    <div className="h-[32px] relative shrink-0 w-[36px]">
       <svg
         className="block size-full"
         fill="none"
