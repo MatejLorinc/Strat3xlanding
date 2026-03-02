@@ -26,7 +26,7 @@ export function PartnersSection() {
         </div>
 
         {/* Cards Row */}
-        <div className="flex flex-col lg:flex-row h-auto lg:h-[700px] items-start justify-center w-full max-w-[1401px] px-6 xl:px-0">
+        <div className="flex flex-col lg:flex-row h-auto items-stretch justify-center w-full max-w-[1401px] px-6 xl:px-0">
           {/* Card 1: Old School Businessy */}
           <div className="lg:h-[700px] h-[500px] relative shrink-0 w-full lg:w-[467px] overflow-hidden">
             <div
@@ -50,8 +50,8 @@ export function PartnersSection() {
               }}
             />
             {/* Content */}
-            <div className="absolute left-0 top-0 w-full flex items-center justify-center pb-[82px] pt-[50px]">
-              <div className="flex flex-col gap-[150px] items-start w-[356.643px] max-w-[calc(100%-40px)]">
+            <div className="absolute inset-0 w-full flex items-center justify-center pb-[50px] pt-[50px]">
+              <div className="flex flex-col justify-between items-start w-[356.643px] max-w-[calc(100%-40px)] h-full">
                 {/* Tags */}
                 <div className="flex flex-col gap-[4px] items-start w-[158px]">
                   <Tag label="Výrobní společnosti" fullWidth />
@@ -91,7 +91,7 @@ export function PartnersSection() {
           </div>
 
           {/* Card 2: Komplikované Businessy */}
-          <div className="lg:h-[407px] h-[500px] relative shrink-0 w-full lg:w-[467px] overflow-hidden">
+          <div className="lg:min-h-[700px] h-[500px] relative shrink-0 w-full lg:w-[467px] overflow-hidden">
             <div
               aria-hidden="true"
               className="absolute border-2 border-solid border-white inset-0 pointer-events-none z-10"
@@ -113,8 +113,8 @@ export function PartnersSection() {
               }}
             />
             {/* Content */}
-            <div className="absolute left-0 top-0 w-full flex items-center justify-center pb-[82px] pt-[50px]">
-              <div className="flex flex-col gap-[150px] items-start w-[356.643px] max-w-[calc(100%-40px)]">
+            <div className="absolute inset-0 w-full flex items-center justify-center pb-[50px] pt-[50px]">
+              <div className="flex flex-col justify-between items-start w-[356.643px] max-w-[calc(100%-40px)] h-full">
                 {/* Tags */}
                 <div className="flex flex-col gap-[4px] items-start w-[158px]">
                   <Tag label="Alkohol & tabák" />
@@ -149,7 +149,7 @@ export function PartnersSection() {
           </div>
 
           {/* Card 3: Fundované Start-upy */}
-          <div className="lg:h-[407px] h-[500px] relative shrink-0 w-full lg:w-[467px] overflow-hidden">
+          <div className="lg:min-h-[700px] h-[500px] relative shrink-0 w-full lg:w-[467px] overflow-hidden">
             <div
               aria-hidden="true"
               className="absolute border-2 border-solid border-white inset-0 pointer-events-none z-10"
@@ -171,8 +171,8 @@ export function PartnersSection() {
               }}
             />
             {/* Content */}
-            <div className="absolute left-0 top-0 w-full flex items-center justify-center pb-[82px] pt-[50px]">
-              <div className="flex flex-col gap-[150px] items-start w-[356.643px] max-w-[calc(100%-40px)]">
+            <div className="absolute inset-0 w-full flex items-center justify-center pb-[50px] pt-[50px]">
+              <div className="flex flex-col justify-between items-start w-[356.643px] max-w-[calc(100%-40px)] h-full">
                 {/* Tags */}
                 <div className="flex flex-col gap-[4px] items-start w-[158px]">
                   <Tag label="Seed/Series A" />

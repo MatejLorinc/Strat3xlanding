@@ -78,45 +78,13 @@ function KdoJsmeCard() {
             maskRepeat: 'no-repeat',
           }}
         />
-        {/* Colorful gradient - Mobile */}
-        <div className="lg:hidden absolute flex inset-[-65.7%_-183.67%_-58.72%_-4.58%] items-center justify-center mix-blend-hard-light">
-          <div className="flex-none h-[772px] rotate-180 w-[1006px]">
-            <div
-              className="relative size-full"
-              style={{
-                maskImage: `url('${imgRectangle6138}')`,
-                maskSize: '349px 437px',
-                maskPosition: '16px 226px',
-                maskRepeat: 'no-repeat',
-              }}
-            >
-              <img
-                alt=""
-                className="absolute backdrop-blur-[7.6px] inset-0 max-w-none object-cover opacity-80 pointer-events-none size-full"
-                src={imgRectangle5}
-              />
-            </div>
-          </div>
-        </div>
-        {/* Colorful gradient - Desktop */}
-        <div className="hidden lg:flex absolute inset-[-51.74%_-63.6%_-25%_-4.53%] items-center justify-center mix-blend-hard-light">
-          <div className="flex-none h-[608px] rotate-180 w-[1150px]">
-            <div
-              className="relative size-full"
-              style={{
-                maskImage: `url('${imgRectangle6138}')`,
-                maskSize: '684px 344px',
-                maskPosition: '31px 178px',
-                maskRepeat: 'no-repeat',
-              }}
-            >
-              <img
-                alt=""
-                className="absolute backdrop-blur-[7.6px] inset-0 max-w-none object-cover opacity-80 pointer-events-none size-full"
-                src={imgRectangle5}
-              />
-            </div>
-          </div>
+        {/* Colorful gradient - covers entire card */}
+        <div className="absolute inset-0 rounded-[9px] overflow-hidden mix-blend-hard-light">
+          <img
+            alt=""
+            className="absolute inset-0 w-full h-full object-cover opacity-80 pointer-events-none"
+            src={imgRectangle5}
+          />
         </div>
       </div>
 
