@@ -166,7 +166,7 @@ function TeamCard({
       <DepartmentBar label={departmentLabel} />
 
       {/* Photo area with mask - Mobile */}
-      <div className="lg:hidden inline-grid grid-cols-[max-content] grid-rows-[max-content] place-items-start relative shrink-0 leading-[0] overflow-hidden w-[359px]">
+      <div className="lg:hidden inline-grid grid-cols-[max-content] grid-rows-[max-content] place-items-start relative shrink-0 leading-[0] overflow-hidden w-[359px] h-[345px]">
         <div
           className="col-start-1 row-start-1 relative pointer-events-none"
           style={{
@@ -208,7 +208,7 @@ function TeamCard({
       </div>
 
       {/* Photo area with mask - Desktop */}
-      <div className="hidden lg:inline-grid grid-cols-[max-content] grid-rows-[max-content] place-items-start relative shrink-0 leading-[0] overflow-hidden w-[418px]">
+      <div className="hidden lg:inline-grid grid-cols-[max-content] grid-rows-[max-content] place-items-start relative shrink-0 leading-[0] overflow-hidden w-[418px] h-[345px]">
         <div
           className="col-start-1 row-start-1 relative pointer-events-none"
           style={{
@@ -258,11 +258,11 @@ function TeamCard({
         <div className="flex flex-col justify-center size-full">
           <div className="flex flex-col gap-[16px] items-start justify-center pl-[40px] relative size-full text-black">
             <div className="flex flex-col gap-[16px] items-start w-[158px]">
-              <p className="font-['Sora'] font-extrabold text-[26px] tracking-[-0.78px] leading-normal w-full">
+              <p className="font-['Sora'] font-extrabold text-[26px] tracking-[-0.78px] leading-normal w-full whitespace-nowrap">
                 {name}
               </p>
               <p
-                className={`font-['Sora'] font-semibold text-[11px] ${roleTracking} uppercase leading-[17px] w-full`}
+                className={`font-['Sora'] font-semibold text-[11px] ${roleTracking} uppercase leading-[17px] w-full whitespace-nowrap`}
               >
                 {role}
               </p>

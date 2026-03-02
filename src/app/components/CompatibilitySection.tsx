@@ -25,18 +25,12 @@ export function CompatibilitySection() {
         {/* Background decorative elements */}
         <div className="absolute inset-0 pointer-events-none">
           <div
-            className="absolute right-0 bottom-0 w-[1790px] h-[825px] mix-blend-screen opacity-50"
-            style={{
-              maskImage: `url('${imgRectangle8}')`,
-              maskSize: "1400px 1300px",
-              maskRepeat: "no-repeat",
-              maskPosition: "1175px -678px",
-            }}
+            className="absolute inset-0 mix-blend-screen opacity-50"
           >
             <div className="absolute inset-0 opacity-70 overflow-hidden pointer-events-none">
               <img
                 alt=""
-                className="absolute left-0 max-w-none size-full top-0"
+                className="absolute inset-0 max-w-none object-cover size-full"
                 src={imgRectangle}
               />
             </div>

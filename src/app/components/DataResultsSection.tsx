@@ -113,10 +113,10 @@ export function DataResultsSection() {
 
 function ChartCard({ data, index }: { data: ChartCardData; index: number }) {
   return (
-    <div className={`relative flex flex-col gap-[28px] lg:gap-[33px] h-[346px] lg:h-[396px] overflow-hidden items-start lg:items-center justify-start lg:justify-center pl-[25px] lg:px-[27px] pt-[17px] lg:py-[38px] w-full lg:w-[700px] border-solid border-[#a9a9a9] ${mobileBorderStyles[index]} lg:border-0 ${desktopBorderStyles[index]}`}>
+    <div className={`relative flex flex-col gap-[28px] lg:gap-[33px] h-[346px] lg:h-[396px] overflow-hidden items-start lg:items-center justify-start lg:justify-center px-[25px] lg:px-[55px] pt-[17px] lg:py-[38px] w-full lg:w-[700px] border-solid border-[#a9a9a9] ${mobileBorderStyles[index]} lg:border-0 ${desktopBorderStyles[index]}`}>
       {/* Header: Tag + Title + Growth */}
-      <div className="flex justify-between items-end w-full pr-[25px] lg:pr-0">
-        <div className="flex flex-col gap-[16px] lg:gap-[20px] items-start w-auto lg:w-[187px]">
+      <div className="flex justify-between items-end w-full">
+        <div className="flex flex-col gap-[16px] lg:gap-[20px] items-start shrink-0">
           <div className="bg-[#eff2f8] flex h-[32px] items-center justify-center px-[12px]">
             <p className="font-['Sora'] font-semibold text-[11px] text-black tracking-[2.2px] uppercase leading-[17px] whitespace-nowrap">
               {data.tag}
@@ -126,7 +126,7 @@ function ChartCard({ data, index }: { data: ChartCardData; index: number }) {
             {data.title}
           </p>
         </div>
-        <div className="flex flex-col gap-[10px] items-end text-right uppercase w-auto lg:w-[216px]">
+        <div className="flex flex-col gap-[10px] items-end text-right uppercase shrink-0">
           <p className="font-['Sora'] font-extrabold text-[32px] lg:text-[52px] text-black tracking-[-0.96px] lg:tracking-[-1.56px] leading-normal w-full">
             {data.growth}
           </p>
