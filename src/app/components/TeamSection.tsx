@@ -1,8 +1,8 @@
 import svgPaths from "../../imports/svg-59wapeqsll";
 import { img21421 } from "../../imports/svg-76oh5";
-import img21422 from "figma:asset/9b1d2ddbf19b0238d4280b485f192cb251cc412e.png";
-import img299071 from "figma:asset/833c20c5b36b9a1249674a86d21094fb642f86ad.png";
-import img275361 from "figma:asset/04f5ba96c056b3e085d330d72f09fb171a91a27d.png";
+import img21422 from "../../assets/Jan.png";
+import img299071 from "../../assets/Stepan.png";
+import img275361 from "../../assets/Mikulas.png";
 
 export function TeamSection() {
   return (
@@ -33,8 +33,8 @@ export function TeamSection() {
             departmentLabel="Business &amp; Sales"
             photoSrc={img21422}
             photoAlt="Jan Dědic"
-            photoContainerDesktop={{ width: 658, height: 439, ml: -120, mt: -4 }}
-            photoContainerMobile={{ width: 658, height: 439, ml: -147, mt: -4 }}
+            photoContainerDesktop={{ width: 418, height: 345, ml: 0, mt: 0 }}
+            photoContainerMobile={{ width: 359, height: 345, ml: 0, mt: 0 }}
             hasBorderTop
             expLabelText="15+ let v obchodním vedení"
             expLabelDesktop={{ ml: 190, mt: 290 }}
@@ -58,8 +58,8 @@ export function TeamSection() {
             departmentLabel="Technologie &amp; Systémy"
             photoSrc={img299071}
             photoAlt="Štěpán Svoboda"
-            photoContainerDesktop={{ width: 1100, height: 733, ml: -366, mt: -42 }}
-            photoContainerMobile={{ width: 1100, height: 733, ml: -399, mt: -42 }}
+            photoContainerDesktop={{ width: 418, height: 345, ml: 0, mt: 0 }}
+            photoContainerMobile={{ width: 359, height: 345, ml: 0, mt: 0 }}
             expLabelText="Alza, Home Credit, Economia"
             expLabelDesktop={{ ml: 190, mt: 290 }}
             expLabelMobile={{ ml: 133, mt: 290 }}
@@ -83,8 +83,8 @@ export function TeamSection() {
             departmentLabel="Marketing &amp; Automatizace"
             photoSrc={img275361}
             photoAlt="Mikuláš Lysek"
-            photoContainerDesktop={{ width: 722, height: 482, ml: -161, mt: -19 }}
-            photoContainerMobile={{ width: 722, height: 482, ml: -181, mt: -19 }}
+            photoContainerDesktop={{ width: 418, height: 345, ml: 0, mt: 0 }}
+            photoContainerMobile={{ width: 359, height: 345, ml: 0, mt: 0 }}
             expLabelText="10+ let v performance marketingu"
             expLabelDesktop={{ ml: 160, mt: 290 }}
             expLabelMobile={{ ml: 99, mt: 290 }}
@@ -164,7 +164,6 @@ function TeamCard({
     <div className="flex flex-col items-start shrink-0 w-[359px] lg:w-[418px]">
       {/* Department bar */}
       <DepartmentBar label={departmentLabel} />
-
       {/* Photo area with mask - Mobile */}
       <div className="lg:hidden inline-grid grid-cols-[max-content] grid-rows-[max-content] place-items-start relative shrink-0 leading-[0] overflow-hidden w-[359px] h-[345px]">
         <div
@@ -206,49 +205,40 @@ function TeamCard({
           maskH={MASK_H}
         />
       </div>
-
-      {/* Photo area with mask - Desktop */}
-      {/*<div className="hidden lg:inline-grid grid-cols-[max-content] grid-rows-[max-content] place-items-start relative shrink-0 leading-[0] overflow-hidden w-[418px] h-[345px]">*/}
-      {/*  <div*/}
-      {/*    className="col-start-1 row-start-1 relative pointer-events-none"*/}
-      {/*    style={{*/}
-      {/*      width: photoContainerDesktop.width,*/}
-      {/*      height: photoContainerDesktop.height,*/}
-      {/*      marginLeft: photoContainerDesktop.ml,*/}
-      {/*      marginTop: photoContainerDesktop.mt,*/}
-      {/*      maskImage: `url('${img21421}')`,*/}
-      {/*      maskSize: `${MASK_W_DESKTOP}px ${MASK_H}px`,*/}
-      {/*      maskPosition: `${-photoContainerDesktop.ml}px ${-photoContainerDesktop.mt}px`,*/}
-      {/*      maskRepeat: "no-repeat",*/}
-      {/*    }}*/}
-      {/*  >*/}
-      {/*    <img*/}
-      {/*      alt={photoAlt}*/}
-      {/*      className="absolute inset-0 max-w-none object-cover size-full"*/}
-      {/*      src={photoSrc}*/}
-      {/*    />*/}
-      {/*    {hasBorderTop && (*/}
-      {/*      <div*/}
-      {/*        aria-hidden="true"*/}
-      {/*        className="absolute border-[#a9a9a9] border-l-[0.4px] border-r-[0.4px] border-solid border-t-[0.4px] inset-0"*/}
-      {/*      />*/}
-      {/*    )}*/}
-      {/*  </div>*/}
-      {/*  <ExperienceLabel*/}
-      {/*    text={expLabelText}*/}
-      {/*    ml={expLabelDesktop.ml}*/}
-      {/*    mt={expLabelDesktop.mt}*/}
-      {/*    maskW={MASK_W_DESKTOP}*/}
-      {/*    maskH={MASK_H}*/}
-      {/*  />*/}
-      {/*  <LinkedInIcon*/}
-      {/*    ml={linkedInDesktop.ml}*/}
-      {/*    mt={linkedInDesktop.mt}*/}
-      {/*    maskW={MASK_W_DESKTOP}*/}
-      {/*    maskH={MASK_H}*/}
-      {/*  />*/}
-      {/*</div>*/}
-
+      <div className="hidden lg:inline-grid grid-cols-[max-content] grid-rows-[max-content] place-items-start relative shrink-0 leading-[0] overflow-hidden w-[418px] h-[345px]">
+        <div
+          className="col-start-1 row-start-1 relative pointer-events-none"
+          style={{
+            width: photoContainerDesktop.width,
+            height: photoContainerDesktop.height,
+            marginLeft: photoContainerDesktop.ml,
+            marginTop: photoContainerDesktop.mt,
+            maskImage: `url('${img21421}')`,
+            maskSize: `${MASK_W_DESKTOP}px ${MASK_H}px`,
+            maskPosition: `${-photoContainerDesktop.ml}px ${-photoContainerDesktop.mt}px`,
+            maskRepeat: "no-repeat",
+          }}
+        >
+          <img
+            alt={photoAlt}
+            className="absolute inset-0 max-w-none object-cover size-full"
+            src={photoSrc}
+          />
+          {hasBorderTop && (
+            <div
+              aria-hidden="true"
+              className="absolute border-[#a9a9a9] border-l-[0.4px] border-r-[0.4px] border-solid border-t-[0.4px] inset-0"
+            />
+          )}
+        </div>
+        <ExperienceLabel
+          text={expLabelText}
+          ml={expLabelDesktop.ml}
+          mt={expLabelDesktop.mt}
+          maskW={MASK_W_DESKTOP}
+          maskH={MASK_H}
+        />
+      </div>
       {/* Info block */}
       <div className="bg-white h-[180px] relative shrink-0 w-full">
         <div
