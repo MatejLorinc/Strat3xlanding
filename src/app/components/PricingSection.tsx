@@ -20,10 +20,10 @@ const card2Checklist: ChecklistItem[] = [
 ];
 
 const card3Checklist: ChecklistItem[] = [
-  { label: "PPC management všech kanálů" },
-  { label: "Kontinuální A/B testování" },
-  { label: "Kreativní produkce" },
-  { label: "Reporty a optimalizace" },
+  { label: "Aktivní až po prokázaní modelu" },
+  { label: "Navázano na reálny zisk" },
+  { label: "Maximální motivace týmu" },
+  { label: "Dlouhodobé partnerství" },
 ];
 
 export function PricingSection() {
@@ -224,13 +224,13 @@ export function PricingSection() {
                       </div>
                     </div>
                     <p className="font-['Sora'] font-extrabold text-[26px] text-white tracking-[-0.78px] leading-normal">
-                      Management Fee
+                      Success Fee
                     </p>
                   </div>
                   {/* Details */}
                   <div className="flex flex-col gap-[24px] items-start w-full">
                     <p className="font-['Sora'] font-semibold text-[11px] text-white tracking-[2.2px] uppercase leading-[17px]">
-                      Z reklamních investic
+                      Z vašeho zisku
                     </p>
                     <p
                       className="font-['Noto_Sans'] text-[15px] text-white leading-[24px] w-[345px] max-w-full"
@@ -238,8 +238,8 @@ export function PricingSection() {
                         fontVariationSettings: "'CTGR' 0, 'wdth' 100",
                       }}
                     >
-                      Průběžná správa kampaní a optimalizace výkonu. Platíte
-                      pouze z investic do reklamy.
+                      Podíl na vašem úspěchu. Vydělávame
+                      až tehdy, když vyděláváte vy.
                     </p>
                     <ChecklistGroup items={card3Checklist} variant="dark" />
                   </div>
