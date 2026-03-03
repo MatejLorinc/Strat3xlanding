@@ -208,46 +208,46 @@ function TeamCard({
       </div>
 
       {/* Photo area with mask - Desktop */}
-      <div className="hidden lg:inline-grid grid-cols-[max-content] grid-rows-[max-content] place-items-start relative shrink-0 leading-[0] overflow-hidden w-[418px] h-[345px]">
-        <div
-          className="col-start-1 row-start-1 relative pointer-events-none"
-          style={{
-            width: photoContainerDesktop.width,
-            height: photoContainerDesktop.height,
-            marginLeft: photoContainerDesktop.ml,
-            marginTop: photoContainerDesktop.mt,
-            maskImage: `url('${img21421}')`,
-            maskSize: `${MASK_W_DESKTOP}px ${MASK_H}px`,
-            maskPosition: `${-photoContainerDesktop.ml}px ${-photoContainerDesktop.mt}px`,
-            maskRepeat: "no-repeat",
-          }}
-        >
-          <img
-            alt={photoAlt}
-            className="absolute inset-0 max-w-none object-cover size-full"
-            src={photoSrc}
-          />
-          {hasBorderTop && (
-            <div
-              aria-hidden="true"
-              className="absolute border-[#a9a9a9] border-l-[0.4px] border-r-[0.4px] border-solid border-t-[0.4px] inset-0"
-            />
-          )}
-        </div>
-        <ExperienceLabel
-          text={expLabelText}
-          ml={expLabelDesktop.ml}
-          mt={expLabelDesktop.mt}
-          maskW={MASK_W_DESKTOP}
-          maskH={MASK_H}
-        />
-        <LinkedInIcon
-          ml={linkedInDesktop.ml}
-          mt={linkedInDesktop.mt}
-          maskW={MASK_W_DESKTOP}
-          maskH={MASK_H}
-        />
-      </div>
+      {/*<div className="hidden lg:inline-grid grid-cols-[max-content] grid-rows-[max-content] place-items-start relative shrink-0 leading-[0] overflow-hidden w-[418px] h-[345px]">*/}
+      {/*  <div*/}
+      {/*    className="col-start-1 row-start-1 relative pointer-events-none"*/}
+      {/*    style={{*/}
+      {/*      width: photoContainerDesktop.width,*/}
+      {/*      height: photoContainerDesktop.height,*/}
+      {/*      marginLeft: photoContainerDesktop.ml,*/}
+      {/*      marginTop: photoContainerDesktop.mt,*/}
+      {/*      maskImage: `url('${img21421}')`,*/}
+      {/*      maskSize: `${MASK_W_DESKTOP}px ${MASK_H}px`,*/}
+      {/*      maskPosition: `${-photoContainerDesktop.ml}px ${-photoContainerDesktop.mt}px`,*/}
+      {/*      maskRepeat: "no-repeat",*/}
+      {/*    }}*/}
+      {/*  >*/}
+      {/*    <img*/}
+      {/*      alt={photoAlt}*/}
+      {/*      className="absolute inset-0 max-w-none object-cover size-full"*/}
+      {/*      src={photoSrc}*/}
+      {/*    />*/}
+      {/*    {hasBorderTop && (*/}
+      {/*      <div*/}
+      {/*        aria-hidden="true"*/}
+      {/*        className="absolute border-[#a9a9a9] border-l-[0.4px] border-r-[0.4px] border-solid border-t-[0.4px] inset-0"*/}
+      {/*      />*/}
+      {/*    )}*/}
+      {/*  </div>*/}
+      {/*  <ExperienceLabel*/}
+      {/*    text={expLabelText}*/}
+      {/*    ml={expLabelDesktop.ml}*/}
+      {/*    mt={expLabelDesktop.mt}*/}
+      {/*    maskW={MASK_W_DESKTOP}*/}
+      {/*    maskH={MASK_H}*/}
+      {/*  />*/}
+      {/*  <LinkedInIcon*/}
+      {/*    ml={linkedInDesktop.ml}*/}
+      {/*    mt={linkedInDesktop.mt}*/}
+      {/*    maskW={MASK_W_DESKTOP}*/}
+      {/*    maskH={MASK_H}*/}
+      {/*  />*/}
+      {/*</div>*/}
 
       {/* Info block */}
       <div className="bg-white h-[180px] relative shrink-0 w-full">
