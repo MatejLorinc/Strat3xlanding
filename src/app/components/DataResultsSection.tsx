@@ -72,7 +72,7 @@ const mobileBorderStyles: Record<number, string> = {
 
 export function DataResultsSection() {
   return (
-    <section className="relative w-full py-12 lg:py-20">
+    <section id="sluzby" className="relative w-full py-12 lg:py-20">
       {/* Decorative line */}
       <div className="max-w-[1400px] mx-auto px-6 lg:px-8 mb-12 lg:mb-20">
         <div className="w-full h-[0.4px] flex justify-between">

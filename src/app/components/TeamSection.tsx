@@ -6,7 +6,7 @@ import img275361 from "figma:asset/04f5ba96c056b3e085d330d72f09fb171a91a27d.png"
 
 export function TeamSection() {
   return (
-    <section className="relative w-full">
+    <section id="tym" className="relative w-full">
       <div className="flex flex-col gap-[48px] lg:gap-[80px] items-center justify-center w-full py-[60px] lg:py-[80px]">
         {/* Section Header */}
         <div className="flex flex-col gap-[28px] items-center text-center text-black w-full max-w-[769px] px-6 xl:px-0">

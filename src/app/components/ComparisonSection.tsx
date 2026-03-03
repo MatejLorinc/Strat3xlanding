@@ -4,7 +4,7 @@ import { imgRectangle6138, imgEllipse1 } from "../../imports/svg-76oh5";
 
 export function ComparisonSection() {
   return (
-    <section className="relative w-full py-12 lg:py-20 overflow-hidden">
+    <section id="o-nas" className="relative w-full py-12 lg:py-20 overflow-hidden">
       <div className="max-w-[1400px] mx-auto px-6 lg:px-8">
         {/* Section Heading */}
         <div className="flex flex-col gap-[60px] lg:gap-[124px] items-center w-full">

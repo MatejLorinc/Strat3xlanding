@@ -37,12 +37,12 @@ export function Header() {
         <div className="hidden lg:flex items-center gap-12">
           {/* Main Navigation */}
           <nav className="flex items-center gap-7 font-['Sora'] font-semibold text-[13px] text-black text-center tracking-[-0.26px] uppercase">
-            <a href="#" className="hover:opacity-70 transition-opacity">O nás</a>
-            <a href="#" className="hover:opacity-70 transition-opacity">Služby</a>
-            <a href="#" className="hover:opacity-70 transition-opacity">Metodika</a>
-            <a href="#" className="hover:opacity-70 transition-opacity">Technologie</a>
-            <a href="#" className="hover:opacity-70 transition-opacity">Tým</a>
-            <a href="#" className="hover:opacity-70 transition-opacity">Kontakt</a>
+            <a href="#o-nas" className="hover:opacity-70 transition-opacity">O nás</a>
+            <a href="#sluzby" className="hover:opacity-70 transition-opacity">Služby</a>
+            <a href="#metodika" className="hover:opacity-70 transition-opacity">Metodika</a>
+            <a href="#technologie" className="hover:opacity-70 transition-opacity">Technologie</a>
+            <a href="#tym" className="hover:opacity-70 transition-opacity">Tým</a>
+            <a href="#kontakt" className="hover:opacity-70 transition-opacity">Kontakt</a>
           </nav>
 
           {/* Language Selector */}
@@ -66,25 +66,25 @@ export function Header() {
           */}
 
           {/* CTA Button */}
-          <button className="bg-black h-11 px-[34px] rounded-[62px] hover:bg-gray-900 transition-colors">
+          <a href="#kontakt" className="bg-black h-11 px-[34px] rounded-[62px] hover:bg-gray-900 transition-colors flex items-center justify-center">
             <span className="font-['Sora'] font-bold text-[12px] text-white text-center tracking-[-0.24px] uppercase">ověřit kompatibilitu</span>
-          </button>
+          </a>
         </div>
 
         {/* Mobile menu overlay */}
         {menuOpen && (
           <div className="fixed inset-0 top-[76px] bg-white z-50 lg:hidden flex flex-col items-center pt-8 gap-6">
             <nav className="flex flex-col items-center gap-6 font-['Sora'] font-semibold text-[15px] text-black tracking-[-0.26px] uppercase">
-              <a href="#" className="hover:opacity-70 transition-opacity" onClick={() => setMenuOpen(false)}>O nás</a>
-              <a href="#" className="hover:opacity-70 transition-opacity" onClick={() => setMenuOpen(false)}>Služby</a>
-              <a href="#" className="hover:opacity-70 transition-opacity" onClick={() => setMenuOpen(false)}>Metodika</a>
-              <a href="#" className="hover:opacity-70 transition-opacity" onClick={() => setMenuOpen(false)}>Technologie</a>
-              <a href="#" className="hover:opacity-70 transition-opacity" onClick={() => setMenuOpen(false)}>Tým</a>
-              <a href="#" className="hover:opacity-70 transition-opacity" onClick={() => setMenuOpen(false)}>Kontakt</a>
+              <a href="#o-nas" className="hover:opacity-70 transition-opacity" onClick={() => setMenuOpen(false)}>O nás</a>
+              <a href="#sluzby" className="hover:opacity-70 transition-opacity" onClick={() => setMenuOpen(false)}>Služby</a>
+              <a href="#metodika" className="hover:opacity-70 transition-opacity" onClick={() => setMenuOpen(false)}>Metodika</a>
+              <a href="#technologie" className="hover:opacity-70 transition-opacity" onClick={() => setMenuOpen(false)}>Technologie</a>
+              <a href="#tym" className="hover:opacity-70 transition-opacity" onClick={() => setMenuOpen(false)}>Tým</a>
+              <a href="#kontakt" className="hover:opacity-70 transition-opacity" onClick={() => setMenuOpen(false)}>Kontakt</a>
             </nav>
-            <button className="bg-black h-11 px-[34px] rounded-[62px]">
+            <a href="#kontakt" className="bg-black h-11 px-[34px] rounded-[62px] flex items-center justify-center" onClick={() => setMenuOpen(false)}>
               <span className="font-['Sora'] font-bold text-[12px] text-white text-center tracking-[-0.24px] uppercase">ověřit kompatibilitu</span>
-            </button>
+            </a>
           </div>
         )}
       </div>

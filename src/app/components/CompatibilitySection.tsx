@@ -98,7 +98,7 @@ export function CompatibilitySection() {
   };
 
   return (
-    <section className="relative w-full py-[80px] px-6 xl:px-0">
+    <section id="kontakt" className="relative w-full py-[80px] px-6 xl:px-0">
       {/* Dark contained card */}
       <div className="relative bg-[#171717] w-full max-w-[1400px] mx-auto overflow-hidden">
         {/* Background decorative elements */}
@@ -234,8 +234,8 @@ export function CompatibilitySection() {
             {statusMessage && (
               <div
                 className={`w-full px-[20px] py-[14px] rounded-[8px] font-['Noto_Sans'] text-[15px] leading-[24px] ${status === "success"
-                    ? "bg-[rgba(34,197,94,0.12)] text-[#22c55e] border border-[rgba(34,197,94,0.3)]"
-                    : "bg-[rgba(239,68,68,0.12)] text-[#ef4444] border border-[rgba(239,68,68,0.3)]"
+                  ? "bg-[rgba(34,197,94,0.12)] text-[#22c55e] border border-[rgba(34,197,94,0.3)]"
+                  : "bg-[rgba(239,68,68,0.12)] text-[#ef4444] border border-[rgba(239,68,68,0.3)]"
                   }`}
                 style={{ fontVariationSettings: "'CTGR' 0, 'wdth' 100" }}
               >
@@ -351,8 +351,8 @@ function FormField({
         <div
           aria-hidden="true"
           className={`absolute border border-solid inset-0 pointer-events-none ${error
-              ? "border-[#ef4444]"
-              : "border-[rgba(255,255,255,0.35)]"
+            ? "border-[#ef4444]"
+            : "border-[rgba(255,255,255,0.35)]"
             }`}
         />
         <input

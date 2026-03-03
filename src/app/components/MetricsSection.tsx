@@ -52,11 +52,11 @@ export function MetricsSection() {
 
         {/* CTA Button */}
         <div className="flex justify-center mt-12 lg:mt-20">
-          <button className="bg-black h-[60px] px-[51px] rounded-[62px] hover:bg-gray-900 transition-colors">
+          <a href="#kontakt" className="bg-black h-[60px] px-[51px] rounded-[62px] hover:bg-gray-900 transition-colors flex items-center justify-center">
             <span className="font-['Sora'] font-extrabold text-[14px] text-white text-center tracking-[-0.28px] uppercase">
               ověřit kompatibilitu
             </span>
-          </button>
+          </a>
         </div>
       </div>
     </section>

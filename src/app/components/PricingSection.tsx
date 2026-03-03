@@ -254,11 +254,11 @@ export function PricingSection() {
         </div>
 
         {/* CTA Button */}
-        <div className="bg-black flex h-[60px] items-center justify-center px-[51px] rounded-[62px] shrink-0 cursor-pointer hover:opacity-90 transition-opacity">
+        <a href="#kontakt" className="bg-black flex h-[60px] items-center justify-center px-[51px] rounded-[62px] shrink-0 cursor-pointer hover:opacity-90 transition-opacity">
           <p className="font-['Sora'] font-extrabold text-[14px] text-center text-white tracking-[-0.28px] uppercase leading-normal">
             ověřit kompatibilitu
           </p>
-        </div>
+        </a>
       </div>
     </section>
   );

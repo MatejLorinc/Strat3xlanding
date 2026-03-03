@@ -7,11 +7,11 @@ export function CtaBannerSection() {
             {"Chcete vidět podobnou křivku "}
             <br className="hidden md:block" />u svého businessu?
           </p>
-          <button className="bg-[#171717] h-[60px] px-[51px] rounded-[62px] border-2 border-[#a038b6] hover:bg-[#a038b6] transition-colors">
+          <a href="#kontakt" className="bg-[#171717] h-[60px] px-[51px] rounded-[62px] border-2 border-[#a038b6] hover:bg-[#a038b6] transition-colors flex items-center justify-center">
             <span className="font-['Sora'] font-extrabold text-[14px] text-white text-center tracking-[-0.28px] uppercase">
               ověřit kompatibilitu
             </span>
-          </button>
+          </a>
         </div>
       </div>
     </section>

@@ -71,13 +71,13 @@ export function HeroSection() {
 
               {/* CTA Buttons */}
               <div className="flex flex-col sm:flex-row gap-[16px] items-center sm:items-center w-full sm:w-auto">
-                <button className="bg-black flex h-[60px] items-center justify-center px-[51px] rounded-[62px] hover:bg-gray-900 transition-colors w-full sm:w-auto">
+                <a href="#kontakt" className="bg-black flex h-[60px] items-center justify-center px-[51px] rounded-[62px] hover:bg-gray-900 transition-colors w-full sm:w-auto">
                   <span className="font-['Sora'] font-extrabold text-[14px] text-white text-center tracking-[-0.28px] uppercase leading-normal">
                     ověřit kompatibilitu
                   </span>
-                </button>
+                </a>
 
-                <button className="backdrop-blur-[20.25px] bg-[rgba(255,255,255,0.2)] flex h-[60px] items-center justify-center px-[51px] rounded-[62px] relative hover:bg-[rgba(255,255,255,0.3)] transition-colors w-full sm:w-auto">
+                <a href="#metodika" className="backdrop-blur-[20.25px] bg-[rgba(255,255,255,0.2)] flex h-[60px] items-center justify-center px-[51px] rounded-[62px] relative hover:bg-[rgba(255,255,255,0.3)] transition-colors w-full sm:w-auto">
                   <div
                     aria-hidden="true"
                     className="absolute border-2 border-[#a038b6] border-solid inset-0 pointer-events-none rounded-[62px] shadow-[0px_0px_10.3px_0px_rgba(0,0,0,0.25)]"
@@ -86,7 +86,7 @@ export function HeroSection() {
                     Jak fungujeme
                   </span>
                   <div className="absolute inset-0 pointer-events-none rounded-[inherit] shadow-[inset_3px_5px_4px_0px_rgba(255,255,255,0.3)]" />
-                </button>
+                </a>
               </div>
             </div>
 

@@ -4,7 +4,7 @@ import { imgG283 } from "../../imports/svg-76oh5";
 
 export function TechnologySection() {
   return (
-    <section className="relative w-full overflow-hidden">
+    <section id="technologie" className="relative w-full overflow-hidden">
       <div className="flex flex-col gap-[80px] items-center justify-center w-full py-[80px]">
         {/* Section Header */}
         <div className="flex flex-col gap-[28px] items-center text-center text-black max-w-[655px] px-6">

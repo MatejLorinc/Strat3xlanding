@@ -44,7 +44,7 @@ const rightCards = [
 
 export function MethodologySection() {
   return (
-    <section className="relative w-full bg-[#171717] overflow-hidden">
+    <section id="metodika" className="relative w-full bg-[#171717] overflow-hidden">
       <div className="flex flex-col items-center justify-center gap-[80px] w-full py-[80px] min-h-[1604px]">
         {/* Section Header */}
         <div className="flex flex-col gap-[28px] items-center text-center text-white max-w-[730px] px-6">

@@ -6,11 +6,11 @@ export function DashboardCtaSection() {
           <p className="mb-0">{`Chcete mít přístup k vlastnímu `}</p>
           <p>dashboardu s vašimi daty?</p>
         </div>
-        <div className="bg-black flex h-[60px] items-center justify-center px-[51px] relative rounded-[62px] shrink-0 cursor-pointer hover:opacity-90 transition-opacity">
+        <a href="#kontakt" className="bg-black flex h-[60px] items-center justify-center px-[51px] relative rounded-[62px] shrink-0 cursor-pointer hover:opacity-90 transition-opacity">
           <p className="font-['Sora'] font-extrabold leading-normal relative shrink-0 text-[14px] text-center text-white tracking-[-0.28px] uppercase">
             ověřit kompatibilitu
           </p>
-        </div>
+        </a>
       </div>
     </section>
   );
