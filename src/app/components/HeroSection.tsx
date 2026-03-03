@@ -1,6 +1,6 @@
 import svgPaths from "../../imports/svg-59wapeqsll";
-import imgRectangle from "figma:asset/320b8c287414bc6a4263c44fb04247eb957ea265.png";
-import imgRectangle4 from "figma:asset/1f7cbf18e91bd11d865e7e7dd625df2af6bb157d.png";
+import imgRectangle from "@/assets/320b8c287414bc6a4263c44fb04247eb957ea265.png";
+import imgRectangle4 from "@/assets/1f7cbf18e91bd11d865e7e7dd625df2af6bb157d.png";
 import { imgRectangle3, imgVector } from "../../imports/svg-76oh5";
 
 export function HeroSection() {
@@ -14,7 +14,7 @@ export function HeroSection() {
               <img
                 alt=""
                 className="absolute left-0 max-w-none size-full top-0"
-                src={imgRectangle}
+                src={(typeof imgRectangle === 'object' && imgRectangle !== null && 'src' in imgRectangle) ? (imgRectangle as any).src : imgRectangle}
               />
             </div>
           </div>
@@ -51,7 +51,7 @@ export function HeroSection() {
                     Strategic Growth Partner
                   </p>
                 </div>
-                <div className="font-['Sora'] font-bold text-[36px] sm:text-[48px] lg:text-[68px] text-black tracking-[-2.72px] uppercase leading-normal xl:whitespace-nowrap">
+                <div className="font-['Sora'] font-bold text-[36px] sm:text-[48px] lg:text-[68px] text-black tracking-[-2.72px] uppercase leading-normal xl:whitespace-normal">
                   <p className="mb-0">{`Váš růst, náš `}</p>
                   <p>společný zisk.</p>
                 </div>
@@ -151,19 +151,19 @@ export function HeroSection() {
           </div>
 
           {/* Right Column - Frame15 */}
-          <div className="hidden lg:flex flex-col gap-[24px] items-start overflow-clip w-[400px] xl:w-[492px]">
+          <div className="flex flex-col gap-[24px] items-start overflow-clip w-full lg:w-[400px] xl:w-[492px]">
             {/* Stats Cards - Group141 */}
-            <div className="inline-grid grid-cols-[max-content] grid-rows-[max-content] place-items-start leading-[0]">
+            <div className="flex flex-row flex-wrap gap-[16px] sm:gap-[24px] lg:inline-grid lg:grid-cols-[max-content] lg:grid-rows-[max-content] lg:place-items-start leading-[0] w-full lg:w-auto">
               {/* Frame16 - 3X stat */}
-              <div className="col-start-1 row-start-1 flex gap-[22px] items-center ml-0 mt-0 relative">
+              <div className="flex gap-[12px] sm:gap-[22px] items-center relative lg:col-start-1 lg:row-start-1 lg:ml-0 lg:mt-0">
                 {/* H - 3X graphic */}
                 <div className="inline-grid grid-cols-[max-content] grid-rows-[max-content] place-items-start leading-[0]">
                   <div
-                    className="col-start-1 row-start-1 h-[54px] relative w-[86px] ml-[3px] mt-[14px]"
+                    className="col-start-1 row-start-1 h-[40px] sm:h-[54px] relative w-[64px] sm:w-[86px] ml-[3px] mt-[14px]"
                     style={{
                       maskImage: `url('${imgRectangle3}')`,
-                      maskSize: "86.417px 50.932px",
-                      maskPosition: "-0.688px 2.36px",
+                      maskSize: "100% auto",
+                      maskPosition: "center",
                       maskRepeat: "no-repeat",
                     }}
                   >
@@ -171,24 +171,24 @@ export function HeroSection() {
                       <img
                         alt=""
                         className="absolute left-0 max-w-none size-full top-0"
-                        src={imgRectangle4}
+                        src={(typeof imgRectangle4 === 'object' && imgRectangle4 !== null && 'src' in imgRectangle4) ? (imgRectangle4 as any).src : imgRectangle4}
                       />
                     </div>
                   </div>
                 </div>
-                <div className="font-['Sora'] font-semibold text-[11px] text-black tracking-[2.2px] uppercase leading-[19px] w-[130px] mt-[12px]">
+                <div className="font-['Sora'] font-semibold text-[10px] sm:text-[11px] text-black tracking-[2.2px] uppercase leading-[17px] sm:leading-[19px] w-auto sm:w-[130px] mt-[12px]">
                   <p className="mb-0">{`Minimální `}</p>
                   <p>růst v prvním roce</p>
                 </div>
               </div>
 
               {/* Frame20 - >15 stat */}
-              <div className="col-start-1 row-start-1 flex gap-[22px] items-center ml-[200px] xl:ml-[258px] mt-0 relative">
+              <div className="flex gap-[12px] sm:gap-[22px] items-center relative lg:col-start-1 lg:row-start-1 lg:ml-[200px] xl:ml-[258px] lg:mt-0">
                 {/* H1 - >15 text */}
                 <div className="inline-grid grid-cols-[max-content] grid-rows-[max-content] place-items-start leading-[0]">
-                  <p className="col-start-1 row-start-1 font-['Sora'] font-bold text-[68px] text-black tracking-[-2.72px] uppercase leading-normal ml-0 mt-[-10px] relative">{`>15`}</p>
+                  <p className="col-start-1 row-start-1 font-['Sora'] font-bold text-[48px] sm:text-[68px] text-black tracking-[-2.72px] uppercase leading-normal ml-0 mt-[-10px] relative">{`>15`}</p>
                 </div>
-                <p className="font-['Sora'] font-semibold text-[11px] text-black tracking-[2.2px] uppercase leading-[19px] w-[104px] mt-[-16px]">
+                <p className="font-['Sora'] font-semibold text-[10px] sm:text-[11px] text-black tracking-[2.2px] uppercase leading-[17px] sm:leading-[19px] w-auto sm:w-[104px] mt-[-16px]">
                   Let zkušeností v oboru
                 </p>
               </div>

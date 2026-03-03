@@ -1,5 +1,5 @@
-import imgRectangle from "figma:asset/320b8c287414bc6a4263c44fb04247eb957ea265.png";
-import imgRectangle5 from "figma:asset/3ad0cbf86082bb5c0deed567f95b0ba4f3a3b0bb.png";
+import imgRectangle from "@/assets/320b8c287414bc6a4263c44fb04247eb957ea265.png";
+import imgRectangle5 from "@/assets/3ad0cbf86082bb5c0deed567f95b0ba4f3a3b0bb.png";
 import { imgRectangle7 } from "../../imports/svg-76oh5";
 
 const leftCards = [
@@ -45,7 +45,7 @@ const rightCards = [
 export function MethodologySection() {
   return (
     <section id="metodika" className="relative w-full bg-[#171717] overflow-hidden">
-      <div className="flex flex-col items-center justify-center gap-[80px] w-full py-[80px] min-h-[1604px]">
+      <div className="flex flex-col items-center justify-center gap-[80px] w-full py-[80px]">
         {/* Section Header */}
         <div className="flex flex-col gap-[28px] items-center text-center text-white max-w-[730px] px-6">
           <div className="flex flex-col gap-[32px] items-center uppercase w-full max-w-[479px]">
@@ -73,13 +73,13 @@ export function MethodologySection() {
               <img
                 alt=""
                 className="absolute left-0 max-w-none size-full top-0"
-                src={imgRectangle}
+                src={(typeof imgRectangle === 'object' && imgRectangle !== null && 'src' in imgRectangle) ? (imgRectangle as any).src : imgRectangle}
               />
             </div>
           </div>
 
           {/* Left column */}
-          <div className="absolute left-[3px] top-0 flex flex-col gap-[240px] w-[520px]">
+          <div className="absolute left-[3px] top-0 flex flex-col gap-[240px] w-[calc(50%-40px)] max-w-[520px]">
             {leftCards.map((card) => (
               <div
                 key={card.number}
@@ -106,7 +106,7 @@ export function MethodologySection() {
                 </div>
                 {/* Description - right aligned */}
                 <p
-                  className="absolute right-[42px] text-[15px] text-right text-white leading-[24px] top-[157.5px] w-[390px]"
+                  className="absolute right-[42px] text-[15px] text-right text-white leading-[24px] top-[157.5px] w-[calc(100%-84px)] max-w-[390px]"
                   style={{
                     fontFamily: "'Noto Sans', sans-serif",
                     fontVariationSettings: "'CTGR' 0, 'wdth' 100",
@@ -166,7 +166,7 @@ export function MethodologySection() {
           </div>
 
           {/* Right column - offset 270px from top */}
-          <div className="absolute left-[729px] top-[270px] flex flex-col gap-[240px] w-[520px]">
+          <div className="absolute left-[729px] top-[270px] flex flex-col gap-[240px] w-[calc(50%-40px)] max-w-[520px]">
             {/* Card 02 - with dark bg */}
             <div
               className="relative rounded-[9px] w-full bg-[#171717]"
@@ -190,7 +190,7 @@ export function MethodologySection() {
                 </p>
               </div>
               <p
-                className="absolute left-[42px] text-[15px] text-white leading-[24px] top-[157.5px] w-[390px]"
+                className="absolute left-[42px] text-[15px] text-white leading-[24px] top-[157.5px] w-[calc(100%-84px)] max-w-[390px]"
                 style={{
                   fontFamily: "'Noto Sans', sans-serif",
                   fontVariationSettings: "'CTGR' 0, 'wdth' 100",
@@ -202,7 +202,7 @@ export function MethodologySection() {
 
             {/* Card 04 - with gradient background effect */}
             <div
-              className="relative rounded-[9px] w-[520px]"
+              className="relative rounded-[9px] w-full"
               style={{ height: `${rightCards[1].height}px` }}
             >
               {/* Background gradient decoration - covers entire card */}
@@ -210,12 +210,12 @@ export function MethodologySection() {
                 <img
                   alt=""
                   className="absolute inset-0 w-full h-full object-cover opacity-70 pointer-events-none"
-                  src={imgRectangle5}
+                  src={(typeof imgRectangle5 === 'object' && imgRectangle5 !== null && 'src' in imgRectangle5) ? (imgRectangle5 as any).src : imgRectangle5}
                 />
                 <div className="absolute bg-[rgba(98,98,98,0.05)] inset-0" />
               </div>
 
-              <div className="absolute bg-transparent flex flex-col items-start justify-center left-0 pl-[42px] py-[40.5px] rounded-[9px] top-px w-[520px] h-full">
+              <div className="absolute bg-transparent flex flex-col items-start justify-center left-0 pl-[42px] py-[40.5px] rounded-[9px] top-px w-full h-full">
                 <div
                   aria-hidden="true"
                   className="absolute border border-[rgba(255,255,255,0.2)] border-solid inset-0 pointer-events-none rounded-[9px]"
@@ -229,7 +229,7 @@ export function MethodologySection() {
                   </p>
                 </div>
                 <p
-                  className="text-[15px] text-white leading-[24px] w-[390px] mt-auto"
+                  className="text-[15px] text-white leading-[24px] w-full max-w-[390px] mt-auto"
                   style={{
                     fontFamily: "'Noto Sans', sans-serif",
                     fontVariationSettings: "'CTGR' 0, 'wdth' 100",

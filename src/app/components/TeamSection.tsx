@@ -1,3 +1,4 @@
+"use client";
 import svgPaths from "../../imports/svg-59wapeqsll";
 import { img21421 } from "../../imports/svg-76oh5";
 import img21422 from "../../assets/Jan.png";
@@ -31,7 +32,7 @@ export function TeamSection() {
           {/* Card 1 - Jan Dědic */}
           <TeamCard
             departmentLabel="Business &amp; Sales"
-            photoSrc={img21422}
+            photoSrc={(typeof img21422 === 'object' && img21422 !== null && 'src' in img21422) ? (img21422 as any).src : img21422}
             photoAlt="Jan Dědic"
             photoContainerDesktop={{ width: 418, height: 345, ml: 0, mt: 0 }}
             photoContainerMobile={{ width: 359, height: 345, ml: 0, mt: 0 }}
@@ -56,7 +57,7 @@ export function TeamSection() {
           {/* Card 2 - Štěpán Svoboda */}
           <TeamCard
             departmentLabel="Technologie &amp; Systémy"
-            photoSrc={img299071}
+            photoSrc={(typeof img299071 === 'object' && img299071 !== null && 'src' in img299071) ? (img299071 as any).src : img299071}
             photoAlt="Štěpán Svoboda"
             photoContainerDesktop={{ width: 418, height: 345, ml: 0, mt: 0 }}
             photoContainerMobile={{ width: 359, height: 345, ml: 0, mt: 0 }}
@@ -81,7 +82,7 @@ export function TeamSection() {
           {/* Card 3 - Mikuláš Lysek */}
           <TeamCard
             departmentLabel="Marketing &amp; Automatizace"
-            photoSrc={img275361}
+            photoSrc={(typeof img275361 === 'object' && img275361 !== null && 'src' in img275361) ? (img275361 as any).src : img275361}
             photoAlt="Mikuláš Lysek"
             photoContainerDesktop={{ width: 418, height: 345, ml: 0, mt: 0 }}
             photoContainerMobile={{ width: 359, height: 345, ml: 0, mt: 0 }}
@@ -161,11 +162,11 @@ function TeamCard({
   const MASK_H = 345;
 
   return (
-    <div className="flex flex-col items-start w-[359px] lg:w-auto lg:flex-1">
+    <div className="flex flex-col items-start w-full max-w-[359px] lg:max-w-none lg:w-auto lg:flex-1">
       {/* Department bar */}
       <DepartmentBar label={departmentLabel} />
       {/* Photo area with mask - Mobile */}
-      <div className="lg:hidden inline-grid grid-cols-[max-content] grid-rows-[max-content] place-items-start relative shrink-0 leading-[0] overflow-hidden w-[359px] h-[345px]">
+      <div className="lg:hidden inline-grid grid-cols-[max-content] grid-rows-[max-content] place-items-start relative shrink-0 leading-[0] overflow-hidden w-full max-w-[359px] h-[345px]">
         <div
           className="col-start-1 row-start-1 relative pointer-events-none"
           style={{
@@ -205,7 +206,7 @@ function TeamCard({
           maskH={MASK_H}
         />
       </div>
-      <div className="hidden lg:inline-grid grid-cols-[max-content] grid-rows-[max-content] place-items-start relative shrink-0 leading-[0] overflow-hidden w-[418px] h-[345px]">
+      <div className="hidden lg:inline-grid grid-cols-[max-content] grid-rows-[max-content] place-items-start relative shrink-0 leading-[0] overflow-hidden w-full max-w-[418px] h-[345px]">
         <div
           className="col-start-1 row-start-1 relative pointer-events-none"
           style={{

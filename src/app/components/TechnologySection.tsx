@@ -1,4 +1,4 @@
-import imgRectangle4 from "figma:asset/1f7cbf18e91bd11d865e7e7dd625df2af6bb157d.png";
+import imgRectangle4 from "@/assets/1f7cbf18e91bd11d865e7e7dd625df2af6bb157d.png";
 import svgPaths from "../../imports/svg-59wapeqsll";
 import { imgG283 } from "../../imports/svg-76oh5";
 
@@ -12,12 +12,12 @@ export function TechnologySection() {
             <p className="font-['Sora'] font-semibold text-[11px] tracking-[2.2px] leading-[17px] w-full">
               Technologie
             </p>
-            <p className="font-['Sora'] font-extrabold text-[32px] lg:text-[52px] tracking-[-0.96px] lg:tracking-[-1.56px] leading-[45px] lg:leading-normal w-[297px] lg:w-full">
+            <p className="font-['Sora'] font-extrabold text-[32px] lg:text-[52px] tracking-[-0.96px] lg:tracking-[-1.56px] leading-[45px] lg:leading-normal w-full max-w-[297px] lg:max-w-none">
               Data-Driven přístup
             </p>
           </div>
           <p
-            className="font-['Noto_Sans'] text-[17px] leading-[32px] w-[270px] lg:w-full"
+            className="font-['Noto_Sans'] text-[17px] leading-[32px] w-full max-w-[270px] lg:max-w-none"
             style={{ fontVariationSettings: "'CTGR' 0, 'wdth' 100" }}
           >
             Každé rozhodnutí podložené daty. Vlastní vývoj nástrojů pro
@@ -38,7 +38,7 @@ export function TechnologySection() {
                     <img
                       alt=""
                       className="absolute left-0 max-w-none size-full top-[21.88%]"
-                      src={imgRectangle4}
+                      src={(typeof imgRectangle4 === 'object' && imgRectangle4 !== null && 'src' in imgRectangle4) ? (imgRectangle4 as any).src : imgRectangle4}
                       style={{ position: "absolute", objectFit: "cover" }}
                     />
                   </div>
@@ -47,7 +47,7 @@ export function TechnologySection() {
                   </p>
                 </div>
                 <p
-                  className="font-['Noto_Sans'] text-[15px] lg:text-[17px] text-black tracking-[-0.34px] leading-[24px] lg:leading-[32px] text-center lg:text-left w-[293px] lg:w-full"
+                  className="font-['Noto_Sans'] text-[15px] lg:text-[17px] text-black tracking-[-0.34px] leading-[24px] lg:leading-[32px] text-center lg:text-left w-full max-w-[293px] lg:max-w-none"
                   style={{ fontVariationSettings: "'CTGR' 0, 'wdth' 100" }}
                 >
                   Vlastní tým datových specialistů. Nejde jen o měření – jde o
@@ -161,7 +161,7 @@ export function TechnologySection() {
           </div>
 
           {/* Right Sidebar - Checklist */}
-          <div className="hidden xl:flex flex-col h-[595px] items-start justify-between shrink-0 w-[278px]">
+          <div className="flex flex-col gap-[40px] xl:gap-0 xl:h-[595px] items-center xl:items-start xl:justify-between shrink-0 w-full xl:w-[278px]">
             <ChecklistItem
               title="Prodejní platformy"
               description="E-shop, který unese vaše ambice a roste s vámi"
@@ -195,7 +195,7 @@ function TechCard({
   description: string;
 }) {
   return (
-    <div className="relative bg-white flex flex-col h-[187px] lg:h-[168px] items-center justify-center shrink-0 w-full sm:w-[503px]">
+    <div className="relative bg-white flex flex-col h-[187px] lg:h-[168px] items-center justify-center shrink-0 w-full sm:w-[calc(50%-0.2px)]">
       <div
         aria-hidden="true"
         className="absolute border-[#c9c6c6] border-[0.4px] border-solid inset-0 pointer-events-none"

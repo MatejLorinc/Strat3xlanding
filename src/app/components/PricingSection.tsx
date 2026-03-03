@@ -1,5 +1,5 @@
 import svgPaths from "../../imports/svg-59wapeqsll";
-import imgRectangle5 from "figma:asset/3ad0cbf86082bb5c0deed567f95b0ba4f3a3b0bb.png";
+import imgRectangle5 from "@/assets/3ad0cbf86082bb5c0deed567f95b0ba4f3a3b0bb.png";
 
 interface ChecklistItem {
   label: string;
@@ -185,9 +185,9 @@ export function PricingSection() {
             <div className="relative h-auto lg:h-[487px] w-full lg:flex-1">
               <div className="overflow-clip relative rounded-[inherit] size-full">
                 {/* Dark background with blur effect */}
-                <div className="absolute left-[-188px] top-[-2px] flex h-[517px] items-center justify-center w-[843px]">
+                <div className="absolute inset-0 flex items-center justify-center">
                   <div className="-scale-y-100 rotate-180">
-                    <div className="bg-[#404040] h-[517px] w-[843px]" />
+                    <div className="bg-[#404040] h-full w-full" />
                   </div>
                 </div>
                 <div className="absolute blur-[7.6px] inset-[0.82%_-47.32%_0.62%_-47.32%]">
@@ -195,13 +195,13 @@ export function PricingSection() {
                     <img
                       alt=""
                       className="absolute max-w-none object-cover opacity-70 size-full"
-                      src={imgRectangle5}
+                      src={(typeof imgRectangle5 === 'object' && imgRectangle5 !== null && 'src' in imgRectangle5) ? (imgRectangle5 as any).src : imgRectangle5}
                     />
                     <div className="absolute bg-[rgba(98,98,98,0.05)] inset-0" />
                   </div>
                 </div>
                 {/* Content overlay */}
-                <div className="absolute flex flex-col gap-[28px] h-[487px] items-start justify-center left-0 pl-[39.5px] pr-[20px] top-0 w-full">
+                <div className="absolute flex flex-col gap-[28px] h-full items-start justify-center left-0 pl-[39.5px] pr-[20px] top-0 w-full">
                   <div
                     aria-hidden="true"
                     className="absolute border-[#c9c6c6] border-[0.4px] lg:border-r-0 border-solid inset-0 pointer-events-none"

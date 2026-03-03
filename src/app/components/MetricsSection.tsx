@@ -1,5 +1,5 @@
 import svgPaths from "../../imports/svg-59wapeqsll";
-import imgRectangle4 from "figma:asset/1f7cbf18e91bd11d865e7e7dd625df2af6bb157d.png";
+import imgRectangle4 from "@/assets/1f7cbf18e91bd11d865e7e7dd625df2af6bb157d.png";
 
 export function MetricsSection() {
   return (
@@ -16,7 +16,7 @@ export function MetricsSection() {
         </div>
 
         {/* Metrics Cards */}
-        <div className="flex flex-col items-center lg:items-stretch lg:flex-row lg:flex-nowrap gap-0">
+        <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 w-full">
           <MetricCard
             icon={<ChartIcon />}
             value="30+"
@@ -75,15 +75,15 @@ interface MetricCardProps {
 
 function MetricCard({ icon, value, subValue, label, borderRight, borderLeft, underline }: MetricCardProps) {
   return (
-    <div className="w-[350px] lg:w-1/4 shrink-0 lg:shrink">
+    <div className="w-full">
       {/* Top Card */}
       <div
         className={`bg-white relative
-          h-[296px] lg:h-[434.45px]
+          min-h-[296px] lg:min-h-[434.45px]
           border-[0.4px] border-[#a9a9a9]
         `}
       >
-        <div className="flex flex-col justify-end items-center lg:items-start h-full pt-[40px] lg:pt-14 px-0 lg:px-[39.326px] pb-[22px] gap-[30px] lg:gap-[148px]">
+        <div className="flex flex-col justify-end items-center md:items-start h-full pt-[40px] lg:pt-14 px-[16px] lg:px-[39.326px] pb-[22px] gap-[30px] xl:gap-[120px]">
           {/* Icon with decorative backgrounds */}
           <div className="relative">
             <div className="bg-[#b9b4d0] h-[27.694px] w-[97.742px] opacity-26 absolute" style={{ top: '13.03px' }} />
@@ -94,8 +94,8 @@ function MetricCard({ icon, value, subValue, label, borderRight, borderLeft, und
           </div>
 
           {/* Value */}
-          <div className="flex flex-col items-center lg:items-start pb-[8.848px]">
-            <p className="font-['Sora'] font-bold text-[68px] text-black tracking-[-2.72px] leading-normal">
+          <div className="flex flex-col items-center md:items-start pb-[8.848px]">
+            <p className="font-['Sora'] font-bold text-[48px] sm:text-[56px] lg:text-[52px] xl:text-[68px] text-black tracking-[-2.72px] leading-normal whitespace-nowrap">
               {value}
             </p>
             <p

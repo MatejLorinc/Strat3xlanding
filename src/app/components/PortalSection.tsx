@@ -58,7 +58,7 @@ export function PortalSection() {
           <img
             alt="Klientský portál preview"
             className="relative w-full h-auto object-contain rounded-lg shadow-xl bg-white"
-            src={clientPortalPreview}
+            src={(typeof clientPortalPreview === 'object' && clientPortalPreview !== null && 'src' in clientPortalPreview) ? (clientPortalPreview as any).src : clientPortalPreview}
           />
         </div>
       </div>

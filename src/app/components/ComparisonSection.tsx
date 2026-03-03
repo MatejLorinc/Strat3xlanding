@@ -1,5 +1,5 @@
 import svgPaths from "../../imports/svg-59wapeqsll";
-import imgRectangle5 from "figma:asset/3ad0cbf86082bb5c0deed567f95b0ba4f3a3b0bb.png";
+import imgRectangle5 from "@/assets/3ad0cbf86082bb5c0deed567f95b0ba4f3a3b0bb.png";
 import { imgRectangle6138, imgEllipse1 } from "../../imports/svg-76oh5";
 import rainbowS from "../../assets/RainbowS.png";
 
@@ -9,7 +9,7 @@ export function ComparisonSection() {
       {/* Background RainbowR image */}
       <img
         alt=""
-        src={rainbowS}
+        src={(typeof rainbowS === 'object' && rainbowS !== null && 'src' in rainbowS) ? (rainbowS as any).src : rainbowS}
         className="absolute left-[20%] lg:left-1/2 top-[70%] lg:top-1/2 -translate-x-1/2 -translate-y-1/2 w-[200%] lg:w-[50%] max-w-none opacity-100 pointer-events-none"
         style={{ maskImage: "radial-gradient(ellipse at center, black 50%, transparent 85%)", WebkitMaskImage: "radial-gradient(ellipse at center, black 50%, transparent 85%)" }}
       />
@@ -17,11 +17,11 @@ export function ComparisonSection() {
         {/* Section Heading */}
         <div className="flex flex-col gap-[60px] lg:gap-[124px] items-center w-full">
           <div className="font-['Sora'] font-extrabold text-center tracking-[-2.46px] uppercase">
-            <p className="mb-0 text-[56px] lg:text-[68px] leading-[50px]">
+            <p className="mb-0 text-[36px] sm:text-[56px] lg:text-[68px] leading-[40px] sm:leading-[50px]">
               <span className="text-[#e8e8e8]">nejsme agentura</span>
               <span>{" "}</span>
             </p>
-            <p className="text-[61px] lg:text-[82px] leading-[50px] text-black">Jsme váš partner.</p>
+            <p className="text-[42px] sm:text-[61px] lg:text-[82px] leading-[46px] sm:leading-[50px] text-black">Jsme váš partner.</p>
           </div>
 
           {/* Cards Row */}
@@ -63,7 +63,7 @@ const kdoNejsmeItems = [
 
 function KdoJsmeCard() {
   return (
-    <div className="relative min-h-[344px] lg:h-[344px] rounded-[9px] w-full max-w-[349px] lg:max-w-none lg:flex-1 shadow-[0px_0px_15px_0px_rgba(0,0,0,0.25)]">
+    <div className="relative min-h-[344px] lg:h-[344px] rounded-[9px] w-full max-w-[400px] lg:max-w-none lg:flex-1 shadow-[0px_0px_15px_0px_rgba(0,0,0,0.25)]">
       {/* Background with glassmorphism */}
       <div className="absolute inset-0 rounded-[9px] overflow-hidden">
         {/* Gray base - Mobile */}
@@ -91,7 +91,7 @@ function KdoJsmeCard() {
           <img
             alt=""
             className="absolute inset-0 w-full h-full object-cover opacity-80 pointer-events-none"
-            src={imgRectangle5}
+            src={(typeof imgRectangle5 === 'object' && imgRectangle5 !== null && 'src' in imgRectangle5) ? (imgRectangle5 as any).src : imgRectangle5}
           />
         </div>
       </div>
@@ -150,7 +150,7 @@ function KdoJsmeCard() {
 
 function KdoNejsmeCard() {
   return (
-    <div className="relative min-h-[344px] lg:min-h-0 lg:h-[344px] rounded-[9px] w-full max-w-[345px] lg:max-w-none lg:flex-1">
+    <div className="relative min-h-[344px] lg:min-h-0 lg:h-[344px] rounded-[9px] w-full max-w-[400px] lg:max-w-none lg:flex-1">
       <div aria-hidden="true" className="absolute border-2 border-solid border-white inset-[-2px] pointer-events-none rounded-[11px] shadow-[0px_0px_15px_0px_rgba(0,0,0,0.1)]" />
 
       {/* Dark background content */}

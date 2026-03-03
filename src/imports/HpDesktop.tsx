@@ -1,16 +1,16 @@
 import svgPaths from "./svg-59wapeqsll";
-import imgRectangle from "figma:asset/320b8c287414bc6a4263c44fb04247eb957ea265.png";
-import imgRectangle2 from "figma:asset/237f5127621aac5fb508fd8af02ad944505f7f78.png";
-import imgRectangle4 from "figma:asset/1f7cbf18e91bd11d865e7e7dd625df2af6bb157d.png";
-import imgRectangle5 from "figma:asset/3ad0cbf86082bb5c0deed567f95b0ba4f3a3b0bb.png";
-import imgShoptetLogoPrimaryPng1 from "figma:asset/0787b06cd1272748b0adc4a99998f28b2cfd5a2b.png";
-import img41641 from "figma:asset/1ae7eb4f61ade708f7114d50825956cbed9c81a3.png";
-import img255402 from "figma:asset/c137d10fde9bfceb8fe155765a39a643cd1e631b.png";
-import img2437921 from "figma:asset/4b725ea6e43c85fd0b312c10b6227e4d5c25b560.png";
-import img21422 from "figma:asset/9b1d2ddbf19b0238d4280b485f192cb251cc412e.png";
-import img299071 from "figma:asset/833c20c5b36b9a1249674a86d21094fb642f86ad.png";
-import img275361 from "figma:asset/04f5ba96c056b3e085d330d72f09fb171a91a27d.png";
-import imgDottedWorldMapGrayColorIsolatedWhite1 from "figma:asset/0e1644e0a7d4153de2a407721bc9408b9eb68e17.png";
+import imgRectangle from "@/assets/320b8c287414bc6a4263c44fb04247eb957ea265.png";
+import imgRectangle2 from "@/assets/237f5127621aac5fb508fd8af02ad944505f7f78.png";
+import imgRectangle4 from "@/assets/1f7cbf18e91bd11d865e7e7dd625df2af6bb157d.png";
+import imgRectangle5 from "@/assets/3ad0cbf86082bb5c0deed567f95b0ba4f3a3b0bb.png";
+import imgShoptetLogoPrimaryPng1 from "@/assets/0787b06cd1272748b0adc4a99998f28b2cfd5a2b.png";
+import img41641 from "@/assets/1ae7eb4f61ade708f7114d50825956cbed9c81a3.png";
+import img255402 from "@/assets/c137d10fde9bfceb8fe155765a39a643cd1e631b.png";
+import img2437921 from "@/assets/4b725ea6e43c85fd0b312c10b6227e4d5c25b560.png";
+import img21422 from "@/assets/9b1d2ddbf19b0238d4280b485f192cb251cc412e.png";
+import img299071 from "@/assets/833c20c5b36b9a1249674a86d21094fb642f86ad.png";
+import img275361 from "@/assets/04f5ba96c056b3e085d330d72f09fb171a91a27d.png";
+import imgDottedWorldMapGrayColorIsolatedWhite1 from "@/assets/0e1644e0a7d4153de2a407721bc9408b9eb68e17.png";
 import { imgRectangle1, imgRectangle3, imgVector, imgRectangle6138, imgEllipse1, imgRectangle6146, imgRectangle6, imgG127, imgG271, imgRectangle7, imgG283, imgRectangle6147, img21421, imgG2515, imgRectangle8 } from "./svg-76oh5";
 
 function Group() {
@@ -18,7 +18,7 @@ function Group() {
     <div className="absolute contents inset-[0.25%_13.46%_-0.25%_65.7%]" data-name="Group">
       <div className="absolute inset-[0.25%_13.46%_-0.25%_65.7%] mask-alpha mask-intersect mask-no-clip mask-no-repeat mask-position-[2.798px_0.639px] mask-size-[22.493px_19.617px]" data-name="Rectangle" style={{ maskImage: `url('${imgRectangle1}')` }}>
         <div className="absolute inset-0 overflow-hidden pointer-events-none">
-          <img alt="" className="absolute left-0 max-w-none size-full top-0" src={imgRectangle2} />
+          <img alt="" className="absolute left-0 max-w-none size-full top-0" src={(typeof imgRectangle2 === 'object' && imgRectangle2 !== null && 'src' in imgRectangle2) ? (imgRectangle2 as any).src : imgRectangle2} />
         </div>
       </div>
     </div>
@@ -373,7 +373,7 @@ function H() {
     <div className="grid-cols-[max-content] grid-rows-[max-content] inline-grid leading-[0] place-items-start relative shrink-0" data-name="h1">
       <div className="col-1 h-[54px] mask-alpha mask-intersect mask-no-clip mask-no-repeat mask-position-[-0.688px_2.36px] mask-size-[86.417px_50.932px] ml-[3px] mt-[14px] relative row-1 w-[86px]" data-name="Rectangle" style={{ maskImage: `url('${imgRectangle3}')` }}>
         <div className="absolute inset-0 overflow-hidden pointer-events-none">
-          <img alt="" className="absolute left-0 max-w-none size-full top-0" src={imgRectangle4} />
+          <img alt="" className="absolute left-0 max-w-none size-full top-0" src={(typeof imgRectangle4 === 'object' && imgRectangle4 !== null && 'src' in imgRectangle4) ? (imgRectangle4 as any).src : imgRectangle4} />
         </div>
       </div>
     </div>
@@ -463,7 +463,7 @@ function Sekce() {
         <div className="-scale-y-100 flex-none h-[760px] w-[2504.229px]">
           <div className="opacity-70 relative size-full" data-name="Rectangle">
             <div className="absolute inset-0 overflow-hidden pointer-events-none">
-              <img alt="" className="absolute left-0 max-w-none size-full top-0" src={imgRectangle} />
+              <img alt="" className="absolute left-0 max-w-none size-full top-0" src={(typeof imgRectangle === 'object' && imgRectangle !== null && 'src' in imgRectangle) ? (imgRectangle as any).src : imgRectangle} />
             </div>
           </div>
         </div>
@@ -981,7 +981,7 @@ function Group148() {
         <div className="-scale-y-100 flex-none rotate-[-11.05deg] skew-x-[3.6deg]">
           <div className="h-[484.998px] opacity-80 relative w-[3255.748px]" data-name="Rectangle">
             <div className="absolute inset-0 overflow-hidden pointer-events-none">
-              <img alt="" className="absolute h-full left-0 max-w-none top-0 w-[59.34%]" src={imgRectangle} />
+              <img alt="" className="absolute h-full left-0 max-w-none top-0 w-[59.34%]" src={(typeof imgRectangle === 'object' && imgRectangle !== null && 'src' in imgRectangle) ? (imgRectangle as any).src : imgRectangle} />
             </div>
           </div>
         </div>
@@ -990,7 +990,7 @@ function Group148() {
         <div className="-scale-y-100 flex-none rotate-[-11.05deg] skew-x-[3.6deg]">
           <div className="h-[484.998px] opacity-80 relative w-[3255.748px]" data-name="Rectangle">
             <div className="absolute inset-0 overflow-hidden pointer-events-none">
-              <img alt="" className="absolute h-full left-0 max-w-none top-0 w-[59.34%]" src={imgRectangle} />
+              <img alt="" className="absolute h-full left-0 max-w-none top-0 w-[59.34%]" src={(typeof imgRectangle === 'object' && imgRectangle !== null && 'src' in imgRectangle) ? (imgRectangle as any).src : imgRectangle} />
             </div>
           </div>
         </div>
@@ -999,7 +999,7 @@ function Group148() {
         <div className="-scale-y-100 flex-none rotate-[-11.05deg] skew-x-[3.6deg]">
           <div className="h-[373.527px] opacity-40 relative w-[2507.452px]" data-name="Rectangle">
             <div className="absolute inset-0 overflow-hidden pointer-events-none">
-              <img alt="" className="absolute h-full left-0 max-w-none top-0 w-[59.34%]" src={imgRectangle} />
+              <img alt="" className="absolute h-full left-0 max-w-none top-0 w-[59.34%]" src={(typeof imgRectangle === 'object' && imgRectangle !== null && 'src' in imgRectangle) ? (imgRectangle as any).src : imgRectangle} />
             </div>
           </div>
         </div>
@@ -1008,7 +1008,7 @@ function Group148() {
         <div className="-scale-y-100 flex-none rotate-[-11.05deg] skew-x-[3.6deg]">
           <div className="h-[373.527px] opacity-40 relative w-[2507.452px]" data-name="Rectangle">
             <div className="absolute inset-0 overflow-hidden pointer-events-none">
-              <img alt="" className="absolute h-full left-0 max-w-none top-0 w-[59.34%]" src={imgRectangle} />
+              <img alt="" className="absolute h-full left-0 max-w-none top-0 w-[59.34%]" src={(typeof imgRectangle === 'object' && imgRectangle !== null && 'src' in imgRectangle) ? (imgRectangle as any).src : imgRectangle} />
             </div>
           </div>
         </div>
@@ -1024,7 +1024,7 @@ function Group149() {
         <div className="-scale-y-100 flex-none rotate-[-11.05deg] skew-x-[3.6deg]">
           <div className="h-[484.998px] opacity-32 relative w-[3255.748px]" data-name="Rectangle">
             <div className="absolute inset-0 overflow-hidden pointer-events-none">
-              <img alt="" className="absolute h-full left-0 max-w-none top-0 w-[59.34%]" src={imgRectangle} />
+              <img alt="" className="absolute h-full left-0 max-w-none top-0 w-[59.34%]" src={(typeof imgRectangle === 'object' && imgRectangle !== null && 'src' in imgRectangle) ? (imgRectangle as any).src : imgRectangle} />
             </div>
           </div>
         </div>
@@ -1033,7 +1033,7 @@ function Group149() {
         <div className="-scale-y-100 flex-none rotate-[-11.05deg] skew-x-[3.6deg]">
           <div className="h-[484.998px] opacity-32 relative w-[3255.748px]" data-name="Rectangle">
             <div className="absolute inset-0 overflow-hidden pointer-events-none">
-              <img alt="" className="absolute h-full left-0 max-w-none top-0 w-[59.34%]" src={imgRectangle} />
+              <img alt="" className="absolute h-full left-0 max-w-none top-0 w-[59.34%]" src={(typeof imgRectangle === 'object' && imgRectangle !== null && 'src' in imgRectangle) ? (imgRectangle as any).src : imgRectangle} />
             </div>
           </div>
         </div>
@@ -1042,7 +1042,7 @@ function Group149() {
         <div className="-scale-y-100 flex-none rotate-[-11.05deg] skew-x-[3.6deg]">
           <div className="h-[373.527px] opacity-16 relative w-[2507.452px]" data-name="Rectangle">
             <div className="absolute inset-0 overflow-hidden pointer-events-none">
-              <img alt="" className="absolute h-full left-0 max-w-none top-0 w-[59.34%]" src={imgRectangle} />
+              <img alt="" className="absolute h-full left-0 max-w-none top-0 w-[59.34%]" src={(typeof imgRectangle === 'object' && imgRectangle !== null && 'src' in imgRectangle) ? (imgRectangle as any).src : imgRectangle} />
             </div>
           </div>
         </div>
@@ -1051,7 +1051,7 @@ function Group149() {
         <div className="-scale-y-100 flex-none rotate-[-11.05deg] skew-x-[3.6deg]">
           <div className="h-[373.527px] opacity-16 relative w-[2507.452px]" data-name="Rectangle">
             <div className="absolute inset-0 overflow-hidden pointer-events-none">
-              <img alt="" className="absolute h-full left-0 max-w-none top-0 w-[59.34%]" src={imgRectangle} />
+              <img alt="" className="absolute h-full left-0 max-w-none top-0 w-[59.34%]" src={(typeof imgRectangle === 'object' && imgRectangle !== null && 'src' in imgRectangle) ? (imgRectangle as any).src : imgRectangle} />
             </div>
           </div>
         </div>
@@ -1076,7 +1076,7 @@ function Group146() {
       <div className="absolute flex inset-[-51.74%_-63.6%_-25%_-4.53%] items-center justify-center mix-blend-hard-light">
         <div className="flex-none h-[608px] rotate-180 w-[1150px]">
           <div className="mask-alpha mask-intersect mask-no-clip mask-no-repeat mask-position-[31px_178px] mask-size-[684px_344px] relative size-full" data-name="Rectangle" style={{ maskImage: `url('${imgRectangle6138}')` }}>
-            <img alt="" className="absolute backdrop-blur-[7.6px] inset-0 max-w-none object-cover opacity-80 pointer-events-none size-full" src={imgRectangle5} />
+            <img alt="" className="absolute backdrop-blur-[7.6px] inset-0 max-w-none object-cover opacity-80 pointer-events-none size-full" src={(typeof imgRectangle5 === 'object' && imgRectangle5 !== null && 'src' in imgRectangle5) ? (imgRectangle5 as any).src : imgRectangle5} />
           </div>
         </div>
       </div>
@@ -2307,7 +2307,7 @@ function Group33() {
       <div className="col-1 flex h-[1112px] items-center justify-center ml-[-188px] mt-[-195px] relative row-1 w-[2105px]">
         <div className="flex-none h-[1112px] rotate-180 w-[2105px]">
           <div className="mask-alpha mask-intersect mask-no-clip mask-no-repeat mask-position-[188px_195px] mask-size-[1399px_639px] relative size-full" data-name="Rectangle" style={{ maskImage: `url('${imgRectangle6146}')` }}>
-            <img alt="" className="absolute backdrop-blur-[7.6px] inset-0 max-w-none object-cover opacity-80 pointer-events-none size-full" src={imgRectangle5} />
+            <img alt="" className="absolute backdrop-blur-[7.6px] inset-0 max-w-none object-cover opacity-80 pointer-events-none size-full" src={(typeof imgRectangle5 === 'object' && imgRectangle5 !== null && 'src' in imgRectangle5) ? (imgRectangle5 as any).src : imgRectangle5} />
           </div>
         </div>
       </div>
@@ -2348,7 +2348,7 @@ function Group29() {
     <div className="absolute contents inset-[0.25%_13.46%_-0.25%_65.7%]" data-name="Group">
       <div className="absolute inset-[0.25%_13.46%_-0.25%_65.7%] mask-alpha mask-intersect mask-no-clip mask-no-repeat mask-position-[2.549px_0.581px] mask-size-[20.494px_17.833px]" data-name="Rectangle" style={{ maskImage: `url('${imgRectangle6}')` }}>
         <div className="absolute inset-0 overflow-hidden pointer-events-none">
-          <img alt="" className="absolute left-0 max-w-none size-full top-0" src={imgRectangle2} />
+          <img alt="" className="absolute left-0 max-w-none size-full top-0" src={(typeof imgRectangle2 === 'object' && imgRectangle2 !== null && 'src' in imgRectangle2) ? (imgRectangle2 as any).src : imgRectangle2} />
         </div>
       </div>
     </div>
@@ -4069,7 +4069,7 @@ function Group99() {
         <div className="flex-none h-[440px] rotate-180 w-[833px]">
           <div className="blur-[7.6px] mask-alpha mask-intersect mask-no-clip mask-no-repeat mask-position-[97px_82px] mask-size-[519px_271px] relative size-full" data-name="Rectangle" style={{ maskImage: `url('${imgRectangle7}')` }}>
             <div aria-hidden="true" className="absolute inset-0 pointer-events-none">
-              <img alt="" className="absolute max-w-none object-cover opacity-70 size-full" src={imgRectangle5} />
+              <img alt="" className="absolute max-w-none object-cover opacity-70 size-full" src={(typeof imgRectangle5 === 'object' && imgRectangle5 !== null && 'src' in imgRectangle5) ? (imgRectangle5 as any).src : imgRectangle5} />
               <div className="absolute bg-[rgba(98,98,98,0.05)] inset-0" />
             </div>
           </div>
@@ -4253,7 +4253,7 @@ function Frame182() {
     <div className="h-[1075px] relative shrink-0 w-[1254px]">
       <div className="absolute h-[760px] left-[-1479.38px] opacity-43 top-[-50px] w-[1990px]" data-name="Rectangle">
         <div className="absolute inset-0 overflow-hidden pointer-events-none">
-          <img alt="" className="absolute left-0 max-w-none size-full top-0" src={imgRectangle} />
+          <img alt="" className="absolute left-0 max-w-none size-full top-0" src={(typeof imgRectangle === 'object' && imgRectangle !== null && 'src' in imgRectangle) ? (imgRectangle as any).src : imgRectangle} />
         </div>
       </div>
       <Group171 />
@@ -4319,7 +4319,7 @@ function Frame199() {
     <div className="content-stretch flex flex-col gap-[28px] items-start relative shrink-0 w-[384px]">
       <div className="h-[3px] relative rounded-[33px] shrink-0 w-[63px]">
         <div className="absolute inset-0 overflow-hidden pointer-events-none rounded-[33px]">
-          <img alt="" className="absolute left-0 max-w-none size-full top-[21.88%]" src={imgRectangle4} />
+          <img alt="" className="absolute left-0 max-w-none size-full top-[21.88%]" src={(typeof imgRectangle4 === 'object' && imgRectangle4 !== null && 'src' in imgRectangle4) ? (imgRectangle4 as any).src : imgRectangle4} />
         </div>
       </div>
       <p className="font-['Sora:ExtraBold',sans-serif] font-extrabold leading-[49px] min-w-full relative shrink-0 text-[35px] text-black tracking-[-1.05px] uppercase w-[min-content] whitespace-pre-wrap">Pokročilá datová analytika</p>
@@ -5561,7 +5561,7 @@ function Frame240() {
       <Group101 />
       <Group102 />
       <div className="h-[25px] relative shrink-0 w-[94px]" data-name="Shoptet-logo-primary.png 1">
-        <img alt="" className="absolute inset-0 max-w-none object-cover pointer-events-none size-full" src={imgShoptetLogoPrimaryPng1} />
+        <img alt="" className="absolute inset-0 max-w-none object-cover pointer-events-none size-full" src={(typeof imgShoptetLogoPrimaryPng1 === 'object' && imgShoptetLogoPrimaryPng1 !== null && 'src' in imgShoptetLogoPrimaryPng1) ? (imgShoptetLogoPrimaryPng1 as any).src : imgShoptetLogoPrimaryPng1} />
       </div>
       <MergadoLogo />
     </div>
@@ -5601,7 +5601,7 @@ function Group176() {
     <div className="absolute contents left-0 top-0">
       <div className="absolute h-[700px] left-0 top-0 w-[467px]" data-name="4164 1">
         <div className="absolute inset-0 overflow-hidden pointer-events-none">
-          <img alt="" className="absolute h-[106.14%] left-0 max-w-none top-[-1.29%] w-[125.27%]" src={img41641} />
+          <img alt="" className="absolute h-[106.14%] left-0 max-w-none top-[-1.29%] w-[125.27%]" src={(typeof img41641 === 'object' && img41641 !== null && 'src' in img41641) ? (img41641 as any).src : img41641} />
         </div>
       </div>
       <div className="absolute bg-[rgba(0,0,0,0.35)] h-[700px] left-0 opacity-80 top-0 w-[467px]" />
@@ -5704,7 +5704,7 @@ function Group177() {
     <div className="absolute contents left-0 top-0">
       <div className="absolute h-[652px] left-0 top-0 w-[467px]" data-name="25540 2">
         <div className="absolute inset-0 overflow-hidden pointer-events-none">
-          <img alt="" className="absolute h-[107.06%] left-[-0.03%] max-w-none top-[-1.38%] w-[123.83%]" src={img255402} />
+          <img alt="" className="absolute h-[107.06%] left-[-0.03%] max-w-none top-[-1.38%] w-[123.83%]" src={(typeof img255402 === 'object' && img255402 !== null && 'src' in img255402) ? (img255402 as any).src : img255402} />
         </div>
       </div>
       <div className="absolute bg-[rgba(0,0,0,0.35)] h-[652px] left-0 opacity-80 top-0 w-[467px]" />
@@ -5814,7 +5814,7 @@ function Group178() {
         <div className="-scale-y-100 flex-none rotate-180">
           <div className="h-[628px] relative w-[467px]" data-name="24379 2 1">
             <div className="absolute inset-0 overflow-hidden pointer-events-none">
-              <img alt="" className="absolute h-[139.33%] left-[-63.17%] max-w-none top-[-10.83%] w-[171.31%]" src={img2437921} />
+              <img alt="" className="absolute h-[139.33%] left-[-63.17%] max-w-none top-[-10.83%] w-[171.31%]" src={(typeof img2437921 === 'object' && img2437921 !== null && 'src' in img2437921) ? (img2437921 as any).src : img2437921} />
             </div>
           </div>
         </div>
@@ -6004,7 +6004,7 @@ function Group127() {
         <div className="flex-none h-[796px] rotate-180 w-[1507px]">
           <div className="blur-[7.6px] mask-alpha mask-intersect mask-no-clip mask-no-repeat mask-position-[53px_74px] mask-size-[1400px_606px] relative size-full" data-name="Rectangle" style={{ maskImage: `url('${imgRectangle6147}')` }}>
             <div aria-hidden="true" className="absolute inset-0 pointer-events-none">
-              <img alt="" className="absolute max-w-none object-cover opacity-70 size-full" src={imgRectangle5} />
+              <img alt="" className="absolute max-w-none object-cover opacity-70 size-full" src={(typeof imgRectangle5 === 'object' && imgRectangle5 !== null && 'src' in imgRectangle5) ? (imgRectangle5 as any).src : imgRectangle5} />
               <div className="absolute bg-[rgba(98,98,98,0.05)] inset-0" />
             </div>
           </div>
@@ -6268,7 +6268,7 @@ function MaskGroup() {
   return (
     <div className="grid-cols-[max-content] grid-rows-[max-content] inline-grid leading-[0] place-items-start relative shrink-0" data-name="Mask group">
       <div className="col-1 h-[439px] mask-alpha mask-intersect mask-no-clip mask-no-repeat mask-position-[120px_4px] mask-size-[418px_345px] ml-[-120px] mt-[-4px] pointer-events-none relative row-1 w-[658px]" data-name="2142 1" style={{ maskImage: `url('${img21421}')` }}>
-        <img alt="" className="absolute inset-0 max-w-none object-cover size-full" src={img21422} />
+        <img alt="" className="absolute inset-0 max-w-none object-cover size-full" src={(typeof img21422 === 'object' && img21422 !== null && 'src' in img21422) ? (img21422 as any).src : img21422} />
         <div aria-hidden="true" className="absolute border-[#a9a9a9] border-l-[0.4px] border-r-[0.4px] border-solid border-t-[0.4px] inset-0" />
       </div>
       <Frame287 />
@@ -6364,7 +6364,7 @@ function MaskGroup1() {
   return (
     <div className="grid-cols-[max-content] grid-rows-[max-content] inline-grid leading-[0] place-items-start relative shrink-0" data-name="Mask group">
       <div className="col-1 h-[733px] mask-alpha mask-intersect mask-no-clip mask-no-repeat mask-position-[366px_42px] mask-size-[418px_345px] ml-[-366px] mt-[-42px] relative row-1 w-[1100px]" data-name="29907 1" style={{ maskImage: `url('${img21421}')` }}>
-        <img alt="" className="absolute inset-0 max-w-none object-cover pointer-events-none size-full" src={img299071} />
+        <img alt="" className="absolute inset-0 max-w-none object-cover pointer-events-none size-full" src={(typeof img299071 === 'object' && img299071 !== null && 'src' in img299071) ? (img299071 as any).src : img299071} />
       </div>
       <Frame293 />
       <Group180 />
@@ -6460,7 +6460,7 @@ function MaskGroup2() {
   return (
     <div className="grid-cols-[max-content] grid-rows-[max-content] inline-grid leading-[0] place-items-start relative shrink-0" data-name="Mask group">
       <div className="col-1 h-[482px] mask-alpha mask-intersect mask-no-clip mask-no-repeat mask-position-[161px_19px] mask-size-[418px_345px] ml-[-161px] mt-[-19px] relative row-1 w-[722px]" data-name="27536 1" style={{ maskImage: `url('${img21421}')` }}>
-        <img alt="" className="absolute inset-0 max-w-none object-cover pointer-events-none size-full" src={img275361} />
+        <img alt="" className="absolute inset-0 max-w-none object-cover pointer-events-none size-full" src={(typeof img275361 === 'object' && img275361 !== null && 'src' in img275361) ? (img275361 as any).src : img275361} />
       </div>
       <Frame299 />
       <Group181 />
@@ -6951,7 +6951,7 @@ function Group193() {
       </div>
       <div className="absolute blur-[7.6px] inset-[0.82%_-47.32%_0.62%_-47.32%]" data-name="Rectangle">
         <div aria-hidden="true" className="absolute inset-0 pointer-events-none">
-          <img alt="" className="absolute max-w-none object-cover opacity-70 size-full" src={imgRectangle5} />
+          <img alt="" className="absolute max-w-none object-cover opacity-70 size-full" src={(typeof imgRectangle5 === 'object' && imgRectangle5 !== null && 'src' in imgRectangle5) ? (imgRectangle5 as any).src : imgRectangle5} />
           <div className="absolute bg-[rgba(98,98,98,0.05)] inset-0" />
         </div>
       </div>
@@ -8440,7 +8440,7 @@ function Group133() {
     <div className="grid-cols-[max-content] grid-rows-[max-content] inline-grid leading-[0] place-items-start relative shrink-0">
       <div className="col-1 h-[825.397px] mask-alpha mask-intersect mask-no-clip mask-no-repeat mask-position-[1175px_-677.924px] mask-size-[1400px_1300px] mix-blend-screen ml-[-1175px] mt-[677.92px] opacity-50 relative row-1 w-[1790.287px]" data-name="Rectangle" style={{ maskImage: `url('${imgRectangle8}')` }}>
         <div className="absolute inset-0 opacity-70 overflow-hidden pointer-events-none">
-          <img alt="" className="absolute left-0 max-w-none size-full top-0" src={imgRectangle} />
+          <img alt="" className="absolute left-0 max-w-none size-full top-0" src={(typeof imgRectangle === 'object' && imgRectangle !== null && 'src' in imgRectangle) ? (imgRectangle as any).src : imgRectangle} />
         </div>
       </div>
       <div className="bg-gradient-to-l col-1 from-[#171717] h-[825.397px] mask-alpha mask-intersect mask-no-clip mask-no-repeat mask-position-[-205px_-661.346px] mask-size-[1400px_1300px] ml-[205px] mt-[661.35px] opacity-43 row-1 to-[rgba(23,23,23,0)] w-[288px]" data-name="Rectangle" style={{ maskImage: `url('${imgRectangle8}')` }} />
@@ -8745,7 +8745,7 @@ function Group125() {
     <div className="absolute contents inset-[0.26%_13.46%_-0.26%_65.7%]" data-name="Group">
       <div className="absolute inset-[0.26%_13.46%_-0.26%_65.7%] mask-alpha mask-intersect mask-no-clip mask-no-repeat mask-position-[2.797px_0.639px] mask-size-[22.493px_19.617px]" data-name="Rectangle" style={{ maskImage: `url('${imgRectangle1}')` }}>
         <div className="absolute inset-0 overflow-hidden pointer-events-none">
-          <img alt="" className="absolute left-0 max-w-none size-full top-0" src={imgRectangle2} />
+          <img alt="" className="absolute left-0 max-w-none size-full top-0" src={(typeof imgRectangle2 === 'object' && imgRectangle2 !== null && 'src' in imgRectangle2) ? (imgRectangle2 as any).src : imgRectangle2} />
         </div>
       </div>
     </div>
@@ -8999,7 +8999,7 @@ function Group138() {
     <div className="grid-cols-[max-content] grid-rows-[max-content] inline-grid leading-[0] place-items-start relative shrink-0">
       <p className="col-1 font-['Sora:Bold',sans-serif] font-bold leading-[normal] ml-[20px] mt-0 relative row-1 text-[15px] text-black tracking-[-0.15px] uppercase">kde nás najdete</p>
       <div className="col-1 h-[227px] ml-0 mt-[33px] relative row-1 w-[321px]" data-name="dotted-world-map-gray-color-isolated-white 1">
-        <img alt="" className="absolute inset-0 max-w-none object-cover pointer-events-none size-full" src={imgDottedWorldMapGrayColorIsolatedWhite1} />
+        <img alt="" className="absolute inset-0 max-w-none object-cover pointer-events-none size-full" src={(typeof imgDottedWorldMapGrayColorIsolatedWhite1 === 'object' && imgDottedWorldMapGrayColorIsolatedWhite1 !== null && 'src' in imgDottedWorldMapGrayColorIsolatedWhite1) ? (imgDottedWorldMapGrayColorIsolatedWhite1 as any).src : imgDottedWorldMapGrayColorIsolatedWhite1} />
       </div>
       <Placeholder />
       <Placeholder2 />
@@ -9109,32 +9109,32 @@ export default function HpDesktop() {
     <div className="bg-white relative size-full" data-name="HP - desktop">
       <div className="absolute inset-[86.22%_9.78%_9.67%_-3.02%] opacity-50" data-name="Rectangle">
         <div className="absolute inset-0 overflow-hidden pointer-events-none">
-          <img alt="" className="absolute left-0 max-w-none size-full top-0" src={imgRectangle} />
+          <img alt="" className="absolute left-0 max-w-none size-full top-0" src={(typeof imgRectangle === 'object' && imgRectangle !== null && 'src' in imgRectangle) ? (imgRectangle as any).src : imgRectangle} />
         </div>
       </div>
       <div className="absolute inset-[72.84%_29.52%_23.04%_-22.76%] opacity-50" data-name="Rectangle">
         <div className="absolute inset-0 overflow-hidden pointer-events-none">
-          <img alt="" className="absolute left-0 max-w-none size-full top-0" src={imgRectangle} />
+          <img alt="" className="absolute left-0 max-w-none size-full top-0" src={(typeof imgRectangle === 'object' && imgRectangle !== null && 'src' in imgRectangle) ? (imgRectangle as any).src : imgRectangle} />
         </div>
       </div>
       <div className="absolute inset-[57.9%_1.67%_37.99%_3.23%] opacity-50" data-name="Rectangle">
         <div className="absolute inset-0 overflow-hidden pointer-events-none">
-          <img alt="" className="absolute left-0 max-w-none size-full top-0" src={imgRectangle} />
+          <img alt="" className="absolute left-0 max-w-none size-full top-0" src={(typeof imgRectangle === 'object' && imgRectangle !== null && 'src' in imgRectangle) ? (imgRectangle as any).src : imgRectangle} />
         </div>
       </div>
       <div className="absolute inset-[67.66%_-7.92%_26.68%_-20.42%] opacity-50" data-name="Rectangle">
         <div className="absolute inset-0 overflow-hidden pointer-events-none">
-          <img alt="" className="absolute left-0 max-w-none size-full top-0" src={imgRectangle} />
+          <img alt="" className="absolute left-0 max-w-none size-full top-0" src={(typeof imgRectangle === 'object' && imgRectangle !== null && 'src' in imgRectangle) ? (imgRectangle as any).src : imgRectangle} />
         </div>
       </div>
       <div className="absolute inset-[28.86%_4.9%_67.03%_0] opacity-50" data-name="Rectangle">
         <div className="absolute inset-0 overflow-hidden pointer-events-none">
-          <img alt="" className="absolute left-0 max-w-none size-full top-0" src={imgRectangle} />
+          <img alt="" className="absolute left-0 max-w-none size-full top-0" src={(typeof imgRectangle === 'object' && imgRectangle !== null && 'src' in imgRectangle) ? (imgRectangle as any).src : imgRectangle} />
         </div>
       </div>
       <div className="absolute inset-[47.13%_22.08%_48.76%_-17.19%] opacity-50" data-name="Rectangle">
         <div className="absolute inset-0 overflow-hidden pointer-events-none">
-          <img alt="" className="absolute left-0 max-w-none size-full top-0" src={imgRectangle} />
+          <img alt="" className="absolute left-0 max-w-none size-full top-0" src={(typeof imgRectangle === 'object' && imgRectangle !== null && 'src' in imgRectangle) ? (imgRectangle as any).src : imgRectangle} />
         </div>
       </div>
       <div className="absolute flex inset-[35.32%_-8.02%_64.68%_-3.7%] items-center justify-center">

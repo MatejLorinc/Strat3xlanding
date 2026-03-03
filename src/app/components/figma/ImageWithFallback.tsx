@@ -1,3 +1,4 @@
+"use client";
 import React, { useState } from 'react'
 
 const ERROR_IMG_SRC =
@@ -18,10 +19,10 @@ export function ImageWithFallback(props: React.ImgHTMLAttributes<HTMLImageElemen
       style={style}
     >
       <div className="flex items-center justify-center w-full h-full">
-        <img src={ERROR_IMG_SRC} alt="Error loading image" {...rest} data-original-url={src} />
+        <img src={(typeof ERROR_IMG_SRC === 'object' && ERROR_IMG_SRC !== null && 'src' in ERROR_IMG_SRC) ? (ERROR_IMG_SRC as any).src : ERROR_IMG_SRC} alt="Error loading image" {...rest} data-original-url={src} />
       </div>
     </div>
   ) : (
-    <img src={src} alt={alt} className={className} style={style} {...rest} onError={handleError} />
+    <img src={(typeof src === 'object' && src !== null && 'src' in src) ? (src as any).src : src} alt={alt} className={className} style={style} {...rest} onError={handleError} />
   )
 }

@@ -1,3 +1,4 @@
+"use client";
 import { useState } from "react";
 import svgPaths from "../../imports/svg-59wapeqsll";
 
@@ -81,7 +82,7 @@ export function FaqSection() {
                       setOpenIndex(isOpen ? null : index)
                     }
                   >
-                    <p className="font-['Sora'] font-bold leading-[71px] text-[22px] text-black tracking-[-0.22px] text-left">
+                    <p className="font-['Sora'] font-bold leading-[50px] lg:leading-[71px] text-[18px] lg:text-[22px] text-black tracking-[-0.22px] text-left">
                       {item.question}
                     </p>
                     <div className="shrink-0 size-[22px]">

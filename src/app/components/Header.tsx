@@ -1,5 +1,6 @@
+"use client";
 import svgPaths from "../../imports/svg-59wapeqsll";
-import imgRectangle2 from "figma:asset/237f5127621aac5fb508fd8af02ad944505f7f78.png";
+import imgRectangle2 from "@/assets/237f5127621aac5fb508fd8af02ad944505f7f78.png";
 import { imgRectangle1 } from "../../imports/svg-76oh5";
 import { useState, useEffect } from "react";
 
@@ -12,6 +13,16 @@ export function Header() {
     window.addEventListener("scroll", handleScroll, { passive: true });
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
+
+  // Lock body scroll when mobile menu is open
+  useEffect(() => {
+    if (menuOpen) {
+      document.body.style.overflow = "hidden";
+    } else {
+      document.body.style.overflow = "";
+    }
+    return () => { document.body.style.overflow = ""; };
+  }, [menuOpen]);
 
   return (
     <header className={`w-full fixed top-0 left-0 right-0 z-50 bg-white transition-all duration-300 ${scrolled ? "py-3 lg:py-5 shadow-md" : "py-6 lg:py-10"}`}>
@@ -136,7 +147,7 @@ function LogoGradient() {
         <div className="absolute contents inset-[0.25%_13.46%_-0.25%_65.7%]">
           <div className="absolute inset-[0.25%_13.46%_-0.25%_65.7%] mask-alpha mask-intersect mask-no-clip mask-no-repeat mask-position-[2.798px_0.639px] mask-size-[22.493px_19.617px]" style={{ maskImage: `url('${imgRectangle1}')` }}>
             <div className="absolute inset-0 overflow-hidden pointer-events-none">
-              <img alt="" className="absolute left-0 max-w-none size-full top-0" src={imgRectangle2} />
+              <img alt="" className="absolute left-0 max-w-none size-full top-0" src={(typeof imgRectangle2 === 'object' && imgRectangle2 !== null && 'src' in imgRectangle2) ? (imgRectangle2 as any).src : imgRectangle2} />
             </div>
           </div>
         </div>

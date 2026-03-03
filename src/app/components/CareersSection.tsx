@@ -310,7 +310,7 @@ function JobCard({
 }) {
   return (
     <div
-      className={`bg-white flex flex-col gap-[20px] h-auto md:h-[348px] items-center justify-center relative shrink-0 w-full md:w-[502px] p-[40px]`}
+      className={`bg-white flex flex-col gap-[20px] h-auto md:h-[348px] items-center justify-center relative shrink-0 w-full md:w-1/2 p-[40px]`}
     >
       <div
         aria-hidden="true"
@@ -417,7 +417,7 @@ function CapacityBar({
   item: (typeof capacityItems)[number];
 }) {
   return (
-    <div className="flex flex-col gap-[16px] items-start w-[228px]">
+    <div className="flex flex-col gap-[16px] items-start w-full max-w-[228px]">
       {/* Labels */}
       <div className="flex flex-col gap-px items-start leading-[24px] text-[15px] text-black w-[93px]">
         <p
@@ -436,7 +436,7 @@ function CapacityBar({
       {/* Progress Bar + Hours */}
       <div className="flex flex-col gap-px items-end w-full">
         <div className="inline-grid relative">
-          <div className="bg-[#e9e9e9] col-start-1 row-start-1 h-[10px] rounded-[14px] w-[227px]" />
+          <div className="bg-[#e9e9e9] col-start-1 row-start-1 h-[10px] rounded-[14px] w-full max-w-[227px]" />
           <div
             className={`bg-[#84d3c5] col-start-1 row-start-1 h-[10px] rounded-[14px] ${item.barWidth}`}
           />

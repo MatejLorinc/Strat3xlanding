@@ -202,9 +202,9 @@ function ChartCard({ data, index }: { data: ChartCardData; index: number }) {
         </div>
 
         {/* Month labels */}
-        <div className="flex flex-col gap-[12px] items-end w-full text-[13px] text-black leading-[32px]">
+        <div className="flex flex-col gap-[12px] items-end w-full text-[11px] sm:text-[13px] text-black leading-[32px]">
           <div
-            className="flex items-center gap-[2px] lg:gap-0 lg:justify-between w-full font-['Noto_Sans'] font-medium"
+            className="flex items-center gap-[2px] lg:gap-0 lg:justify-between w-full font-['Noto_Sans'] font-medium text-[11px] sm:text-[13px]"
             style={{ fontVariationSettings: "'CTGR' 0, 'wdth' 100" }}
           >
             {months.map((m) => (

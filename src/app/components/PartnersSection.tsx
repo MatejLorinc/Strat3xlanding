@@ -1,7 +1,8 @@
+"use client";
 import { useState } from "react";
-import img41641 from "figma:asset/1ae7eb4f61ade708f7114d50825956cbed9c81a3.png";
-import img255402 from "figma:asset/c137d10fde9bfceb8fe155765a39a643cd1e631b.png";
-import img2437921 from "figma:asset/4b725ea6e43c85fd0b312c10b6227e4d5c25b560.png";
+import img41641 from "@/assets/1ae7eb4f61ade708f7114d50825956cbed9c81a3.png";
+import img255402 from "@/assets/c137d10fde9bfceb8fe155765a39a643cd1e631b.png";
+import img2437921 from "@/assets/4b725ea6e43c85fd0b312c10b6227e4d5c25b560.png";
 
 interface PartnerCardProps {
   imageSrc: string;
@@ -59,7 +60,7 @@ function PartnerCard({
       />
       {/* Content */}
       <div className="absolute inset-0 w-full flex items-center justify-center pb-[50px] pt-[50px]">
-        <div className="flex flex-col justify-between items-start w-[356.643px] max-w-[calc(100%-40px)] h-full">
+        <div className="flex flex-col justify-between items-start w-full max-w-[357px] px-5 lg:px-0 h-full">
           {/* Tags */}
           <div className="flex flex-col gap-[4px] items-start w-[158px]">
             {tags.map((tag) => (
@@ -116,7 +117,7 @@ export function PartnersSection() {
         <div className="flex flex-col lg:flex-row h-auto items-stretch justify-center w-full max-w-[1401px] px-6 xl:px-0">
           {/* Card 1: Old School Businessy */}
           <PartnerCard
-            imageSrc={img41641}
+            imageSrc={(typeof img41641 === 'object' && img41641 !== null && 'src' in img41641) ? (img41641 as any).src : img41641}
             tags={[
               { label: "Výrobní společnosti", fullWidth: true },
               { label: "Tradiční retail" },
@@ -151,7 +152,7 @@ export function PartnersSection() {
 
           {/* Card 2: Komplikované Businessy */}
           <PartnerCard
-            imageSrc={img255402}
+            imageSrc={(typeof img255402 === 'object' && img255402 !== null && 'src' in img255402) ? (img255402 as any).src : img255402}
             tags={[
               { label: "Alkohol & tabák" },
               { label: "Farmacie" },
@@ -181,7 +182,7 @@ export function PartnersSection() {
 
           {/* Card 3: Fundované Start-upy */}
           <PartnerCard
-            imageSrc={img2437921}
+            imageSrc={(typeof img2437921 === 'object' && img2437921 !== null && 'src' in img2437921) ? (img2437921 as any).src : img2437921}
             tags={[
               { label: "Seed/Series A" },
               { label: "D2C brandy" },
