@@ -56,13 +56,14 @@ export function Header() {
             </div>
           </div>
 
-          {/* Login Button */}
+          {/* Login Button - commented out for now
           <button className="relative border-2 border-[#a038b6] rounded-[63px] h-11 w-[157px] flex items-center justify-center hover:bg-[#a038b6] hover:text-white transition-colors group">
             <span className="font-['Sora'] font-bold text-[12px] text-black text-center tracking-[-0.24px] uppercase group-hover:text-white">přihlášení</span>
             <svg className="absolute right-4 w-[9px] h-[5px] rotate-180" fill="none" preserveAspectRatio="none" viewBox="0 0 9 5">
               <path d={svgPaths.p2568da00} fill="black" className="group-hover:fill-white" />
             </svg>
           </button>
+          */}
 
           {/* CTA Button */}
           <button className="bg-black h-11 px-[34px] rounded-[62px] hover:bg-gray-900 transition-colors">

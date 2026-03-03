@@ -1,6 +1,93 @@
+import { useState } from "react";
 import img41641 from "figma:asset/1ae7eb4f61ade708f7114d50825956cbed9c81a3.png";
 import img255402 from "figma:asset/c137d10fde9bfceb8fe155765a39a643cd1e631b.png";
 import img2437921 from "figma:asset/4b725ea6e43c85fd0b312c10b6227e4d5c25b560.png";
+
+interface PartnerCardProps {
+  imageSrc: string;
+  tags: { label: string; fullWidth?: boolean }[];
+  title: string;
+  children: React.ReactNode;
+  gradientAngle: string;
+  flipImage?: boolean;
+}
+
+function PartnerCard({
+  imageSrc,
+  tags,
+  title,
+  children,
+  gradientAngle,
+  flipImage,
+}: PartnerCardProps) {
+  const [isHovered, setIsHovered] = useState(false);
+
+  return (
+    <div
+      className="relative shrink-0 w-full lg:w-[467px] overflow-hidden"
+      style={{
+        height: isHovered ? "700px" : "350px",
+        transition: "height 0.45s cubic-bezier(0.4, 0, 0.2, 1)",
+      }}
+      onMouseEnter={() => setIsHovered(true)}
+      onMouseLeave={() => setIsHovered(false)}
+      onTouchStart={() => setIsHovered((prev) => !prev)}
+    >
+      <div
+        aria-hidden="true"
+        className="absolute border-2 border-solid border-white inset-0 pointer-events-none z-10"
+      />
+      {/* Background image */}
+      <div className="absolute inset-0">
+        <img
+          alt=""
+          className={`absolute inset-0 w-full h-full object-cover${flipImage ? " -scale-y-100 rotate-180" : ""}`}
+          style={{
+            objectPosition: isHovered ? "center" : "top",
+            transition: "object-position 0.45s cubic-bezier(0.4, 0, 0.2, 1)",
+          }}
+          src={imageSrc}
+        />
+      </div>
+      {/* Dark gradient overlay */}
+      <div
+        className="absolute inset-0"
+        style={{
+          background: `linear-gradient(${gradientAngle}, rgba(0, 0, 0, 0.28) 0%, rgba(0, 0, 0, 0.64) 100%)`,
+          transition: "background 0.45s ease",
+        }}
+      />
+      {/* Content */}
+      <div className="absolute inset-0 w-full flex items-center justify-center pb-[50px] pt-[50px]">
+        <div className="flex flex-col justify-between items-start w-[356.643px] max-w-[calc(100%-40px)] h-full">
+          {/* Tags */}
+          <div className="flex flex-col gap-[4px] items-start w-[158px]">
+            {tags.map((tag) => (
+              <Tag key={tag.label} label={tag.label} fullWidth={tag.fullWidth} />
+            ))}
+          </div>
+          {/* Description */}
+          <div className="flex flex-col gap-[32px] items-start text-white w-full">
+            <p className="font-['Sora'] font-extrabold leading-normal text-[26px] tracking-[-0.78px] uppercase w-[257px]">
+              {title}
+            </p>
+            <div
+              style={{
+                maxHeight: isHovered ? "400px" : "0px",
+                opacity: isHovered ? 1 : 0,
+                overflow: "hidden",
+                transition:
+                  "max-height 0.45s cubic-bezier(0.4, 0, 0.2, 1), opacity 0.35s ease",
+              }}
+            >
+              {children}
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+}
 
 export function PartnersSection() {
   return (
@@ -28,184 +115,101 @@ export function PartnersSection() {
         {/* Cards Row */}
         <div className="flex flex-col lg:flex-row h-auto items-stretch justify-center w-full max-w-[1401px] px-6 xl:px-0">
           {/* Card 1: Old School Businessy */}
-          <div className="lg:h-[700px] h-[500px] relative shrink-0 w-full lg:w-[467px] overflow-hidden">
+          <PartnerCard
+            imageSrc={img41641}
+            tags={[
+              { label: "Výrobní společnosti", fullWidth: true },
+              { label: "Tradiční retail" },
+              { label: "B2B firmy" },
+            ]}
+            title="Old School Businessy"
+            gradientAngle="208.805deg"
+          >
             <div
-              aria-hidden="true"
-              className="absolute border-2 border-solid border-white inset-0 pointer-events-none z-10"
-            />
-            {/* Background image */}
-            <div className="absolute inset-0">
-              <img
-                alt=""
-                className="absolute inset-0 w-full h-full object-cover"
-                src={img41641}
-              />
-            </div>
-            {/* Dark gradient overlay */}
-            <div
-              className="absolute inset-0"
+              className="font-['Noto_Sans'] leading-[24px] text-[15px] w-full"
               style={{
-                background:
-                  "linear-gradient(208.805deg, rgba(0, 0, 0, 0.28) 0%, rgba(0, 0, 0, 0.64) 100%)",
+                fontVariationSettings: "'CTGR' 0, 'wdth' 100",
               }}
-            />
-            {/* Content */}
-            <div className="absolute inset-0 w-full flex items-center justify-center pb-[50px] pt-[50px]">
-              <div className="flex flex-col justify-between items-start w-[356.643px] max-w-[calc(100%-40px)] h-full">
-                {/* Tags */}
-                <div className="flex flex-col gap-[4px] items-start w-[158px]">
-                  <Tag label="Výrobní společnosti" fullWidth />
-                  <Tag label="Tradiční retail" />
-                  <Tag label="B2B firmy" />
-                </div>
-                {/* Description */}
-                <div className="flex flex-col gap-[32px] items-start text-white w-full">
-                  <p className="font-['Sora'] font-extrabold leading-normal text-[26px] tracking-[-0.78px] uppercase w-[257px]">
-                    Old School Businessy
-                  </p>
-                  <div
-                    className="font-['Noto_Sans'] leading-[24px] text-[15px] w-full"
-                    style={{
-                      fontVariationSettings: "'CTGR' 0, 'wdth' 100",
-                    }}
-                  >
-                    <p
-                      className="font-semibold mb-0"
-                      style={{
-                        fontVariationSettings: "'CTGR' 0, 'wdth' 100",
-                      }}
-                    >
-                      Firmy etablované v offline světě s zajímavými produkty,
-                      které v online zaostávají.
-                    </p>
-                    <p className="mb-0">&nbsp;</p>
-                    <p>
-                      {`Zastupujeme kompletně digitální team, zajistíme hladký vstup do aktivního e-commerce, postaráme se o nastavení procesů, proškolíme personál, nastavíme e-shop, vyrobíme kreativu, nastavíme budgety, spravujeme kampaně, určíme strategii `}
-                      <br aria-hidden="true" />a plně vás etablujeme v online
-                      světě.
-                    </p>
-                  </div>
-                </div>
-              </div>
+            >
+              <p
+                className="font-semibold mb-0"
+                style={{
+                  fontVariationSettings: "'CTGR' 0, 'wdth' 100",
+                }}
+              >
+                Firmy etablované v offline světě s zajímavými produkty,
+                které v online zaostávají.
+              </p>
+              <p className="mb-0">&nbsp;</p>
+              <p>
+                {`Zastupujeme kompletně digitální team, zajistíme hladký vstup do aktivního e-commerce, postaráme se o nastavení procesů, proškolíme personál, nastavíme e-shop, vyrobíme kreativu, nastavíme budgety, spravujeme kampaně, určíme strategii `}
+                <br aria-hidden="true" />a plně vás etablujeme v online
+                světě.
+              </p>
             </div>
-          </div>
+          </PartnerCard>
 
           {/* Card 2: Komplikované Businessy */}
-          <div className="lg:min-h-[700px] h-[500px] relative shrink-0 w-full lg:w-[467px] overflow-hidden">
+          <PartnerCard
+            imageSrc={img255402}
+            tags={[
+              { label: "Alkohol & tabák" },
+              { label: "Farmacie" },
+              { label: "Kasina" },
+              { label: "Erotické zboží" },
+            ]}
+            title="Komplikované Businessy"
+            gradientAngle="207.12deg"
+          >
             <div
-              aria-hidden="true"
-              className="absolute border-2 border-solid border-white inset-0 pointer-events-none z-10"
-            />
-            {/* Background image */}
-            <div className="absolute inset-0">
-              <img
-                alt=""
-                className="absolute inset-0 w-full h-full object-cover"
-                src={img255402}
-              />
-            </div>
-            {/* Dark gradient overlay */}
-            <div
-              className="absolute inset-0"
+              className="font-['Noto_Sans'] font-semibold leading-[24px] text-[15px] w-full"
               style={{
-                background:
-                  "linear-gradient(207.12deg, rgba(0, 0, 0, 0.28) 0%, rgba(0, 0, 0, 0.64) 100%)",
+                fontVariationSettings: "'CTGR' 0, 'wdth' 100",
               }}
-            />
-            {/* Content */}
-            <div className="absolute inset-0 w-full flex items-center justify-center pb-[50px] pt-[50px]">
-              <div className="flex flex-col justify-between items-start w-[356.643px] max-w-[calc(100%-40px)] h-full">
-                {/* Tags */}
-                <div className="flex flex-col gap-[4px] items-start w-[158px]">
-                  <Tag label="Alkohol & tabák" />
-                  <Tag label="Farmacie" />
-                  <Tag label="Kasina" />
-                  <Tag label="Erotické zboží" />
-                </div>
-                {/* Description */}
-                <div className="flex flex-col gap-[32px] items-start text-white w-full">
-                  <p className="font-['Sora'] font-extrabold leading-normal text-[26px] tracking-[-0.78px] uppercase w-[257px]">
-                    Komplikované Businessy
-                  </p>
-                  <div
-                    className="font-['Noto_Sans'] font-semibold leading-[24px] text-[15px] w-full"
-                    style={{
-                      fontVariationSettings: "'CTGR' 0, 'wdth' 100",
-                    }}
-                  >
-                    <p className="mb-0">
-                      Firmy podléhající regulacím či jiným restrikcím, např.
-                      pravidlům platforem.
-                    </p>
-                    <p className="mb-0">&nbsp;</p>
-                    <p>
-                      {`Jsme specialisté na hledání funkčních hranic mezi byznysem a regulací. Umíme pracovat tak, abychom v tomto komplikovaném světě uspěli `}
-                      <br aria-hidden="true" />a neohrozili naše klienty.
-                    </p>
-                  </div>
-                </div>
-              </div>
+            >
+              <p className="mb-0">
+                Firmy podléhající regulacím či jiným restrikcím, např.
+                pravidlům platforem.
+              </p>
+              <p className="mb-0">&nbsp;</p>
+              <p>
+                {`Jsme specialisté na hledání funkčních hranic mezi byznysem a regulací. Umíme pracovat tak, abychom v tomto komplikovaném světě uspěli `}
+                <br aria-hidden="true" />a neohrozili naše klienty.
+              </p>
             </div>
-          </div>
+          </PartnerCard>
 
           {/* Card 3: Fundované Start-upy */}
-          <div className="lg:min-h-[700px] h-[500px] relative shrink-0 w-full lg:w-[467px] overflow-hidden">
+          <PartnerCard
+            imageSrc={img2437921}
+            tags={[
+              { label: "Seed/Series A" },
+              { label: "D2C brandy" },
+              { label: "Tech start-upy" },
+            ]}
+            title="Fundované Start-upy"
+            gradientAngle="206.258deg"
+            flipImage
+          >
             <div
-              aria-hidden="true"
-              className="absolute border-2 border-solid border-white inset-0 pointer-events-none z-10"
-            />
-            {/* Background image */}
-            <div className="absolute inset-0">
-              <img
-                alt=""
-                className="absolute inset-0 w-full h-full object-cover -scale-y-100 rotate-180"
-                src={img2437921}
-              />
-            </div>
-            {/* Dark gradient overlay */}
-            <div
-              className="absolute inset-0"
+              className="font-['Noto_Sans'] font-semibold leading-[24px] text-[15px] w-full"
               style={{
-                background:
-                  "linear-gradient(206.258deg, rgba(0, 0, 0, 0.28) 0%, rgba(0, 0, 0, 0.64) 100%)",
+                fontVariationSettings: "'CTGR' 0, 'wdth' 100",
               }}
-            />
-            {/* Content */}
-            <div className="absolute inset-0 w-full flex items-center justify-center pb-[50px] pt-[50px]">
-              <div className="flex flex-col justify-between items-start w-[356.643px] max-w-[calc(100%-40px)] h-full">
-                {/* Tags */}
-                <div className="flex flex-col gap-[4px] items-start w-[158px]">
-                  <Tag label="Seed/Series A" />
-                  <Tag label="D2C brandy" />
-                  <Tag label="Tech start-upy" />
-                </div>
-                {/* Description */}
-                <div className="flex flex-col gap-[32px] items-start text-white w-full">
-                  <p className="font-['Sora'] font-extrabold leading-normal text-[26px] tracking-[-0.78px] uppercase w-[257px]">
-                    Fundované Start-upy
-                  </p>
-                  <div
-                    className="font-['Noto_Sans'] font-semibold leading-[24px] text-[15px] w-full"
-                    style={{
-                      fontVariationSettings: "'CTGR' 0, 'wdth' 100",
-                    }}
-                  >
-                    <p className="mb-0">
-                      Firmy se zajištěným kapitálem a jasnou vizí,
-                      <br aria-hidden="true" />
-                      ve kterých spatřujeme potenciál.
-                    </p>
-                    <p className="mb-0">&nbsp;</p>
-                    <p>
-                      Dokážeme pomoct mezi výrazné hráče na trhu. Spojujeme
-                      technologickou expertízu s byznys know-how pro rychlý
-                      scale.
-                    </p>
-                  </div>
-                </div>
-              </div>
+            >
+              <p className="mb-0">
+                Firmy se zajištěným kapitálem a jasnou vizí,
+                <br aria-hidden="true" />
+                ve kterých spatřujeme potenciál.
+              </p>
+              <p className="mb-0">&nbsp;</p>
+              <p>
+                Dokážeme pomoct mezi výrazné hráče na trhu. Spojujeme
+                technologickou expertízu s byznys know-how pro rychlý
+                scale.
+              </p>
             </div>
-          </div>
+          </PartnerCard>
         </div>
       </div>
     </section>

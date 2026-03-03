@@ -176,7 +176,7 @@ export function HeroSection() {
                     </div>
                   </div>
                 </div>
-                <div className="font-['Sora'] font-semibold text-[11px] text-black tracking-[2.2px] uppercase leading-[19px] w-[130px]">
+                <div className="font-['Sora'] font-semibold text-[11px] text-black tracking-[2.2px] uppercase leading-[19px] w-[130px] mt-[12px]">
                   <p className="mb-0">{`Minimální `}</p>
                   <p>růst v prvním roce</p>
                 </div>
@@ -186,9 +186,9 @@ export function HeroSection() {
               <div className="col-start-1 row-start-1 flex gap-[22px] items-center ml-[258px] mt-0 relative">
                 {/* H1 - >15 text */}
                 <div className="inline-grid grid-cols-[max-content] grid-rows-[max-content] place-items-start leading-[0]">
-                  <p className="col-start-1 row-start-1 font-['Sora'] font-bold text-[68px] text-black tracking-[-2.72px] uppercase leading-normal ml-0 mt-0 relative">{`>15`}</p>
+                  <p className="col-start-1 row-start-1 font-['Sora'] font-bold text-[68px] text-black tracking-[-2.72px] uppercase leading-normal ml-0 mt-[-10px] relative">{`>15`}</p>
                 </div>
-                <p className="font-['Sora'] font-semibold text-[11px] text-black tracking-[2.2px] uppercase leading-[19px] w-[104px]">
+                <p className="font-['Sora'] font-semibold text-[11px] text-black tracking-[2.2px] uppercase leading-[19px] w-[104px] mt-[-16px]">
                   Let zkušeností v oboru
                 </p>
               </div>
