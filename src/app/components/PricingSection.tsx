@@ -72,10 +72,10 @@ export function PricingSection() {
           {/* 3 Pricing Cards */}
           <div className="flex flex-col lg:flex-row items-stretch shrink-0 w-full max-w-[1400px] mx-auto px-6 xl:px-0">
             {/* Card 1: Setup Fee */}
-            <div className="bg-white relative flex flex-col gap-[28px] h-auto lg:h-[487px] items-start justify-center pl-[39.5px] pr-[20px] py-[40px] lg:py-0 shrink-0 w-full lg:w-[467px]">
+            <div className="bg-white relative flex flex-col gap-[28px] h-auto lg:h-[487px] items-start justify-center pl-[39.5px] pr-[20px] py-[40px] lg:py-0 w-full lg:flex-1">
               <div
                 aria-hidden="true"
-                className="absolute border-[#c9c6c6] border-b-[0.4px] border-l-[0.4px] border-solid border-t-[0.4px] inset-0 pointer-events-none"
+                className="absolute border-[#c9c6c6] border-[0.4px] lg:border-r-0 border-solid inset-0 pointer-events-none"
               />
               {/* Number + Icon */}
               <div className="flex flex-col gap-[40px] h-[139px] items-start shrink-0 w-[225px]">
@@ -132,10 +132,10 @@ export function PricingSection() {
             </div>
 
             {/* Card 2: Management Fee */}
-            <div className="bg-white relative flex flex-col gap-[28px] h-auto lg:h-[487px] items-start justify-center pl-[39.5px] pr-[20px] py-[40px] lg:py-0 shrink-0 w-full lg:w-[467px]">
+            <div className="bg-white relative flex flex-col gap-[28px] h-auto lg:h-[487px] items-start justify-center pl-[39.5px] pr-[20px] py-[40px] lg:py-0 w-full lg:flex-1">
               <div
                 aria-hidden="true"
-                className="absolute border-[#c9c6c6] border-b-[0.4px] border-l-[0.4px] border-solid border-t-[0.4px] inset-0 pointer-events-none"
+                className="absolute border-[#c9c6c6] border-[0.4px] lg:border-r-0 border-solid inset-0 pointer-events-none"
               />
               {/* Number + Icon */}
               <div className="flex flex-col gap-[40px] h-[139px] items-start shrink-0 w-[225px]">
@@ -182,7 +182,7 @@ export function PricingSection() {
             </div>
 
             {/* Card 3: Success Fee (dark with glassmorphism) */}
-            <div className="relative h-auto lg:h-[487px] shrink-0 w-full lg:w-[467px]">
+            <div className="relative h-auto lg:h-[487px] w-full lg:flex-1">
               <div className="overflow-clip relative rounded-[inherit] size-full">
                 {/* Dark background with blur effect */}
                 <div className="absolute left-[-188px] top-[-2px] flex h-[517px] items-center justify-center w-[843px]">
@@ -201,10 +201,10 @@ export function PricingSection() {
                   </div>
                 </div>
                 {/* Content overlay */}
-                <div className="absolute flex flex-col gap-[28px] h-[487px] items-start justify-center left-0 pl-[39.5px] pr-[20px] top-0 w-full lg:w-[467px]">
+                <div className="absolute flex flex-col gap-[28px] h-[487px] items-start justify-center left-0 pl-[39.5px] pr-[20px] top-0 w-full">
                   <div
                     aria-hidden="true"
-                    className="absolute border-[#c9c6c6] border-b-[0.4px] border-l-[0.4px] border-solid border-t-[0.4px] inset-0 pointer-events-none"
+                    className="absolute border-[#c9c6c6] border-[0.4px] lg:border-r-0 border-solid inset-0 pointer-events-none"
                   />
                   {/* Number + Icon */}
                   <div className="flex flex-col gap-[40px] h-[139px] items-start shrink-0 w-[225px]">

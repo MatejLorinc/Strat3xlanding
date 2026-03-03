@@ -67,7 +67,7 @@ export default function App() {
       </div>
 
       {/* Main content */}
-      <div className="relative z-10">
+      <div className="relative z-10 pt-[70px] lg:pt-[102px]">
         <Header />
         <HeroSection />
         <MetricsSection />

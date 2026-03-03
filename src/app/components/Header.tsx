@@ -1,13 +1,20 @@
 import svgPaths from "../../imports/svg-59wapeqsll";
 import imgRectangle2 from "figma:asset/237f5127621aac5fb508fd8af02ad944505f7f78.png";
 import { imgRectangle1 } from "../../imports/svg-76oh5";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 export function Header() {
   const [menuOpen, setMenuOpen] = useState(false);
+  const [scrolled, setScrolled] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => setScrolled(window.scrollY > 20);
+    window.addEventListener("scroll", handleScroll, { passive: true });
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
 
   return (
-    <header className="w-full py-6 lg:py-10">
+    <header className={`w-full fixed top-0 left-0 right-0 z-50 bg-white transition-all duration-300 ${scrolled ? "py-3 lg:py-5 shadow-md" : "py-6 lg:py-10"}`}>
       <div className="max-w-[1400px] mx-auto px-6 lg:px-8 flex items-center justify-between">
         {/* Logo */}
         <div className="flex-shrink-0">
@@ -34,9 +41,9 @@ export function Header() {
         </button>
 
         {/* Navigation and Actions - Desktop */}
-        <div className="hidden lg:flex items-center gap-12">
+        <div className="hidden lg:flex items-center gap-6 xl:gap-12">
           {/* Main Navigation */}
-          <nav className="flex items-center gap-7 font-['Sora'] font-semibold text-[13px] text-black text-center tracking-[-0.26px] uppercase">
+          <nav className="flex items-center gap-4 xl:gap-7 font-['Sora'] font-semibold text-[13px] text-black text-center tracking-[-0.26px] uppercase">
             <a href="#o-nas" className="hover:opacity-70 transition-opacity">O nás</a>
             <a href="#sluzby" className="hover:opacity-70 transition-opacity">Služby</a>
             <a href="#metodika" className="hover:opacity-70 transition-opacity">Metodika</a>

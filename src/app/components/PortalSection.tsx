@@ -19,7 +19,7 @@ export function PortalSection() {
         <div className="relative w-full max-w-[1200px] mx-auto">
           {/* Rectangle background - overflows top and sides, not bottom */}
           <div
-            className="absolute"
+            className="hidden lg:block absolute"
             style={{
               top: "-80px",
               left: "-80px",

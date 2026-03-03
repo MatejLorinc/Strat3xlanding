@@ -30,7 +30,7 @@ export function TechnologySection() {
           {/* Left Content */}
           <div className="flex flex-col gap-[60px] items-start w-full max-w-[1006px]">
             {/* Top feature row */}
-            <div className="flex flex-col lg:flex-row gap-[60px] lg:gap-[246px] items-center lg:items-center w-full">
+            <div className="flex flex-col lg:flex-row gap-[60px] lg:gap-[60px] xl:gap-[246px] items-center lg:items-center w-full">
               <div className="flex flex-col gap-[24px] items-center lg:items-start w-full max-w-[494px]">
                 <div className="flex flex-col gap-[28px] items-center lg:items-start w-full max-w-[384px]">
                   {/* Gradient bar */}

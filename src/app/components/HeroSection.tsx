@@ -38,12 +38,12 @@ export function HeroSection() {
       </div>
 
       {/* Content */}
-      <div className="relative flex flex-col items-center justify-center w-full px-6 lg:px-[154px] py-[40px] lg:py-[80px]">
-        <div className="flex flex-col lg:flex-row gap-[48px] lg:gap-[162px] h-auto lg:h-[698px] items-start lg:items-center w-full max-w-[1400px]">
+      <div className="relative flex flex-col items-center justify-center w-full px-6 lg:px-[60px] xl:px-[154px] py-[40px] lg:py-[80px]">
+        <div className="flex flex-col lg:flex-row gap-[48px] lg:gap-[60px] xl:gap-[162px] h-auto lg:h-[698px] items-start lg:items-center w-full max-w-[1400px]">
           {/* Left Column - Frame18 */}
           <div className="flex flex-col gap-[28px] h-auto lg:h-[698px] items-start w-full lg:w-auto">
             {/* Frame9 - Title, description, buttons */}
-            <div className="flex flex-col gap-[32px] lg:gap-[48px] items-start pt-[32px] w-full lg:w-[663px]">
+            <div className="flex flex-col gap-[32px] lg:gap-[48px] items-start pt-[32px] w-full xl:w-[663px]">
               {/* Frame8 - Label + Headline */}
               <div className="flex flex-col gap-[40px] lg:gap-[73px] items-start">
                 <div className="flex items-center justify-center">
@@ -51,7 +51,7 @@ export function HeroSection() {
                     Strategic Growth Partner
                   </p>
                 </div>
-                <div className="font-['Sora'] font-bold text-[36px] sm:text-[48px] lg:text-[68px] text-black tracking-[-2.72px] uppercase leading-normal lg:whitespace-nowrap">
+                <div className="font-['Sora'] font-bold text-[36px] sm:text-[48px] lg:text-[68px] text-black tracking-[-2.72px] uppercase leading-normal xl:whitespace-nowrap">
                   <p className="mb-0">{`Váš růst, náš `}</p>
                   <p>společný zisk.</p>
                 </div>
@@ -59,7 +59,7 @@ export function HeroSection() {
 
               {/* Description */}
               <p
-                className="font-['Noto_Sans'] text-[15px] lg:text-[17px] text-black leading-[28px] lg:leading-[32px] w-full lg:w-[663px]"
+                className="font-['Noto_Sans'] text-[15px] lg:text-[17px] text-black leading-[28px] lg:leading-[32px] w-full xl:w-[663px]"
                 style={{
                   fontVariationSettings: "'CTGR' 0, 'wdth' 100",
                 }}
@@ -151,7 +151,7 @@ export function HeroSection() {
           </div>
 
           {/* Right Column - Frame15 */}
-          <div className="hidden lg:flex flex-col gap-[24px] items-start overflow-clip w-[492px]">
+          <div className="hidden lg:flex flex-col gap-[24px] items-start overflow-clip w-[400px] xl:w-[492px]">
             {/* Stats Cards - Group141 */}
             <div className="inline-grid grid-cols-[max-content] grid-rows-[max-content] place-items-start leading-[0]">
               {/* Frame16 - 3X stat */}
@@ -183,7 +183,7 @@ export function HeroSection() {
               </div>
 
               {/* Frame20 - >15 stat */}
-              <div className="col-start-1 row-start-1 flex gap-[22px] items-center ml-[258px] mt-0 relative">
+              <div className="col-start-1 row-start-1 flex gap-[22px] items-center ml-[200px] xl:ml-[258px] mt-0 relative">
                 {/* H1 - >15 text */}
                 <div className="inline-grid grid-cols-[max-content] grid-rows-[max-content] place-items-start leading-[0]">
                   <p className="col-start-1 row-start-1 font-['Sora'] font-bold text-[68px] text-black tracking-[-2.72px] uppercase leading-normal ml-0 mt-[-10px] relative">{`>15`}</p>

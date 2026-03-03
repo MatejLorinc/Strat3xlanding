@@ -24,7 +24,7 @@ function PartnerCard({
 
   return (
     <div
-      className="relative shrink-0 w-full lg:w-[467px] overflow-hidden"
+      className="relative w-full lg:flex-1 overflow-hidden"
       style={{
         height: isHovered ? "700px" : "350px",
         transition: "height 0.45s cubic-bezier(0.4, 0, 0.2, 1)",

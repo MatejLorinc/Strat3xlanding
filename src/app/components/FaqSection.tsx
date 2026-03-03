@@ -146,15 +146,15 @@ export function FaqSection() {
         </div>
 
         {/* CTA Button */}
-        <div className="bg-white flex h-[60px] items-center justify-center px-[51px] relative rounded-[62px] shrink-0 cursor-pointer">
+        <a href="#kontakt" className="bg-white flex h-[60px] items-center justify-center px-[51px] relative rounded-[62px] shrink-0 cursor-pointer hover:bg-[#a038b6] hover:text-white transition-colors group">
           <div
             aria-hidden="true"
             className="absolute border-2 border-[#a038b6] border-solid inset-0 pointer-events-none rounded-[62px]"
           />
-          <p className="font-['Sora'] font-extrabold leading-normal text-[14px] text-black text-center tracking-[-0.28px] uppercase">
+          <p className="font-['Sora'] font-extrabold leading-normal text-[14px] text-black text-center tracking-[-0.28px] uppercase group-hover:text-white">
             máte otázku? napište nám
           </p>
-        </div>
+        </a>
       </div>
     </section>
   );

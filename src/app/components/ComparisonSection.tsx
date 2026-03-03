@@ -1,11 +1,19 @@
 import svgPaths from "../../imports/svg-59wapeqsll";
 import imgRectangle5 from "figma:asset/3ad0cbf86082bb5c0deed567f95b0ba4f3a3b0bb.png";
 import { imgRectangle6138, imgEllipse1 } from "../../imports/svg-76oh5";
+import rainbowS from "../../assets/RainbowS.png";
 
 export function ComparisonSection() {
   return (
     <section id="o-nas" className="relative w-full py-12 lg:py-20 overflow-hidden">
-      <div className="max-w-[1400px] mx-auto px-6 lg:px-8">
+      {/* Background RainbowR image */}
+      <img
+        alt=""
+        src={rainbowS}
+        className="absolute left-[20%] lg:left-1/2 top-[70%] lg:top-1/2 -translate-x-1/2 -translate-y-1/2 w-[200%] lg:w-[50%] max-w-none opacity-100 pointer-events-none"
+        style={{ maskImage: "radial-gradient(ellipse at center, black 50%, transparent 85%)", WebkitMaskImage: "radial-gradient(ellipse at center, black 50%, transparent 85%)" }}
+      />
+      <div className="max-w-[1400px] mx-auto px-6 lg:px-8 relative">
         {/* Section Heading */}
         <div className="flex flex-col gap-[60px] lg:gap-[124px] items-center w-full">
           <div className="font-['Sora'] font-extrabold text-center tracking-[-2.46px] uppercase">
@@ -55,7 +63,7 @@ const kdoNejsmeItems = [
 
 function KdoJsmeCard() {
   return (
-    <div className="relative min-h-[344px] lg:h-[344px] rounded-[9px] shrink-0 w-full max-w-[349px] lg:max-w-none lg:w-[684px] shadow-[0px_0px_15px_0px_rgba(0,0,0,0.25)]">
+    <div className="relative min-h-[344px] lg:h-[344px] rounded-[9px] w-full max-w-[349px] lg:max-w-none lg:flex-1 shadow-[0px_0px_15px_0px_rgba(0,0,0,0.25)]">
       {/* Background with glassmorphism */}
       <div className="absolute inset-0 rounded-[9px] overflow-hidden">
         {/* Gray base - Mobile */}
@@ -70,7 +78,7 @@ function KdoJsmeCard() {
         />
         {/* Gray base - Desktop */}
         <div
-          className="hidden lg:block absolute bg-[rgba(120,120,120,0.89)] blur-[2px] h-[344px] left-0 rounded-[9px] top-0 w-[684px]"
+          className="hidden lg:block absolute bg-[rgba(120,120,120,0.89)] blur-[2px] h-[344px] left-0 rounded-[9px] top-0 w-full"
           style={{
             maskImage: `url('${imgRectangle6138}')`,
             maskSize: '684px 344px',
@@ -89,7 +97,7 @@ function KdoJsmeCard() {
       </div>
 
       {/* Content */}
-      <div className="absolute inset-0 flex flex-col gap-[24px] lg:gap-[34px] pl-[35px] lg:pl-[50px] pt-[42px] lg:pt-[40px] rounded-[9px] shadow-[0px_0px_6.3px_0px_rgba(0,0,0,0.15)]">
+      <div className="absolute inset-0 flex flex-col gap-[24px] lg:gap-[34px] px-[24px] lg:px-0 lg:pl-[50px] pt-[42px] lg:pt-[40px] rounded-[9px] shadow-[0px_0px_6.3px_0px_rgba(0,0,0,0.15)] items-center lg:items-start">
         <p className="font-['Sora'] font-extrabold text-[23px] text-white tracking-[-0.69px] uppercase w-full">
           kdo jsme
         </p>
@@ -112,7 +120,7 @@ function KdoJsmeCard() {
       </div>
 
       {/* Green accent circle */}
-      <div className="absolute contents left-[516px] top-[175px]">
+      <div className="hidden lg:block absolute left-[516px] top-[175px]">
         <div
           className="absolute left-[525px] top-[310px] size-[105px] mask-alpha mask-intersect mask-no-clip mask-no-repeat mask-position-[-9px_-135px] mask-size-[168px_169px]"
           style={{ maskImage: `url('${imgEllipse1}')` }}
@@ -142,11 +150,11 @@ function KdoJsmeCard() {
 
 function KdoNejsmeCard() {
   return (
-    <div className="relative min-h-[443px] lg:min-h-0 lg:h-[344px] rounded-[9px] shrink-0 w-full max-w-[345px] lg:max-w-none lg:w-[683px]">
+    <div className="relative min-h-[344px] lg:min-h-0 lg:h-[344px] rounded-[9px] w-full max-w-[345px] lg:max-w-none lg:flex-1">
       <div aria-hidden="true" className="absolute border-2 border-solid border-white inset-[-2px] pointer-events-none rounded-[11px] shadow-[0px_0px_15px_0px_rgba(0,0,0,0.1)]" />
 
       {/* Dark background content */}
-      <div className="absolute bg-[rgba(110,110,110,0.2)] flex flex-col gap-[24px] lg:gap-[34px] h-full items-start pl-[33px] lg:pl-[50px] pt-[40px] right-0 lg:right-[-1px] rounded-[9px] top-0 w-full lg:w-[684px]">
+      <div className="absolute bg-[rgba(110,110,110,0.2)] flex flex-col gap-[24px] lg:gap-[34px] h-full items-center lg:items-start px-[24px] lg:px-0 lg:pl-[50px] pt-[40px] right-0 lg:right-[-1px] rounded-[9px] top-0 w-full">
         <p className="font-['Sora'] font-extrabold text-[23px] text-white tracking-[-0.69px] uppercase w-full">
           kdo nejsme
         </p>
@@ -169,7 +177,7 @@ function KdoNejsmeCard() {
       </div>
 
       {/* Pink/magenta accent circle */}
-      <div className="absolute contents left-0 top-0">
+      <div className="hidden lg:block absolute left-0 top-0">
         <div
           className="absolute left-[525px] top-[310px] size-[105px] mask-alpha mask-intersect mask-no-clip mask-no-repeat mask-position-[-9px_-135px] mask-size-[168px_169px]"
           style={{ maskImage: `url('${imgEllipse1}')` }}

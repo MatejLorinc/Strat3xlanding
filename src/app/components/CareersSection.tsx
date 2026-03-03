@@ -23,7 +23,7 @@ const jobPositions = [
       "Hledáme zkušeného PPC specialistu pro správu kampaní našich klientů. Budeš mít na starosti Google Ads ...",
     salary: "55 000 - 75 000 CZK/měsíc",
     applicants: "12 uchazečů",
-    borderClass: "border-[#a038b6] border-b-2 border-r-2 border-t-2",
+    borderClass: "border-2 border-[#a038b6] md:border-l-0",
   },
 ];
 
@@ -56,9 +56,9 @@ export function CareersSection() {
     <section className="relative w-full overflow-hidden">
       <div className="flex flex-col gap-[60px] items-center justify-center px-6 xl:px-[110px] py-[80px] w-full max-w-[1920px] mx-auto">
         {/* Top Row: Header + Stats */}
-        <div className="flex flex-col lg:flex-row gap-[40px] lg:gap-[130px] items-start lg:items-end justify-center w-full">
+        <div className="flex flex-col lg:flex-row gap-[40px] lg:gap-[40px] xl:gap-[130px] items-start lg:items-end justify-center w-full">
           {/* Left: Header */}
-          <div className="flex flex-col gap-[28px] items-start text-black w-full lg:w-[557px] shrink-0">
+          <div className="flex flex-col gap-[28px] items-start text-black w-full xl:w-[557px] shrink-0">
             <div className="flex flex-col gap-[32px] items-start uppercase w-[468px] max-w-full">
               <p className="font-['Sora'] font-semibold leading-[17px] text-[11px] tracking-[2.2px] w-full">
                 kariéra
@@ -157,7 +157,7 @@ export function CareersSection() {
           </div>
 
           {/* Right: Capacity */}
-          <div className="flex flex-col gap-[28px] items-start w-full xl:w-[288px]">
+          <div className="flex flex-col gap-[28px] items-center xl:items-start w-full xl:w-[288px]">
             <p className="font-['Sora'] font-bold leading-[38px] text-[22px] text-black tracking-[-0.22px] w-[237.406px]">
               {`Aktuální `}
               <br aria-hidden="true" />

@@ -75,7 +75,7 @@ interface MetricCardProps {
 
 function MetricCard({ icon, value, subValue, label, borderRight, borderLeft, underline }: MetricCardProps) {
   return (
-    <div className="w-[350px] shrink-0">
+    <div className="w-[350px] lg:w-1/4 shrink-0 lg:shrink">
       {/* Top Card */}
       <div
         className={`bg-white relative

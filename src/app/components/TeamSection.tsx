@@ -161,7 +161,7 @@ function TeamCard({
   const MASK_H = 345;
 
   return (
-    <div className="flex flex-col items-start shrink-0 w-[359px] lg:w-[418px]">
+    <div className="flex flex-col items-start w-[359px] lg:w-auto lg:flex-1">
       {/* Department bar */}
       <DepartmentBar label={departmentLabel} />
       {/* Photo area with mask - Mobile */}

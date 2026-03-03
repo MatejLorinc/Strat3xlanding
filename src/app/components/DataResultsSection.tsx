@@ -113,7 +113,7 @@ export function DataResultsSection() {
 
 function ChartCard({ data, index }: { data: ChartCardData; index: number }) {
   return (
-    <div className={`relative flex flex-col gap-[28px] lg:gap-[33px] h-[346px] lg:h-[396px] overflow-hidden items-start lg:items-center justify-start lg:justify-center px-[25px] lg:px-[55px] pt-[17px] lg:py-[38px] w-full lg:w-[700px] border-solid border-[#a9a9a9] ${mobileBorderStyles[index]} lg:border-0 ${desktopBorderStyles[index]}`}>
+    <div className={`relative flex flex-col gap-[28px] lg:gap-[33px] h-[346px] lg:h-[396px] overflow-hidden items-start lg:items-center justify-start lg:justify-center px-[25px] lg:px-[55px] pt-[17px] lg:py-[38px] w-full border-solid border-[#a9a9a9] ${mobileBorderStyles[index]} lg:border-0 ${desktopBorderStyles[index]}`}>
       {/* Header: Tag + Title + Growth */}
       <div className="flex justify-between items-end w-full">
         <div className="flex flex-col gap-[16px] lg:gap-[20px] items-start shrink-0">
