@@ -68,10 +68,10 @@ function KdoJsmeCard() {
       <div className="absolute inset-0 rounded-[9px] overflow-hidden">
         {/* Gray base - Mobile */}
         <div
-          className="lg:hidden absolute bg-[rgba(120,120,120,0.89)] blur-[2px] h-[577px] left-0 rounded-[9px] top-0 w-[684px]"
+          className="lg:hidden absolute bg-[rgba(120,120,120,0.89)] blur-[2px] inset-0 rounded-[9px]"
           style={{
             maskImage: `url('${imgRectangle6138}')`,
-            maskSize: '349px 437px',
+            maskSize: '100% 100%',
             maskPosition: '0px 0px',
             maskRepeat: 'no-repeat',
           }}

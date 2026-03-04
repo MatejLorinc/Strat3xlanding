@@ -69,17 +69,24 @@ export function Footer() {
                 informace
               </p>
               <div className="flex flex-col font-['Noto_Sans'] gap-[8px] items-start leading-[32px] text-[17px] underline w-full">
-                {["O nás", "Služby", "Metodiky", "Technologie", "Tým", "Kontakt"].map(
+                {[
+                  { label: "O nás", href: "#o-nas" },
+                  { label: "Služby", href: "#sluzby" },
+                  { label: "Metodiky", href: "#metodika" },
+                  { label: "Technologie", href: "#technologie" },
+                  { label: "Tým", href: "#tym" },
+                  { label: "Kontakt", href: "#kontakt" },
+                ].map(
                   (item) => (
                     <a
-                      key={item}
-                      href="#"
+                      key={item.label}
+                      href={item.href}
                       className="decoration-solid hover:opacity-70 transition-opacity"
                       style={{
                         fontVariationSettings: "'CTGR' 0, 'wdth' 100",
                       }}
                     >
-                      {item}
+                      {item.label}
                     </a>
                   )
                 )}
@@ -92,16 +99,20 @@ export function Footer() {
                 zajímá vás
               </p>
               <div className="flex flex-col font-['Noto_Sans'] gap-[8px] items-start leading-[32px] text-[17px] underline w-full">
-                {["Tým", "FAQ", "Partnerský program"].map((item) => (
+                {[
+                  { label: "Tým", href: "#tym" },
+                  { label: "FAQ", href: "#faq" },
+                  // { label: "Partnerský program", href: "#" },
+                ].map((item) => (
                   <a
-                    key={item}
-                    href="#"
+                    key={item.label}
+                    href={item.href}
                     className="decoration-solid hover:opacity-70 transition-opacity"
                     style={{
                       fontVariationSettings: "'CTGR' 0, 'wdth' 100",
                     }}
                   >
-                    {item}
+                    {item.label}
                   </a>
                 ))}
               </div>

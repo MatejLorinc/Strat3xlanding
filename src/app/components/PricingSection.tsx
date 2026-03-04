@@ -20,10 +20,10 @@ const card2Checklist: ChecklistItem[] = [
 ];
 
 const card3Checklist: ChecklistItem[] = [
-  { label: "PPC management všech kanálů" },
-  { label: "Kontinuální A/B testování" },
-  { label: "Kreativní produkce" },
-  { label: "Reporty a optimalizace" },
+  { label: "Aktivní až po prokázání modelu" },
+  { label: "Navázáno na reálný zisk" },
+  { label: "Maximální motivace týmu" },
+  { label: "Dlouhodobé partnerství" },
 ];
 
 export function PricingSection() {
@@ -70,7 +70,7 @@ export function PricingSection() {
           </div>
 
           {/* 3 Pricing Cards */}
-          <div className="flex flex-col lg:flex-row items-stretch shrink-0 w-full max-w-[1400px] mx-auto px-6 xl:px-0">
+          <div className="flex flex-col xl:flex-row items-stretch shrink-0 w-full max-w-[1400px] mx-auto px-6 xl:px-0">
             {/* Card 1: Setup Fee */}
             <div className="bg-white relative flex flex-col gap-[28px] h-auto lg:h-[487px] items-start justify-center pl-[39.5px] pr-[20px] py-[40px] lg:py-0 w-full lg:flex-1">
               <div
@@ -132,10 +132,10 @@ export function PricingSection() {
             </div>
 
             {/* Card 2: Management Fee */}
-            <div className="bg-white relative flex flex-col gap-[28px] h-auto lg:h-[487px] items-start justify-center pl-[39.5px] pr-[20px] py-[40px] lg:py-0 w-full lg:flex-1">
+            <div className="bg-white relative flex flex-col gap-[28px] h-auto xl:h-[487px] items-start justify-center pl-[39.5px] pr-[20px] py-[40px] xl:py-0 w-full xl:flex-1">
               <div
                 aria-hidden="true"
-                className="absolute border-[#c9c6c6] border-[0.4px] lg:border-r-0 border-solid inset-0 pointer-events-none"
+                className="absolute border-[#c9c6c6] border-[0.4px] xl:border-r-0 border-solid inset-0 pointer-events-none"
               />
               {/* Number + Icon */}
               <div className="flex flex-col gap-[40px] h-[139px] items-start shrink-0 w-[225px]">
@@ -182,7 +182,7 @@ export function PricingSection() {
             </div>
 
             {/* Card 3: Success Fee (dark with glassmorphism) */}
-            <div className="relative h-auto lg:h-[487px] w-full lg:flex-1">
+            <div className="relative h-auto xl:h-[487px] w-full xl:flex-1">
               <div className="overflow-clip relative rounded-[inherit] size-full">
                 {/* Dark background with blur effect */}
                 <div className="absolute inset-0 flex items-center justify-center">
@@ -201,10 +201,10 @@ export function PricingSection() {
                   </div>
                 </div>
                 {/* Content overlay */}
-                <div className="absolute flex flex-col gap-[28px] h-full items-start justify-center left-0 pl-[39.5px] pr-[20px] top-0 w-full">
+                <div className="relative flex flex-col gap-[28px] h-full items-start justify-center pl-[39.5px] pr-[20px] py-[40px] xl:py-0 w-full">
                   <div
                     aria-hidden="true"
-                    className="absolute border-[#c9c6c6] border-[0.4px] lg:border-r-0 border-solid inset-0 pointer-events-none"
+                    className="absolute border-[#c9c6c6] border-[0.4px] xl:border-r-0 border-solid inset-0 pointer-events-none"
                   />
                   {/* Number + Icon */}
                   <div className="flex flex-col gap-[40px] h-[139px] items-start shrink-0 w-[225px]">
@@ -224,13 +224,13 @@ export function PricingSection() {
                       </div>
                     </div>
                     <p className="font-['Sora'] font-extrabold text-[26px] text-white tracking-[-0.78px] leading-normal">
-                      Management Fee
+                      Success Fee
                     </p>
                   </div>
                   {/* Details */}
                   <div className="flex flex-col gap-[24px] items-start w-full">
                     <p className="font-['Sora'] font-semibold text-[11px] text-white tracking-[2.2px] uppercase leading-[17px]">
-                      Z reklamních investic
+                      Z vašeho zisku
                     </p>
                     <p
                       className="font-['Noto_Sans'] text-[15px] text-white leading-[24px] w-[345px] max-w-full"
@@ -238,8 +238,8 @@ export function PricingSection() {
                         fontVariationSettings: "'CTGR' 0, 'wdth' 100",
                       }}
                     >
-                      Průběžná správa kampaní a optimalizace výkonu. Platíte
-                      pouze z investic do reklamy.
+                      Podíl na vašem úspěchu. Vyděláváme
+                      až tehdy, když vyděláváte vy.
                     </p>
                     <ChecklistGroup items={card3Checklist} variant="dark" />
                   </div>

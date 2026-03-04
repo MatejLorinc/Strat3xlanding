@@ -26,13 +26,13 @@ export function TechnologySection() {
         </div>
 
         {/* Main Content Area */}
-        <div className="flex flex-col xl:flex-row gap-[54px] items-center w-full max-w-[1392px] mx-auto px-6 xl:px-0">
+        <div className="flex flex-col xl:flex-row gap-[54px] items-center w-full max-w-[1392px] mx-auto px-6">
           {/* Left Content */}
-          <div className="flex flex-col gap-[60px] items-start w-full max-w-[1006px]">
+          <div className="flex flex-col gap-[60px] items-center xl:items-start w-full max-w-[1006px]">
             {/* Top feature row */}
-            <div className="flex flex-col lg:flex-row gap-[60px] lg:gap-[60px] xl:gap-[246px] items-center lg:items-center w-full">
-              <div className="flex flex-col gap-[24px] items-center lg:items-start w-full max-w-[494px]">
-                <div className="flex flex-col gap-[28px] items-center lg:items-start w-full max-w-[384px]">
+            <div className="flex flex-col lg:flex-row gap-[60px] lg:gap-[60px] xl:gap-[246px] items-center w-full">
+              <div className="flex flex-col gap-[24px] items-center xl:items-start w-full max-w-[494px]">
+                <div className="flex flex-col gap-[28px] items-center xl:items-start w-full max-w-[384px]">
                   {/* Gradient bar */}
                   <div className="h-[3px] w-[63px] rounded-[33px] overflow-hidden relative">
                     <img
@@ -42,12 +42,12 @@ export function TechnologySection() {
                       style={{ position: "absolute", objectFit: "cover" }}
                     />
                   </div>
-                  <p className="font-['Sora'] font-extrabold text-[26px] lg:text-[35px] text-black tracking-[-0.78px] lg:tracking-[-1.05px] uppercase leading-[40px] lg:leading-[49px] text-center lg:text-left w-full">
+                  <p className="font-['Sora'] font-extrabold text-[26px] lg:text-[35px] text-black tracking-[-0.78px] lg:tracking-[-1.05px] uppercase leading-[40px] lg:leading-[49px] text-center xl:text-left w-full">
                     Pokročilá datová analytika
                   </p>
                 </div>
                 <p
-                  className="font-['Noto_Sans'] text-[15px] lg:text-[17px] text-black tracking-[-0.34px] leading-[24px] lg:leading-[32px] text-center lg:text-left w-full max-w-[293px] lg:max-w-none"
+                  className="font-['Noto_Sans'] text-[15px] lg:text-[17px] text-black tracking-[-0.34px] leading-[24px] lg:leading-[32px] text-center xl:text-left w-full max-w-[293px] lg:max-w-none"
                   style={{ fontVariationSettings: "'CTGR' 0, 'wdth' 100" }}
                 >
                   Vlastní tým datových specialistů. Nejde jen o měření – jde o
@@ -68,7 +68,7 @@ export function TechnologySection() {
             </div>
 
             {/* 2x2 Tech Cards Grid */}
-            <div className="flex flex-col items-start w-full max-w-[1006px]">
+            <div className="flex flex-col items-center xl:items-start w-full max-w-[1006px]">
               {/* Row 1 */}
               <div className="flex flex-col sm:flex-row items-center">
                 <TechCard
@@ -98,7 +98,7 @@ export function TechnologySection() {
             </div>
 
             {/* Bottom text row */}
-            <div className="flex flex-col lg:flex-row gap-[40px] lg:gap-[73px] items-start w-full">
+            <div className="flex flex-col xl:flex-row gap-[24px] xl:gap-[73px] items-center xl:items-start w-full text-center xl:text-left">
               <div
                 className="text-[15px] text-black leading-[24px] w-full max-w-[724px]"
                 style={{ fontVariationSettings: "'CTGR' 0, 'wdth' 100" }}
@@ -161,7 +161,7 @@ export function TechnologySection() {
           </div>
 
           {/* Right Sidebar - Checklist */}
-          <div className="flex flex-col gap-[40px] xl:gap-0 xl:h-[595px] items-center xl:items-start xl:justify-between shrink-0 w-full xl:w-[278px]">
+          <div className="flex flex-col gap-[40px] xl:gap-0 xl:h-[595px] items-center xl:items-start xl:justify-between shrink-0 w-full max-w-[400px] xl:max-w-none xl:w-[278px]">
             <ChecklistItem
               title="Prodejní platformy"
               description="E-shop, který unese vaše ambice a roste s vámi"
@@ -200,7 +200,7 @@ function TechCard({
         aria-hidden="true"
         className="absolute border-[#c9c6c6] border-[0.4px] border-solid inset-0 pointer-events-none"
       />
-      <div className="flex flex-col items-start w-full max-w-[408.406px] px-6 sm:px-0">
+      <div className="flex flex-col items-start w-full max-w-[408.406px] px-6 sm:px-10">
         <div className="flex gap-[32px] h-[98px] items-start w-full">
           <div className="shrink-0 mt-[4px]">{icon}</div>
           <div className="flex flex-col gap-[12px] items-start text-black w-full max-w-[336.406px]">
@@ -228,7 +228,7 @@ function ChecklistItem({
   description: string;
 }) {
   return (
-    <div className="flex items-start justify-between w-full">
+    <div className="flex items-start gap-[24px] w-full">
       <div className="flex items-center py-[6px] shrink-0">
         <div className="relative shrink-0 size-[22.382px]">
           <svg
@@ -245,7 +245,7 @@ function ChecklistItem({
           </svg>
         </div>
       </div>
-      <div className="flex flex-col gap-[10px] items-start text-black w-[224.406px]">
+      <div className="flex flex-col gap-[10px] items-start text-black flex-1">
         <p className="font-['Sora'] font-bold text-[22px] tracking-[-0.22px] leading-[38px]">
           {title}
         </p>

@@ -21,21 +21,6 @@ export function HeroSection() {
         </div>
       </div>
 
-      {/* Vector decoration */}
-      <div className="absolute inset-[22.14%_20.16%_9.33%_56.51%] pointer-events-none">
-        <svg
-          className="absolute block size-full"
-          fill="none"
-          preserveAspectRatio="none"
-          viewBox="0 0 447.992 587.966"
-        >
-          <path
-            d={svgPaths.p1dad8600}
-            fill="white"
-            fillOpacity="0.2"
-          />
-        </svg>
-      </div>
 
       {/* Content */}
       <div className="relative flex flex-col items-center justify-center w-full px-6 lg:px-[60px] xl:px-[154px] py-[40px] lg:py-[80px]">
@@ -151,15 +136,15 @@ export function HeroSection() {
           </div>
 
           {/* Right Column - Frame15 */}
-          <div className="flex flex-col gap-[24px] items-start overflow-clip w-full lg:w-[400px] xl:w-[492px]">
+          <div className="flex flex-col gap-[24px] items-start w-full lg:w-[400px] xl:w-[492px]">
             {/* Stats Cards - Group141 */}
-            <div className="flex flex-row flex-wrap gap-[16px] sm:gap-[24px] lg:inline-grid lg:grid-cols-[max-content] lg:grid-rows-[max-content] lg:place-items-start leading-[0] w-full lg:w-auto">
+            <div className="flex flex-row gap-[32px] sm:gap-[24px] items-center justify-center sm:justify-start w-full">
               {/* Frame16 - 3X stat */}
-              <div className="flex gap-[12px] sm:gap-[22px] items-center relative lg:col-start-1 lg:row-start-1 lg:ml-0 lg:mt-0">
+              <div className="flex flex-col sm:flex-row gap-[8px] sm:gap-[22px] items-center">
                 {/* H - 3X graphic */}
-                <div className="inline-grid grid-cols-[max-content] grid-rows-[max-content] place-items-start leading-[0]">
+                <div className="shrink-0">
                   <div
-                    className="col-start-1 row-start-1 h-[40px] sm:h-[54px] relative w-[64px] sm:w-[86px] ml-[3px] mt-[14px]"
+                    className="h-[40px] sm:h-[54px] relative w-[64px] sm:w-[86px]"
                     style={{
                       maskImage: `url('${imgRectangle3}')`,
                       maskSize: "100% auto",
@@ -176,28 +161,45 @@ export function HeroSection() {
                     </div>
                   </div>
                 </div>
-                <div className="font-['Sora'] font-semibold text-[10px] sm:text-[11px] text-black tracking-[2.2px] uppercase leading-[17px] sm:leading-[19px] w-auto sm:w-[130px] mt-[12px]">
-                  <p className="mb-0">{`Minimální `}</p>
-                  <p>růst v prvním roce</p>
-                </div>
+                <p className="shrink-0 font-['Sora'] font-semibold text-[11px] text-black tracking-[2.2px] uppercase leading-[19px] m-0 text-center sm:text-left">
+                  minimální<br />
+                  růst v prvním<br />
+                  roce
+                </p>
               </div>
 
               {/* Frame20 - >15 stat */}
-              <div className="flex gap-[12px] sm:gap-[22px] items-center relative lg:col-start-1 lg:row-start-1 lg:ml-[200px] xl:ml-[258px] lg:mt-0">
+              <div className="flex flex-col sm:flex-row gap-[8px] sm:gap-[22px] items-stretch sm:items-center">
                 {/* H1 - >15 text */}
-                <div className="inline-grid grid-cols-[max-content] grid-rows-[max-content] place-items-start leading-[0]">
-                  <p className="col-start-1 row-start-1 font-['Sora'] font-bold text-[48px] sm:text-[68px] text-black tracking-[-2.72px] uppercase leading-normal ml-0 mt-[-10px] relative">{`>15`}</p>
+                <div className="shrink-0 text-center sm:text-left">
+                  <p className="font-['Sora'] font-bold text-[56px] sm:text-[68px] text-black tracking-[-2.72px] uppercase leading-[1] m-0">{`>15`}</p>
                 </div>
-                <p className="font-['Sora'] font-semibold text-[10px] sm:text-[11px] text-black tracking-[2.2px] uppercase leading-[17px] sm:leading-[19px] w-auto sm:w-[104px] mt-[-16px]">
-                  Let zkušeností v oboru
+                <p className="shrink-0 font-['Sora'] font-semibold text-[11px] text-black tracking-[2.2px] uppercase leading-[19px] m-0 text-center sm:text-left">
+                  let<br />
+                  zkušeností<br />
+                  v oboru
                 </p>
               </div>
             </div>
 
             {/* Vector Decoration - Vrstva */}
-            <div className="h-[588px] w-[448px] overflow-clip relative">
+            <div className="hidden lg:block h-[588px] w-[448px] relative">
+              {/* Background SVG overlay */}
+              <svg
+                className="absolute block size-full pointer-events-none"
+                fill="none"
+                preserveAspectRatio="xMidYMid meet"
+                viewBox="0 0 447.992 587.966"
+              >
+                <path
+                  d={svgPaths.p1dad8600}
+                  fill="white"
+                  fillOpacity="0.2"
+                />
+              </svg>
+              {/* Masked vector decoration */}
               <div
-                className="absolute inset-[0_0_0.01%_0]"
+                className="absolute inset-[0_0_0.01%_0] overflow-clip"
                 style={{
                   maskImage: `url('${imgVector}')`,
                   maskSize: "447.992px 587.966px",

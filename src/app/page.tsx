@@ -38,7 +38,7 @@ export default function App() {
         </div>
       </div>
       <div className="hidden lg:block">
-        <div className="absolute inset-[57.9%_1.67%_37.99%_3.23%] opacity-50 pointer-events-none">
+        <div className="absolute inset-[61.9%_1.67%_33.99%_3.23%] opacity-50 pointer-events-none">
           <div className="absolute inset-0 overflow-hidden">
             <img alt="" className="absolute left-0 max-w-none size-full top-0" src={(typeof imgRectangle === 'object' && imgRectangle !== null && 'src' in imgRectangle) ? (imgRectangle as any).src : imgRectangle} />
           </div>

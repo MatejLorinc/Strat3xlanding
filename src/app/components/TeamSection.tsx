@@ -28,7 +28,7 @@ export function TeamSection() {
         </div>
 
         {/* Team Cards Row */}
-        <div className="flex flex-col lg:flex-row items-center lg:items-stretch shrink-0 w-full max-w-[1254px] mx-auto px-6 xl:px-0 gap-0">
+        <div className="flex flex-col xl:flex-row items-center xl:items-stretch shrink-0 w-full max-w-[1254px] mx-auto px-6 xl:px-0 gap-0">
           {/* Card 1 - Jan Dědic */}
           <TeamCard
             departmentLabel="Business &amp; Sales"
@@ -61,6 +61,8 @@ export function TeamSection() {
             photoAlt="Štěpán Svoboda"
             photoContainerDesktop={{ width: 418, height: 345, ml: 0, mt: 0 }}
             photoContainerMobile={{ width: 359, height: 345, ml: 0, mt: 0 }}
+            hasBorderTop
+            hideLeftBorderDesktop
             expLabelText="Alza, Home Credit, Economia"
             expLabelDesktop={{ ml: 190, mt: 290 }}
             expLabelMobile={{ ml: 133, mt: 290 }}
@@ -86,6 +88,8 @@ export function TeamSection() {
             photoAlt="Mikuláš Lysek"
             photoContainerDesktop={{ width: 418, height: 345, ml: 0, mt: 0 }}
             photoContainerMobile={{ width: 359, height: 345, ml: 0, mt: 0 }}
+            hasBorderTop
+            hideLeftBorderDesktop
             expLabelText="10+ let v performance marketingu"
             expLabelDesktop={{ ml: 160, mt: 290 }}
             expLabelMobile={{ ml: 99, mt: 290 }}
@@ -127,6 +131,7 @@ interface TeamCardProps {
   photoContainerDesktop: PhotoDimensions;
   photoContainerMobile: PhotoDimensions;
   hasBorderTop?: boolean;
+  hideLeftBorderDesktop?: boolean;
   expLabelText: string;
   expLabelDesktop: Position;
   expLabelMobile: Position;
@@ -146,6 +151,7 @@ function TeamCard({
   photoContainerDesktop,
   photoContainerMobile,
   hasBorderTop,
+  hideLeftBorderDesktop,
   expLabelText,
   expLabelDesktop,
   expLabelMobile,
@@ -162,11 +168,11 @@ function TeamCard({
   const MASK_H = 345;
 
   return (
-    <div className="flex flex-col items-start w-full max-w-[359px] lg:max-w-none lg:w-auto lg:flex-1">
+    <div className="flex flex-col items-center xl:items-start w-full max-w-[359px] xl:max-w-none xl:w-auto xl:flex-1">
       {/* Department bar */}
-      <DepartmentBar label={departmentLabel} />
+      <DepartmentBar label={departmentLabel} hideLeftBorderDesktop={hideLeftBorderDesktop} />
       {/* Photo area with mask - Mobile */}
-      <div className="lg:hidden inline-grid grid-cols-[max-content] grid-rows-[max-content] place-items-start relative shrink-0 leading-[0] overflow-hidden w-full max-w-[359px] h-[345px]">
+      <div className="xl:hidden inline-grid grid-cols-[max-content] grid-rows-[max-content] place-items-start relative shrink-0 leading-[0] overflow-hidden w-full max-w-[359px] h-[345px]">
         <div
           className="col-start-1 row-start-1 relative pointer-events-none"
           style={{
@@ -206,7 +212,7 @@ function TeamCard({
           maskH={MASK_H}
         />
       </div>
-      <div className="hidden lg:inline-grid grid-cols-[max-content] grid-rows-[max-content] place-items-start relative shrink-0 leading-[0] overflow-hidden w-full max-w-[418px] h-[345px]">
+      <div className="hidden xl:inline-grid grid-cols-[max-content] grid-rows-[max-content] place-items-start relative shrink-0 leading-[0] overflow-hidden w-full max-w-[418px] h-[345px]">
         <div
           className="col-start-1 row-start-1 relative pointer-events-none"
           style={{
@@ -228,7 +234,8 @@ function TeamCard({
           {hasBorderTop && (
             <div
               aria-hidden="true"
-              className="absolute border-[#a9a9a9] border-l-[0.4px] border-r-[0.4px] border-solid border-t-[0.4px] inset-0"
+              className="absolute border-[#a9a9a9] border-t-[0.4px] border-solid inset-0"
+              style={{ borderBottom: 0, borderLeft: 0, borderRight: 0 }}
             />
           )}
         </div>
@@ -244,7 +251,7 @@ function TeamCard({
       <div className="bg-white h-[180px] relative shrink-0 w-full">
         <div
           aria-hidden="true"
-          className="absolute border-[#a9a9a9] border-[0.4px] border-solid inset-0 pointer-events-none"
+          className={`absolute border-[#a9a9a9] border-t-[0.4px] border-b-[0.4px] border-r-[0.4px] border-solid inset-0 ${hideLeftBorderDesktop ? "xl:border-l-[0px] border-l-[0.4px]" : "border-l-[0.4px]"}`}
         />
         <div className="flex flex-col justify-center size-full">
           <div className="flex flex-col gap-[16px] items-start justify-center pl-[40px] relative size-full text-black">
@@ -273,12 +280,12 @@ function TeamCard({
   );
 }
 
-function DepartmentBar({ label }: { label: string }) {
+function DepartmentBar({ label, hideLeftBorderDesktop }: { label: string; hideLeftBorderDesktop?: boolean }) {
   return (
     <div className="bg-white h-[40px] relative shrink-0 w-full">
       <div
         aria-hidden="true"
-        className="absolute border-[#a9a9a9] border-[0.4px] border-solid inset-0 pointer-events-none"
+        className={`absolute border-[#a9a9a9] border-t-[0.4px] border-b-[0.4px] border-r-[0.4px] border-solid inset-0 pointer-events-none ${hideLeftBorderDesktop ? "xl:border-l-[0px] border-l-[0.4px]" : "border-l-[0.4px]"}`}
       />
       <div className="flex flex-col justify-center size-full">
         <div className="flex flex-col items-start justify-center pl-[40px] relative size-full">

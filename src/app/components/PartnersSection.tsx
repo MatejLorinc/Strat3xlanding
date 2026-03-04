@@ -3,6 +3,15 @@ import { useState } from "react";
 import img41641 from "@/assets/1ae7eb4f61ade708f7114d50825956cbed9c81a3.png";
 import img255402 from "@/assets/c137d10fde9bfceb8fe155765a39a643cd1e631b.png";
 import img2437921 from "@/assets/4b725ea6e43c85fd0b312c10b6227e4d5c25b560.png";
+import firma1 from "@/assets/FIRMA_IKONA_1.svg";
+import firma2 from "@/assets/FIRMA_IKONA_2.svg";
+import firma3 from "@/assets/FIRMA_IKONA_3.svg";
+import firma4 from "@/assets/FIRMA_IKONA_4.svg";
+import firma5 from "@/assets/FIRMA_IKONA_5.svg";
+import firma6 from "@/assets/FIRMA_IKONA_6.svg";
+import firma7 from "@/assets/FIRMA_IKONA_7.svg";
+
+const partnerLogos = [firma1, firma2, firma3, firma4, firma5, firma6, firma7];
 
 interface PartnerCardProps {
   imageSrc: string;
@@ -60,7 +69,7 @@ function PartnerCard({
       />
       {/* Content */}
       <div className="absolute inset-0 w-full flex items-center justify-center pb-[50px] pt-[50px]">
-        <div className="flex flex-col justify-between items-start w-full max-w-[357px] px-5 lg:px-0 h-full">
+        <div className="flex flex-col justify-between items-start w-full max-w-[357px] px-5 lg:px-10 h-full">
           {/* Tags */}
           <div className="flex flex-col gap-[4px] items-start w-[158px]">
             {tags.map((tag) => (
@@ -94,6 +103,18 @@ export function PartnersSection() {
   return (
     <section className="relative w-full overflow-hidden">
       <div className="flex flex-col gap-[80px] items-center justify-center w-full py-[80px]">
+        {/* Logos Row */}
+        <div className="flex flex-wrap items-center justify-center gap-[40px] xl:gap-[80px] w-full max-w-[1401px] px-6 xl:px-0">
+          {partnerLogos.map((logo, idx) => (
+            <img
+              key={idx}
+              src={(typeof logo === 'object' && logo !== null && 'src' in logo) ? (logo as any).src : logo}
+              alt={`Partner ${idx + 1}`}
+              className="h-4 md:h-5 lg:h-7 w-auto object-contain shrink-0"
+            />
+          ))}
+        </div>
+
         {/* Header */}
         <div className="flex flex-col gap-[28px] items-center text-center text-black w-[675px] max-w-full px-6">
           <div className="flex flex-col gap-[32px] items-center uppercase w-full">

@@ -40,11 +40,62 @@ const faqItems = [
   },
 ];
 
+const TypewriterText = ({ text, isOpen }: { text: string; isOpen: boolean }) => {
+  const words = text.split(" ");
+  let globalCharIndex = 0;
+
+  return (
+    <>
+      <span className="sr-only">{text}</span>
+      <span aria-hidden="true">
+        {words.map((word, wordIndex) => {
+          const wordNode = (
+            <span key={wordIndex} className="inline-block">
+              {word.split("").map((char, charIndex) => {
+                const delay = globalCharIndex * 6;
+                globalCharIndex++;
+                return (
+                  <span
+                    key={charIndex}
+                    className={`transition-opacity ${isOpen ? "duration-100 opacity-100" : "duration-300 opacity-0"
+                      }`}
+                    style={{ transitionDelay: `${isOpen ? delay : 0}ms` }}
+                  >
+                    {char}
+                  </span>
+                );
+              })}
+            </span>
+          );
+
+          const spaceDelay = globalCharIndex * 6;
+          globalCharIndex++;
+
+          return (
+            <span key={`w-${wordIndex}`}>
+              {wordNode}
+              {wordIndex < words.length - 1 && (
+                <span
+                  className={`transition-opacity ${isOpen ? "duration-100 opacity-100" : "duration-300 opacity-0"
+                    }`}
+                  style={{ transitionDelay: `${isOpen ? spaceDelay : 0}ms` }}
+                >
+                  {" "}
+                </span>
+              )}
+            </span>
+          );
+        })}
+      </span>
+    </>
+  );
+};
+
 export function FaqSection() {
   const [openIndex, setOpenIndex] = useState<number | null>(1);
 
   return (
-    <section className="relative w-full overflow-hidden">
+    <section id="faq" className="relative w-full overflow-hidden">
       <div className="flex flex-col gap-[120px] items-center py-[80px] w-full max-w-[1920px] mx-auto px-6">
         {/* Header + FAQ Items */}
         <div className="flex flex-col gap-[80px] items-center w-full">
@@ -93,9 +144,9 @@ export function FaqSection() {
                         viewBox="0 0 22 22"
                         style={{
                           transform: isOpen
-                            ? "rotate(180deg)"
-                            : "rotate(0deg)",
-                          transition: "transform 0.3s ease",
+                            ? "rotate(180deg) scale(1.1)"
+                            : "rotate(0deg) scale(1)",
+                          transition: "all 0.5s cubic-bezier(0.4, 0, 0.2, 1)",
                         }}
                       >
                         <path
@@ -106,40 +157,47 @@ export function FaqSection() {
                     </div>
                   </button>
 
-                  {/* Answer (if open) */}
-                  {isOpen && item.answer && (
-                    <p
-                      className="font-['Noto_Sans'] leading-[27px] text-[15px] text-black w-full max-w-[693px]"
-                      style={{
-                        fontVariationSettings:
-                          "'CTGR' 0, 'wdth' 100",
-                      }}
-                    >
-                      {item.answer}
-                    </p>
-                  )}
-
-                  {/* Divider line (not after open item) */}
-                  {!isOpen && (
-                    <div className="h-0 w-full relative">
-                      <div className="absolute inset-[-1px_0_0_0]">
-                        <svg
-                          className="block size-full"
-                          fill="none"
-                          preserveAspectRatio="none"
-                          viewBox="0 0 769 1"
-                        >
-                          <line
-                            opacity="0.11"
-                            stroke="black"
-                            x2="769"
-                            y1="0.5"
-                            y2="0.5"
-                          />
-                        </svg>
-                      </div>
+                  {/* Answer */}
+                  <div
+                    className={`grid transition-[grid-template-rows,opacity] duration-500 ease-in-out w-full ${isOpen ? "grid-rows-[1fr] opacity-100" : "grid-rows-[0fr] opacity-0"
+                      }`}
+                  >
+                    <div className="overflow-hidden">
+                      <p
+                        className={`font-['Noto_Sans'] leading-[27px] text-[15px] text-black w-full max-w-[693px] transition-all duration-300 ease-in-out ${isOpen ? "pb-5" : "pb-0"
+                          }`}
+                        style={{
+                          fontVariationSettings:
+                            "'CTGR' 0, 'wdth' 100",
+                        }}
+                      >
+                        <TypewriterText text={item.answer} isOpen={isOpen} />
+                      </p>
                     </div>
-                  )}
+                  </div>
+
+                  {/* Divider line */}
+                  <div
+                    className={`h-0 w-full relative transition-all duration-500 ease-in-out ${isOpen ? "opacity-0" : "opacity-100"
+                      }`}
+                  >
+                    <div className="absolute inset-[-1px_0_0_0]">
+                      <svg
+                        className="block size-full"
+                        fill="none"
+                        preserveAspectRatio="none"
+                        viewBox="0 0 769 1"
+                      >
+                        <line
+                          opacity="0.11"
+                          stroke="black"
+                          x2="769"
+                          y1="0.5"
+                          y2="0.5"
+                        />
+                      </svg>
+                    </div>
+                  </div>
                 </div>
               );
             })}

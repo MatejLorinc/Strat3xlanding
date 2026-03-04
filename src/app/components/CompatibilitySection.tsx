@@ -103,26 +103,11 @@ export function CompatibilitySection() {
       {/* Dark contained card */}
       <div className="relative bg-[#171717] w-full max-w-[1400px] mx-auto overflow-hidden">
         {/* Background decorative elements */}
-        <div className="absolute inset-0 pointer-events-none">
-          <div
-            className="absolute inset-0 mix-blend-screen opacity-50"
-          >
-            <div className="absolute inset-0 opacity-70 overflow-hidden pointer-events-none">
-              <img
-                alt=""
-                className="absolute inset-0 max-w-none object-cover size-full"
-                src={(typeof imgRectangle === 'object' && imgRectangle !== null && 'src' in imgRectangle) ? (imgRectangle as any).src : imgRectangle}
-              />
-            </div>
-          </div>
-          <div
-            className="absolute right-0 bottom-0 w-[288px] h-[825px] bg-gradient-to-l from-[#171717] to-[rgba(23,23,23,0)] opacity-[0.43]"
-            style={{
-              maskImage: `url('${imgRectangle8}')`,
-              maskSize: "1400px 1300px",
-              maskRepeat: "no-repeat",
-              maskPosition: "-205px -661px",
-            }}
+        <div className="absolute inset-0 pointer-events-none overflow-hidden">
+          <img
+            alt=""
+            className="absolute -bottom-[200px] -left-[650px] w-[1100px] h-auto mix-blend-screen opacity-70"
+            src={(typeof imgRectangle === 'object' && imgRectangle !== null && 'src' in imgRectangle) ? (imgRectangle as any).src : imgRectangle}
           />
         </div>
 
@@ -314,7 +299,7 @@ export function CompatibilitySection() {
           </form>
         </div>
       </div>
-    </section>
+    </section >
   );
 }
 

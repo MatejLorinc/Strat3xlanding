@@ -56,7 +56,7 @@ export function CareersSection() {
     <section className="relative w-full overflow-hidden">
       <div className="flex flex-col gap-[60px] items-center justify-center px-6 xl:px-[110px] py-[80px] w-full max-w-[1920px] mx-auto">
         {/* Top Row: Header + Stats */}
-        <div className="flex flex-col lg:flex-row gap-[40px] lg:gap-[40px] xl:gap-[130px] items-start lg:items-end justify-center w-full">
+        <div className="flex flex-col xl:flex-row gap-[40px] xl:gap-[130px] items-start xl:items-end justify-center w-full">
           {/* Left: Header */}
           <div className="flex flex-col gap-[28px] items-start text-black w-full xl:w-[557px] shrink-0">
             <div className="flex flex-col gap-[32px] items-start uppercase w-[468px] max-w-full">

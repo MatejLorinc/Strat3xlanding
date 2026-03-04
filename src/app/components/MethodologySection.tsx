@@ -1,5 +1,5 @@
 import imgRectangle from "@/assets/320b8c287414bc6a4263c44fb04247eb957ea265.png";
-import imgRectangle5 from "@/assets/3ad0cbf86082bb5c0deed567f95b0ba4f3a3b0bb.png";
+import imgStrategicGrowth from "@/assets/StrateticGrowth.png";
 import { imgRectangle7 } from "../../imports/svg-76oh5";
 
 const leftCards = [
@@ -66,7 +66,7 @@ export function MethodologySection() {
         </div>
 
         {/* Timeline Layout */}
-        <div className="relative w-full max-w-[1254px] mx-auto h-[1075px] hidden lg:block">
+        <div className="relative w-full max-w-[1254px] mx-auto h-[1075px] hidden lg:block px-6 xl:px-0">
           {/* Background gradient decoration */}
           <div className="absolute h-[760px] left-[-1479px] opacity-43 top-[-50px] w-[1990px] pointer-events-none">
             <div className="absolute inset-0 overflow-hidden">
@@ -79,7 +79,7 @@ export function MethodologySection() {
           </div>
 
           {/* Left column */}
-          <div className="absolute left-[3px] top-0 flex flex-col gap-[240px] w-[calc(50%-40px)] max-w-[520px]">
+          <div className="absolute left-6 xl:left-0 top-0 flex flex-col gap-[240px] w-[calc(50%-40px)] max-w-[520px]">
             {leftCards.map((card) => (
               <div
                 key={card.number}
@@ -119,7 +119,7 @@ export function MethodologySection() {
           </div>
 
           {/* Timeline line with dots */}
-          <div className="absolute left-[632px] top-0 w-[13px] h-[965px]">
+          <div className="absolute left-1/2 -translate-x-1/2 top-0 w-[13px] h-[965px]">
             <svg
               className="block size-full"
               fill="none"
@@ -166,7 +166,7 @@ export function MethodologySection() {
           </div>
 
           {/* Right column - offset 270px from top */}
-          <div className="absolute left-[729px] top-[270px] flex flex-col gap-[240px] w-[calc(50%-40px)] max-w-[520px]">
+          <div className="absolute left-[calc(50%+40px)] top-[270px] flex flex-col gap-[240px] w-[calc(50%-80px)] max-w-[520px]">
             {/* Card 02 - with dark bg */}
             <div
               className="relative rounded-[9px] w-full bg-[#171717]"
@@ -210,7 +210,7 @@ export function MethodologySection() {
                 <img
                   alt=""
                   className="absolute inset-0 w-full h-full object-cover opacity-70 pointer-events-none"
-                  src={(typeof imgRectangle5 === 'object' && imgRectangle5 !== null && 'src' in imgRectangle5) ? (imgRectangle5 as any).src : imgRectangle5}
+                  src={(typeof imgStrategicGrowth === 'object' && imgStrategicGrowth !== null && 'src' in imgStrategicGrowth) ? (imgStrategicGrowth as any).src : imgStrategicGrowth}
                 />
                 <div className="absolute bg-[rgba(98,98,98,0.05)] inset-0" />
               </div>

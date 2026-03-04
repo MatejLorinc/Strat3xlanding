@@ -3,19 +3,19 @@ import svgPaths from "../../imports/svg-59wapeqsll";
 export function LifecycleSection() {
   return (
     <section className="overflow-clip relative w-full">
-      <div className="flex flex-col lg:flex-row gap-[60px] lg:gap-[40px] xl:gap-[142px] items-start justify-center w-full pb-[80px] pt-[120px] px-6 xl:px-0 max-w-[1400px] mx-auto">
+      <div className="flex flex-col xl:flex-row gap-[60px] xl:gap-[142px] items-start justify-center w-full pb-[80px] pt-[120px] px-6 max-w-[1400px] mx-auto">
         {/* Left column - header */}
-        <div className="flex flex-col gap-[28px] items-center lg:items-start shrink-0 text-black w-full lg:w-[350px] xl:w-[468px] lg:max-w-[468px]">
-          <div className="flex flex-col gap-[32px] items-center lg:items-start uppercase w-full text-center lg:text-left">
+        <div className="flex flex-col gap-[28px] items-center xl:items-start shrink-0 text-black w-full xl:w-[468px] xl:max-w-[468px]">
+          <div className="flex flex-col gap-[32px] items-center xl:items-start uppercase w-full text-center xl:text-left">
             <p className="font-['Sora'] font-semibold leading-[17px] text-[11px] tracking-[2.2px] w-full">
               Komplexní ekosystém
             </p>
-            <p className="font-['Sora'] font-extrabold leading-[44px] lg:leading-normal text-[32px] lg:text-[52px] tracking-[-0.96px] lg:tracking-[-1.56px] w-full max-w-[333px] lg:max-w-[350px] xl:max-w-[468px]">
+            <p className="font-['Sora'] font-extrabold leading-[44px] lg:leading-normal text-[32px] lg:text-[52px] tracking-[-0.96px] lg:tracking-[-1.56px] w-full max-w-[333px] lg:max-w-none">
               Celý životní cyklus online byznysu
             </p>
           </div>
           <p
-            className="font-['Noto_Sans'] text-[17px] leading-[31px] lg:leading-[32px] text-center lg:text-left w-full max-w-[325px] lg:max-w-[345px]"
+            className="font-['Noto_Sans'] text-[17px] leading-[31px] lg:leading-[32px] text-center xl:text-left w-full max-w-[325px] lg:max-w-none"
             style={{ fontVariationSettings: "'CTGR' 0, 'wdth' 100" }}
           >
             Od strategie po hlubokou automatizaci. Vše pod jednou střechou.
@@ -23,9 +23,9 @@ export function LifecycleSection() {
         </div>
 
         {/* Right side - two service columns */}
-        <div className="flex flex-col md:flex-row gap-[60px] md:gap-[82px] items-start">
+        <div className="flex flex-col md:flex-row gap-[60px] md:gap-[40px] lg:gap-[82px] items-start w-full">
           {/* Left service column */}
-          <div className="flex flex-col gap-[64px] items-start shrink-0 w-full md:w-[370px] md:max-w-[370px]">
+          <div className="flex flex-col gap-[64px] items-start w-full md:w-1/2 md:max-w-none">
             {/* Management & Consulting */}
             <ServiceRow
               icon={<ManagementIcon />}
