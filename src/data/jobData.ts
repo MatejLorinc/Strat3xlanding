@@ -64,7 +64,7 @@ export const jobPositions: JobPosition[] = [
         department: "Data & Analytics",
         tags: ["Plný úvazek", "Hybrid", "Senior"],
         description:
-            "Hledáme zkušeného datového analytika, který dokáže přeměnit surová data na strategická rozhodnutí. Budeš mít na starosti analýzu dat, vizualizaci a pokročilý reporting pro naše klienty...",
+            "Hledáme zkušeného datového analytika, který dokáže přeměnit surová data na strategická rozhodnutí ...",
         salary: "80 000 - 110 000 CZK/měsíc",
         borderClass: "border-2 border-[#a038b6] md:border-l-0",
         location: "Plně vzdáleně / STRAT3X, 11000 Praha, Nové Město",
