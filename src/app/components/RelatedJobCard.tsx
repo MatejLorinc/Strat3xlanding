@@ -72,13 +72,7 @@ export function RelatedJobCard({ job }: { job: JobPosition }) {
             </div>
 
             {/* Footer */}
-            <div className="flex items-end justify-between w-full">
-                <p
-                    className="font-['Noto_Sans'] leading-[24px] text-[14px] text-black opacity-60"
-                    style={{ fontVariationSettings: "'CTGR' 0, 'wdth' 100" }}
-                >
-                    {job.applicants}
-                </p>
+            <div className="flex items-end justify-end w-full">
                 <Link href={detailHref} className="flex gap-[8px] items-center justify-end group/link">
                     <p
                         className="font-['Noto_Sans'] font-bold leading-[24px] text-[14px] text-[#a038b6] text-right underline decoration-solid group-hover/link:opacity-70 transition-opacity"

@@ -181,11 +181,6 @@ export default async function JobDetail({
                                     </span>
                                 </a>
 
-                                {/* Applicants */}
-                                <p className="font-['Noto_Sans'] text-[18px] text-[#666666]">
-                                    {jobParams.applicants.startsWith('Doposud') ? jobParams.applicants : `Doposud reagovalo ${jobParams.applicants}`}
-                                </p>
-
                             </div>
                         </div>
                     </div>

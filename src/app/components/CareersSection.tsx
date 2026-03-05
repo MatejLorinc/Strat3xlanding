@@ -362,13 +362,7 @@ function JobCard({
       </div>
 
       {/* Footer */}
-      <div className="flex items-end justify-between w-[422px] max-w-full">
-        <p
-          className="font-['Noto_Sans'] leading-[24px] text-[15px] text-black"
-          style={{ fontVariationSettings: "'CTGR' 0, 'wdth' 100" }}
-        >
-          {job.applicants}
-        </p>
+      <div className="flex items-end justify-end w-[422px] max-w-full">
         <Link href={detailHref} className="flex gap-[13px] items-center justify-end group">
           <p
             className="font-['Noto_Sans'] font-bold leading-[24px] text-[15px] text-black text-right underline decoration-solid group-hover:opacity-70 transition-opacity"

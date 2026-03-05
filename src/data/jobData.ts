@@ -7,7 +7,6 @@ export interface JobPosition {
     tags: string[];
     description: string;
     salary: string;
-    applicants: string;
     borderClass: string;
     location: string;
     employment: string;
@@ -28,7 +27,6 @@ export const jobPositions: JobPosition[] = [
         description:
             "Hledáme zkušeného PPC specialistu pro správu kampaní našich klientů. Budeš mít na starosti Google Ads ...",
         salary: "55 000 - 75 000 CZK/měsíc",
-        applicants: "12 uchazečů",
         borderClass: "border-2 border-[#a038b6]",
         location: "Náměstí Republiky 1078/1, 11000 Praha - Nové Město",
         employment: "Plný úvazek / Hybrid",
@@ -68,7 +66,6 @@ export const jobPositions: JobPosition[] = [
         description:
             "Hledáme zkušeného datového analytika, který dokáže přeměnit surová data na strategická rozhodnutí. Budeš mít na starosti analýzu dat, vizualizaci a pokročilý reporting pro naše klienty...",
         salary: "80 000 - 110 000 CZK/měsíc",
-        applicants: "5 uchazečů",
         borderClass: "border-2 border-[#a038b6] md:border-l-0",
         location: "Plně vzdáleně / STRAT3X, 11000 Praha, Nové Město",
         employment: "Plný úvazek / Hybridní",
