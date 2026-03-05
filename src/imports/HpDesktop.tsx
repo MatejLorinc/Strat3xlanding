@@ -7867,10 +7867,10 @@ function Frame356() {
 
 function Frame100() {
   return (
-    <div className="bg-black content-stretch flex h-[60px] items-center justify-center px-[51px] relative rounded-[62px] shrink-0">
+    <a href="mailto:info@strat3x.com" className="bg-black content-stretch flex h-[60px] items-center justify-center px-[51px] relative rounded-[62px] shrink-0 hover:opacity-80 transition-opacity">
       <div aria-hidden="true" className="absolute border-2 border-[#a038b6] border-solid inset-0 pointer-events-none rounded-[62px]" />
       <p className="font-['Sora:ExtraBold',sans-serif] font-extrabold leading-[normal] relative shrink-0 text-[14px] text-center text-white tracking-[-0.28px] uppercase">Poslat otevřenou přihlášku</p>
-    </div>
+    </a>
   );
 }
 

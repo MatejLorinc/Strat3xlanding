@@ -53,30 +53,30 @@ export function CareersSection() {
           </div>
 
           {/* Right: Stats */}
-          <div className="grid grid-cols-2 sm:flex gap-[20px] sm:gap-[30px] items-start">
+          <div className="grid grid-cols-2 2xl:flex gap-x-[15px] sm:gap-x-[30px] gap-y-[30px] sm:gap-[30px] items-start justify-items-center sm:justify-items-start w-full 2xl:w-auto">
             <StatItem
               icon={<TeamIcon />}
               value="15+"
               label="Členů týmu"
-              width="w-[152px]"
+              width="w-full max-w-[152px]"
             />
             <StatItem
               icon={<ProjectsIcon />}
               value="40+"
               label="Aktivních projektů"
-              width="w-[167px]"
+              width="w-full max-w-[167px]"
             />
             <StatItem
               icon={<LocationIcon />}
               value="3"
               label="Lokace"
-              width="w-[152px]"
+              width="w-full max-w-[152px]"
             />
             <StatItem
               icon={<PositionsIcon />}
               value="3"
               label="Otevřené pozice"
-              width="w-[152px]"
+              width="w-full max-w-[152px]"
             />
           </div>
         </div>
@@ -97,7 +97,7 @@ export function CareersSection() {
               <p className="font-['Sora'] font-bold leading-[38px] text-[22px] text-white tracking-[-0.22px] uppercase w-full md:w-[431px] text-center md:text-left">
                 Nevidíš pozici, která by ti seděla? Napiš nám stejně!
               </p>
-              <div className="bg-black flex h-[60px] items-center justify-center px-[51px] rounded-[62px] relative shrink-0">
+              <Link href="mailto:info@strat3x.com" className="bg-black flex h-[60px] items-center justify-center px-[51px] rounded-[62px] relative shrink-0 hover:opacity-80 transition-opacity">
                 <div
                   aria-hidden="true"
                   className="absolute border-2 border-[#a038b6] border-solid inset-0 pointer-events-none rounded-[62px]"
@@ -105,7 +105,7 @@ export function CareersSection() {
                 <p className="font-['Sora'] font-extrabold leading-normal text-[14px] text-center text-white tracking-[-0.28px] uppercase whitespace-nowrap">
                   Poslat otevřenou přihlášku
                 </p>
-              </div>
+              </Link>
             </div>
           </div>
 
@@ -163,7 +163,7 @@ function StatItem({
 }) {
   return (
     <div
-      className={`flex flex-col gap-[10px] items-center shrink-0 ${width}`}
+      className={`flex flex-col gap-[10px] items-center ${width}`}
     >
       <div className="h-[32px] flex items-end justify-center">
         {icon}
@@ -411,10 +411,10 @@ function CapacityBar({
       </div>
       {/* Progress Bar + Hours */}
       <div className="flex flex-col gap-px items-end w-full">
-        <div className="inline-grid relative">
-          <div className="bg-[#e9e9e9] col-start-1 row-start-1 h-[10px] rounded-[14px] w-full max-w-[227px]" />
+        <div className="inline-grid relative w-full max-w-[227px]">
+          <div className="bg-[#e9e9e9] col-start-1 row-start-1 h-[10px] rounded-[14px] w-full" />
           <div
-            className={`bg-[#84d3c5] col-start-1 row-start-1 h-[10px] rounded-[14px] ${item.barWidth}`}
+            className={`bg-[#84d3c5] col-start-1 row-start-1 h-[10px] rounded-[14px] justify-self-start ${item.barWidth}`}
           />
         </div>
         <p

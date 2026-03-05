@@ -2464,10 +2464,10 @@ function Frame226() {
 
 function Frame8() {
   return (
-    <div className="absolute bg-black content-stretch flex h-[60px] items-center justify-center left-[39px] px-[51px] rounded-[62px] top-[22283px] w-[300px]">
+    <a href="mailto:info@strat3x.com" className="absolute bg-black content-stretch flex h-[60px] items-center justify-center left-[39px] px-[51px] rounded-[62px] top-[22283px] w-[300px] hover:opacity-80 transition-opacity">
       <div aria-hidden="true" className="absolute border-2 border-[#a038b6] border-solid inset-0 pointer-events-none rounded-[62px]" />
       <p className="font-['Sora:ExtraBold',sans-serif] font-extrabold leading-[normal] relative shrink-0 text-[14px] text-center text-white tracking-[-0.28px] uppercase">Poslat otevřenou přihlášku</p>
-    </div>
+    </a>
   );
 }
 
