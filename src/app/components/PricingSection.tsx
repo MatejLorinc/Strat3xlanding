@@ -20,10 +20,10 @@ const card2Checklist: ChecklistItem[] = [
 ];
 
 const card3Checklist: ChecklistItem[] = [
-  { label: "Aktivní až po prokázání modelu" },
-  { label: "Navázáno na reálný zisk" },
-  { label: "Maximální motivace týmu" },
-  { label: "Dlouhodobé partnerství" },
+    { label: "Aktivní až po prokázaní modelu" },
+    { label: "Navázano na reálny zisk" },
+    { label: "Maximální motivace týmu" },
+    { label: "Dlouhodobé partnerství" },
 ];
 
 export function PricingSection() {
@@ -238,7 +238,7 @@ export function PricingSection() {
                         fontVariationSettings: "'CTGR' 0, 'wdth' 100",
                       }}
                     >
-                      Podíl na vašem úspěchu. Vyděláváme
+                      Podíl na vašem úspěchu. Vydělávame
                       až tehdy, když vyděláváte vy.
                     </p>
                     <ChecklistGroup items={card3Checklist} variant="dark" />
