@@ -6040,7 +6040,7 @@ function Frame98() {
       <div aria-hidden="true" className="absolute border-2 border-[#a038b6] border-solid inset-0 pointer-events-none rounded-[62px]" />
       <div className="flex flex-row items-center justify-center size-full">
         <div className="content-stretch flex items-center justify-center px-[51px] relative size-full">
-          <p className="font-['Sora:Regular',sans-serif] font-normal leading-[normal] relative shrink-0 text-[#a038b6] text-[14px] text-center tracking-[-0.28px] uppercase">+420 777 888 999</p>
+          <p className="font-['Sora:Regular',sans-serif] font-normal leading-[normal] relative shrink-0 text-[#a038b6] text-[14px] text-center tracking-[-0.28px] uppercase">+420 727 809 847</p>
         </div>
       </div>
     </div>
@@ -8857,7 +8857,7 @@ function Frame439() {
     <div className="content-stretch flex flex-col gap-[48px] h-[296px] items-start relative shrink-0 w-[390px]">
       <Frame440 />
       <p className="font-['Sora:Bold',sans-serif] font-bold leading-[0] min-w-full relative shrink-0 text-[15px] text-black tracking-[-0.15px] w-[min-content] whitespace-pre-wrap">
-        <span className="[text-decoration-skip-ink:none] decoration-solid leading-[31px] underline">+420 777 888 999</span>
+        <span className="[text-decoration-skip-ink:none] decoration-solid leading-[31px] underline">+420 727 809 847</span>
         <span className="leading-[31px]">{`    `}</span>
         <span className="[text-decoration-skip-ink:none] decoration-solid leading-[31px] underline">info@strat3x.com</span>
       </p>

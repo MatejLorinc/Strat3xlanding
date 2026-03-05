@@ -1833,7 +1833,7 @@ function Group186() {
         Strategic Growth Partner. Budujeme kompletní, funkční a výdělečné online businessy.
       </p>
       <p className="absolute font-['Sora:Bold',sans-serif] font-bold leading-[0] left-[calc(50%-163.5px)] text-[15px] text-black top-[25183px] tracking-[-0.15px] w-[390px] whitespace-pre-wrap">
-        <span className="[text-decoration-skip-ink:none] decoration-solid leading-[31px] underline">+420 777 888 999</span>
+        <span className="[text-decoration-skip-ink:none] decoration-solid leading-[31px] underline">+420 727 809 847</span>
         <span className="leading-[31px]">{`    `}</span>
         <span className="[text-decoration-skip-ink:none] decoration-solid leading-[31px] underline">info@strat3x.com</span>
       </p>
@@ -2753,7 +2753,7 @@ function Frame15() {
     <div className="bg-white h-[60px] relative rounded-[62px] shrink-0 w-full">
       <div aria-hidden="true" className="absolute border-2 border-[#a038b6] border-solid inset-0 pointer-events-none rounded-[62px]" />
       <Component />
-      <p className="-translate-x-1/2 absolute font-['Sora:Bold',sans-serif] font-bold leading-[normal] left-[127.84px] text-[#a53ece] text-[14px] text-center top-[21px] tracking-[-0.28px] uppercase w-[234.965px] whitespace-pre-wrap">+420 777 888 999</p>
+      <p className="-translate-x-1/2 absolute font-['Sora:Bold',sans-serif] font-bold leading-[normal] left-[127.84px] text-[#a53ece] text-[14px] text-center top-[21px] tracking-[-0.28px] uppercase w-[234.965px] whitespace-pre-wrap">+420 727 809 847</p>
     </div>
   );
 }
