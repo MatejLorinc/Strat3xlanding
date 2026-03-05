@@ -23,7 +23,7 @@ export function Footer() {
             </div>
             <p className="font-['Sora'] font-bold text-[15px] text-black tracking-[-0.15px] leading-[31px]">
               <span className="underline decoration-solid">
-                +420 777 888 999
+                +420 727 809 847
               </span>
               <span>{`    `}</span>
               <span className="underline decoration-solid">
