@@ -54,7 +54,7 @@ export async function POST(req: Request) {
 
             const { data, error } = await resend.emails.send({
                 from: process.env.EMAIL_FROM!,
-                to: [process.env.EMAIL_TO!],
+                to: [process.env.EMAIL_TO_JOB_APPLICATIONS!],
                 subject: `Nová žádost o pozici: ${jobTitle}`,
                 text: textBody,
                 html: htmlBody,
@@ -117,7 +117,7 @@ export async function POST(req: Request) {
 
         const { data, error } = await resend.emails.send({
             from: process.env.EMAIL_FROM!,
-            to: [process.env.EMAIL_TO!],
+            to: [process.env.EMAIL_TO_LEADS!],
             subject: 'Nová poptávka z webu - Ověření kompatibility',
             text: textBody,
             html: htmlBody,
