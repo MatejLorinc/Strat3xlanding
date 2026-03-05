@@ -1,31 +1,6 @@
 import svgPaths from "../../imports/svg-59wapeqsll";
-
-const jobPositions = [
-  {
-    id: 1,
-    urgent: true,
-    title: "Senior PPC Specialist",
-    department: "Performance",
-    tags: ["Plný úvazek", "Hybrid", "Senior"],
-    description:
-      "Hledáme zkušeného PPC specialistu pro správu kampaní našich klientů. Budeš mít na starosti Google Ads ...",
-    salary: "55 000 - 75 000 CZK/měsíc",
-    applicants: "12 uchazečů",
-    borderClass: "border-2 border-[#a038b6]",
-  },
-  {
-    id: 2,
-    urgent: true,
-    title: "Senior PPC Specialist",
-    department: "Performance",
-    tags: ["Plný úvazek", "Hybrid", "Senior"],
-    description:
-      "Hledáme zkušeného PPC specialistu pro správu kampaní našich klientů. Budeš mít na starosti Google Ads ...",
-    salary: "55 000 - 75 000 CZK/měsíc",
-    applicants: "12 uchazečů",
-    borderClass: "border-2 border-[#a038b6] md:border-l-0",
-  },
-];
+import Link from "next/link";
+import { jobPositions } from "@/data/jobData";
 
 const capacityItems = [
   {
@@ -53,7 +28,7 @@ const capacityItems = [
 
 export function CareersSection() {
   return (
-    <section className="relative w-full overflow-hidden">
+    <section id="kariera" className="relative w-full overflow-hidden">
       <div className="flex flex-col gap-[60px] items-center justify-center px-6 xl:px-[110px] py-[80px] w-full max-w-[1920px] mx-auto">
         {/* Top Row: Header + Stats */}
         <div className="flex flex-col xl:flex-row gap-[40px] xl:gap-[130px] items-start xl:items-end justify-center w-full">
@@ -308,6 +283,7 @@ function JobCard({
 }: {
   job: (typeof jobPositions)[number];
 }) {
+  const detailHref = `/kariera/${job.slug}`;
   return (
     <div
       className={`bg-white flex flex-col gap-[20px] h-auto md:h-[348px] items-center justify-center relative shrink-0 w-full md:w-1/2 p-[40px]`}
@@ -393,9 +369,9 @@ function JobCard({
         >
           {job.applicants}
         </p>
-        <div className="flex gap-[13px] items-center justify-end">
+        <Link href={detailHref} className="flex gap-[13px] items-center justify-end group">
           <p
-            className="font-['Noto_Sans'] font-bold leading-[24px] text-[15px] text-black text-right underline decoration-solid"
+            className="font-['Noto_Sans'] font-bold leading-[24px] text-[15px] text-black text-right underline decoration-solid group-hover:opacity-70 transition-opacity"
             style={{ fontVariationSettings: "'CTGR' 100, 'wdth' 100" }}
           >
             Zobrazit detail
@@ -405,7 +381,7 @@ function JobCard({
               <path d={svgPaths.p26469100} fill="black" />
             </svg>
           </div>
-        </div>
+        </Link>
       </div>
     </div>
   );
