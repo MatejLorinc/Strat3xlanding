@@ -3,15 +3,19 @@ import { useState } from "react";
 import img41641 from "@/assets/1ae7eb4f61ade708f7114d50825956cbed9c81a3.png";
 import img255402 from "@/assets/c137d10fde9bfceb8fe155765a39a643cd1e631b.png";
 import img2437921 from "@/assets/4b725ea6e43c85fd0b312c10b6227e4d5c25b560.png";
-import firma1 from "@/assets/FIRMA_IKONA_1.svg";
-import firma2 from "@/assets/FIRMA_IKONA_2.svg";
-import firma3 from "@/assets/FIRMA_IKONA_3.svg";
-import firma4 from "@/assets/FIRMA_IKONA_4.svg";
-import firma5 from "@/assets/FIRMA_IKONA_5.svg";
-import firma6 from "@/assets/FIRMA_IKONA_6.svg";
-import firma7 from "@/assets/FIRMA_IKONA_7.svg";
-
-const partnerLogos = [firma1, firma2, firma3, firma4, firma5, firma6, firma7];
+const partnerLogos = [
+  { src: "/partners/google.png", alt: "Google" },
+  { src: "/partners/meta.svg", alt: "Meta" },
+  { src: "/partners/claude.svg", alt: "Claude" },
+  { src: "/partners/openai.png", alt: "OpenAI" },
+  { src: "/partners/n8n.png", alt: "n8n" },
+  { src: "/partners/perplexity.png", alt: "Perplexity" },
+  { src: "/partners/tiktok.png", alt: "TikTok" },
+  { src: "/partners/twilio.png", alt: "Twilio" },
+  { src: "/partners/shopify.svg", alt: "Shopify" },
+  { src: "/partners/heureka.svg", alt: "Heureka" },
+  { src: "/partners/mergado.svg", alt: "Mergado" },
+];
 
 interface PartnerCardProps {
   imageSrc: string;
@@ -108,8 +112,8 @@ export function PartnersSection() {
           {partnerLogos.map((logo, idx) => (
             <img
               key={idx}
-              src={(typeof logo === 'object' && logo !== null && 'src' in logo) ? (logo as any).src : logo}
-              alt={`Partner ${idx + 1}`}
+              src={logo.src}
+              alt={logo.alt}
               className="h-4 md:h-5 lg:h-7 w-auto object-contain shrink-0"
             />
           ))}

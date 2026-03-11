@@ -142,33 +142,48 @@ function ChartCard({ data, index }: { data: ChartCardData; index: number }) {
           {/* Chart lines */}
           <div className="absolute inset-0">
             <svg className="block size-full" fill="none" preserveAspectRatio="none" viewBox={getChartViewBox(index)}>
-              {data.chartPaths.gray && (
-                <path
-                  d={(svgPaths as Record<string, string>)[data.chartPaths.gray]}
-                  stroke="#DFDFDF"
-                  strokeLinejoin="round"
-                  strokeMiterlimit="1.08239"
-                  strokeWidth="4"
-                />
-              )}
-              {data.chartPaths.green && (
-                <path
-                  d={(svgPaths as Record<string, string>)[data.chartPaths.green]}
-                  stroke="#84D3C5"
-                  strokeLinejoin="round"
-                  strokeMiterlimit="1.08239"
-                  strokeWidth="4"
-                />
-              )}
-              {/* Simple rising green line for E-commerce card */}
-              {index === 1 && (
-                <path
-                  d="M183.5 100.543L551 1.93167"
-                  stroke="#84D3C5"
-                  strokeLinejoin="round"
-                  strokeMiterlimit="1.08239"
-                  strokeWidth="4"
-                />
+              {/* E-commerce (index 1): gray spans full width, green starts after marker — render gray first, green on top */}
+              {/* Other charts: green spans full width, gray covers only before marker — render green first, gray on top */}
+              {index === 1 ? (
+                <>
+                  {data.chartPaths.gray && (
+                    <path
+                      d={(svgPaths as Record<string, string>)[data.chartPaths.gray]}
+                      stroke="#DFDFDF"
+                      strokeLinejoin="round"
+                      strokeMiterlimit="1.08239"
+                      strokeWidth="4"
+                    />
+                  )}
+                  <path
+                    d="M183.5 100.543L551 1.93167"
+                    stroke="#84D3C5"
+                    strokeLinejoin="round"
+                    strokeMiterlimit="1.08239"
+                    strokeWidth="4"
+                  />
+                </>
+              ) : (
+                <>
+                  {data.chartPaths.green && (
+                    <path
+                      d={(svgPaths as Record<string, string>)[data.chartPaths.green]}
+                      stroke="#84D3C5"
+                      strokeLinejoin="round"
+                      strokeMiterlimit="1.08239"
+                      strokeWidth="4"
+                    />
+                  )}
+                  {data.chartPaths.gray && (
+                    <path
+                      d={(svgPaths as Record<string, string>)[data.chartPaths.gray]}
+                      stroke="#DFDFDF"
+                      strokeLinejoin="round"
+                      strokeMiterlimit="1.08239"
+                      strokeWidth="4"
+                    />
+                  )}
+                </>
               )}
             </svg>
           </div>
