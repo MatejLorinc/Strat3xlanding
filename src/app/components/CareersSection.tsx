@@ -304,7 +304,7 @@ function JobCard({
         <div className="flex flex-col gap-[14px] items-start mb-[-12px] w-full">
           {/* Title + Department */}
           <div className="flex flex-col gap-[4px] items-start text-black w-full">
-            <p className="font-['Sora'] font-bold leading-[38px] text-[22px] tracking-[-0.22px] underline decoration-solid w-[80%]">
+            <p className="font-['Sora'] font-bold leading-[38px] text-[22px] tracking-[-0.22px] underline decoration-solid w-[75%]">
               {job.title}
             </p>
             <p className="font-['Sora'] font-semibold leading-[17px] text-[11px] tracking-[2.2px] uppercase w-full">
