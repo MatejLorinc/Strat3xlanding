@@ -7,7 +7,7 @@ import img275361 from "../../assets/Mikulas.png";
 
 export function TeamSection() {
   return (
-    <section id="tym" className="relative w-full">
+    <section id="tym" className="relative w-full bg-white">
       <div className="flex flex-col gap-[48px] lg:gap-[80px] items-center justify-center w-full py-[60px] lg:py-[80px]">
         {/* Section Header */}
         <div className="flex flex-col gap-[28px] items-center text-center text-black w-full max-w-[769px] px-6 xl:px-0">
