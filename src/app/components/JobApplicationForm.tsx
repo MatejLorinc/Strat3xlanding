@@ -102,7 +102,7 @@ export function JobApplicationForm({ jobTitle }: { jobTitle: string }) {
 
             if (response.ok && data.success) {
                 setStatus("success");
-                setStatusMessage("Děkujeme. Vaše CV bylo úspěšně odeláno.");
+                setStatusMessage("Děkujeme. Vaše CV bylo úspěšně odesláno.");
                 setFormData({
                     jmeno: "",
                     prijmeni: "",
