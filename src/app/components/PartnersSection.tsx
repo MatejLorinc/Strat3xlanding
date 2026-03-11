@@ -144,7 +144,7 @@ export function PartnersSection() {
               { label: "Tradiční retail" },
               { label: "B2B firmy" },
             ]}
-            title="Old School Businessy"
+            title="Tradiční businessy"
             gradientAngle="208.805deg"
           >
             <div
@@ -171,7 +171,7 @@ export function PartnersSection() {
             </div>
           </PartnerCard>
 
-          {/* Card 2: Komplikované Businessy */}
+          {/* Card 2: Regulované businessy */}
           <PartnerCard
             imageSrc={(typeof img255402 === 'object' && img255402 !== null && 'src' in img255402) ? (img255402 as any).src : img255402}
             tags={[
@@ -180,7 +180,7 @@ export function PartnersSection() {
               { label: "Kasina" },
               { label: "Erotické zboží" },
             ]}
-            title="Komplikované Businessy"
+            title="Regulované businessy"
             gradientAngle="207.12deg"
           >
             <div

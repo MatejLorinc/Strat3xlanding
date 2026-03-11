@@ -46,13 +46,13 @@ export function Header() {
       <header className={`w-full fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${menuOpen ? "bg-transparent" : "bg-white"} ${!menuOpen && scrolled ? "py-3 lg:py-5 shadow-md" : "py-6 lg:py-10"}`}>
         <div className="max-w-[1400px] mx-auto px-6 lg:px-8 flex items-center justify-between">
           {/* Logo */}
-          <div className="flex-shrink-0">
+          <a href="/" className="flex-shrink-0" onClick={() => setMenuOpen(false)}>
             <img
               src={newLogoSrc}
               alt="Strat3x Logo"
               className={`h-[22px] w-auto object-contain relative transition-all duration-300 ${menuOpen ? "z-[60]" : ""}`}
             />
-          </div>
+          </a>
 
           {/* Mobile hamburger / close */}
           <button

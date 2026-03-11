@@ -31,34 +31,34 @@ export function Footer() {
               </span>
             </p>
             {/* Social icons */}
-            <div className="flex gap-[16px] h-[23px] items-center">
-              {/* LinkedIn */}
-              <div className="size-[23px] overflow-clip relative">
-                <div className="absolute inset-[10%]">
-                  <svg
-                    className="absolute block size-full"
-                    fill="none"
-                    preserveAspectRatio="none"
-                    viewBox="0 0 18.4 18.3994"
-                  >
-                    <path d={svgPaths.p4cd5200} fill="black" />
-                    <path d={svgPaths.p93a6b80} fill="black" />
-                    <path d={svgPaths.p2fbcbe00} fill="black" />
-                  </svg>
-                </div>
-              </div>
-              {/* X/Twitter */}
-              <div className="h-[19px] w-[25.027px] relative shrink-0">
-                <svg
-                  className="absolute block size-full"
-                  fill="none"
-                  preserveAspectRatio="none"
-                  viewBox="0 0 25.027 19"
-                >
-                  <path d={svgPaths.p395c6f00} fill="black" />
-                </svg>
-              </div>
-            </div>
+          {/*  <div className="flex gap-[16px] h-[23px] items-center">*/}
+          {/*    /!* LinkedIn *!/*/}
+          {/*    <div className="size-[23px] overflow-clip relative">*/}
+          {/*      <div className="absolute inset-[10%]">*/}
+          {/*        <svg*/}
+          {/*          className="absolute block size-full"*/}
+          {/*          fill="none"*/}
+          {/*          preserveAspectRatio="none"*/}
+          {/*          viewBox="0 0 18.4 18.3994"*/}
+          {/*        >*/}
+          {/*          <path d={svgPaths.p4cd5200} fill="black" />*/}
+          {/*          <path d={svgPaths.p93a6b80} fill="black" />*/}
+          {/*          <path d={svgPaths.p2fbcbe00} fill="black" />*/}
+          {/*        </svg>*/}
+          {/*      </div>*/}
+          {/*    </div>*/}
+          {/*    /!* X/Twitter *!/*/}
+          {/*    <div className="h-[19px] w-[25.027px] relative shrink-0">*/}
+          {/*      <svg*/}
+          {/*        className="absolute block size-full"*/}
+          {/*        fill="none"*/}
+          {/*        preserveAspectRatio="none"*/}
+          {/*        viewBox="0 0 25.027 19"*/}
+          {/*      >*/}
+          {/*        <path d={svgPaths.p395c6f00} fill="black" />*/}
+          {/*      </svg>*/}
+          {/*    </div>*/}
+          {/*  </div>*/}
           </div>
 
           {/* Right section - Links & Map */}

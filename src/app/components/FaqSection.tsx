@@ -38,6 +38,11 @@ const faqItems = [
     answer:
       "Máme jasně definované milníky a KPIs. Pokud spolupráce nenaplňuje očekávání, transparentně to komunikujeme a hledáme řešení. Nejsme vázáni dlouhodobými smlouvami – důvěra se buduje výsledky.",
   },
+  {
+    question: "Vstupujete do ecommerce projektů i jako investor?",
+    answer:
+      "Ano, pokud to dává oběma stranám byznysový smysl. Roli strategického partnera pak umíme podpořit i vlastním kapitálem a do projektu majetkově vstoupit.",
+  },
 ];
 
 const TypewriterText = ({ text, isOpen }: { text: string; isOpen: boolean }) => {
