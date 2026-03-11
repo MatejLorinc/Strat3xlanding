@@ -71,7 +71,7 @@ export default async function JobDetail({
                         {/* Co vám nabídneme */}
                         <div className="flex flex-col gap-[24px]">
                             <h2 className="font-['Sora'] text-[24px] font-bold tracking-[-0.24px]">
-                                Co ti můžeme nabídnout?v
+                                Co ti můžeme nabídnout?
                             </h2>
                             <div className="flex flex-col gap-[16px]">
                                 {jobParams.offerItems.map((item, i) => (
