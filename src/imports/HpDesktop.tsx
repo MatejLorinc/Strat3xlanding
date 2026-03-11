@@ -7619,7 +7619,7 @@ function Frame359() {
 function Frame361() {
   return (
     <div className="content-stretch flex flex-col gap-[4px] items-start relative shrink-0 text-black w-full whitespace-pre-wrap">
-      <p className="decoration-solid font-['Sora:Bold',sans-serif] font-bold leading-[38px] relative shrink-0 text-[22px] tracking-[-0.22px] underline w-full">Senior PPC Specialist</p>
+      <p className="decoration-solid font-['Sora:Bold',sans-serif] font-bold leading-[38px] relative shrink-0 text-[22px] tracking-[-0.22px] underline w-full">Meta Ads Specialist</p>
       <p className="font-['Sora:SemiBold',sans-serif] font-semibold leading-[17px] relative shrink-0 text-[11px] tracking-[2.2px] uppercase w-full">Performance</p>
     </div>
   );
@@ -7671,7 +7671,7 @@ function Frame360() {
       <Frame361 />
       <Frame362 />
       <p className="font-['Noto_Sans:Regular',sans-serif] font-normal leading-[24px] relative shrink-0 text-[15px] text-black w-[422px] whitespace-pre-wrap" style={{ fontVariationSettings: "'CTGR' 0, 'wdth' 100" }}>
-        Hledáme zkušeného PPC specialistu pro správu kampaní našich klientů. Budeš mít na starosti Google Ads ...
+        Do týmu hledáme zkušeného specialistu na výkonnostní marketing, pro kterého jsou Meta Ads přirozeným prostředím.
       </p>
     </div>
   );
@@ -7718,7 +7718,7 @@ function Frame357() {
       <div aria-hidden="true" className="absolute border-2 border-[#a038b6] border-solid inset-0 pointer-events-none" />
       <Frame358 />
       <p className="font-['Noto_Sans:Display_Bold',sans-serif] font-bold leading-[32px] relative shrink-0 text-[17px] text-black w-[422px] whitespace-pre-wrap" style={{ fontVariationSettings: "'CTGR' 100, 'wdth' 100" }}>
-        55 000 - 75 000 CZK/měsíc
+        65 000 - 80 000 CZK/měsíc
       </p>
       <div className="h-0 relative shrink-0 w-[422px]">
         <div className="absolute inset-[-1px_0_0_0]">
@@ -7743,7 +7743,7 @@ function Frame370() {
 function Frame374() {
   return (
     <div className="content-stretch flex flex-col gap-[4px] items-start relative shrink-0 text-black w-full whitespace-pre-wrap">
-      <p className="decoration-solid font-['Sora:Bold',sans-serif] font-bold leading-[38px] relative shrink-0 text-[22px] tracking-[-0.22px] underline w-full">Senior PPC Specialist</p>
+      <p className="decoration-solid font-['Sora:Bold',sans-serif] font-bold leading-[38px] relative shrink-0 text-[22px] tracking-[-0.22px] underline w-full">Meta Ads Specialist</p>
       <p className="font-['Sora:SemiBold',sans-serif] font-semibold leading-[17px] relative shrink-0 text-[11px] tracking-[2.2px] uppercase w-full">Performance</p>
     </div>
   );
@@ -7795,7 +7795,7 @@ function Frame372() {
       <Frame374 />
       <Frame375 />
       <p className="font-['Noto_Sans:Regular',sans-serif] font-normal leading-[24px] relative shrink-0 text-[15px] text-black w-[422px] whitespace-pre-wrap" style={{ fontVariationSettings: "'CTGR' 0, 'wdth' 100" }}>
-        Hledáme zkušeného PPC specialistu pro správu kampaní našich klientů. Budeš mít na starosti Google Ads ...
+        Do týmu hledáme zkušeného specialistu na výkonnostní marketing, pro kterého jsou Meta Ads přirozeným prostředím.
       </p>
     </div>
   );
@@ -7842,7 +7842,7 @@ function Frame368() {
       <div aria-hidden="true" className="absolute border-[#a038b6] border-b-2 border-r-2 border-solid border-t-2 inset-0 pointer-events-none" />
       <Frame369 />
       <p className="font-['Noto_Sans:Display_Bold',sans-serif] font-bold leading-[32px] relative shrink-0 text-[17px] text-black w-[422px] whitespace-pre-wrap" style={{ fontVariationSettings: "'CTGR' 100, 'wdth' 100" }}>
-        55 000 - 75 000 CZK/měsíc
+        65 000 - 80 000 CZK/měsíc
       </p>
       <div className="h-0 relative shrink-0 w-[422px]">
         <div className="absolute inset-[-1px_0_0_0]">

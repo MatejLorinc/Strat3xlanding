@@ -5,7 +5,8 @@ export interface JobPosition {
     title: string;
     department: string;
     tags: string[];
-    description: string;
+    shortDescription: string;
+    fullDescription: string;
     salary: string;
     borderClass: string;
     location: string;
@@ -19,41 +20,40 @@ export interface JobPosition {
 export const jobPositions: JobPosition[] = [
     {
         id: 1,
-        slug: "senior-ppc-specialist",
+        slug: "meta-ads-specialist",
         urgent: true,
-        title: "Senior PPC Specialist",
+        title: "Meta Ads Specialist - Performance Marketing",
         department: "Performance",
-        tags: ["Plný úvazek", "Hybrid", "Senior"],
-        description:
-            "Hledáme zkušeného PPC specialistu pro správu kampaní našich klientů. Budeš mít na starosti Google Ads ...",
-        salary: "55 000 - 75 000 CZK/měsíc",
+        tags: ["Plný úvazek", "Remote / Hybrid", "Senior"],
+        shortDescription:
+            "Do týmu hledáme zkušeného specialistu na výkonnostní marketing, pro kterého jsou Meta Ads ...",
+        fullDescription:
+            "Do týmu hledáme zkušeného specialistu na výkonnostní marketing, pro kterého jsou Meta Ads přirozeným prostředím. Hledáme skutečného profesionála, který se opírá o tvrdá data a pokročilou analytiku, avšak plně si uvědomuje klíčovou roli kreativy pro úspěch kampaní. Očekáváme od tebe komplexní byznysové myšlení a schopnost strategicky rozvíjet projekty našich klientů v oblastech e-commerce a lead generation.",
+        salary: "65 000 - 80 000 CZK/měsíc",
         borderClass: "border-2 border-[#a038b6]",
-        location: "Náměstí Republiky 1078/1, 11000 Praha - Nové Město",
-        employment: "Plný úvazek / Hybrid",
+        location: "K dispozici kanceláře na Praze 4",
+        employment: "Plný úvazek / Remote / Hybrid",
         seniority: "Senior",
         offerItems: [
-            "Práci na zajímavých projektech s rozpočty v řádech milionů korun měsíčně",
-            "Flexibilní pracovní dobu a možnost práce z domova",
-            "Neomezené vzdělávání — konference, kurzy, certifikace",
-            "Moderní technologie a nástroje pro efektivní práci",
-            "Prostor pro vlastní nápady a iniciativu",
-            "Transparentní firemní kulturu bez zbytečné byrokracie",
+            "Práci na strategických e-commerce a lead gen projektech s významnými klientskými rozpočty",
+            "Flexibilní pracovní dobu a možnost práce z domova (můžeš pracovat 100% remote, nebo využívat naše pražské kanceláře)",
+            "Vysokou míru autonomie, prostor pro vlastní nápady a iniciativu při návrhu strategií a testování nových formátů",
+            "Transparentní firemní kulturu bez zbytečné byrokracie v týmu seniorních profesionálů",
         ],
         responsibilities: [
-            "Správa a optimalizace PPC kampaní (Google Ads, Sklik, Meta Ads) pro portfolio klientů",
-            "Analýza výkonnosti kampaní a příprava reportů s actionable insighty",
-            "Spolupráce s kreativním týmem na přípravě reklamních materiálů a landing pages",
-            "Identifikace nových příležitostí pro růst a škálování kampaní",
-            "Komunikace s klienty, prezentace výsledků a strategických doporučení",
-            "Testování nových formátů, strategií a automatizací",
+            "Tvořit, řídit a optimalizovat komplexní výkonnostní kampaně primárně v Meta Ads, s přesahem do Google Ads a TikTok Ads",
+            "Přinášet nápady a kreativy pro sale, ale i lead gen kampaně",
+            "Vyhodnocovat výkonnost, řešit atribuci a hledat maxima",
+            "Zajišťovat kontinuitu a kvalitu kampaní",
         ],
         expectations: [
-            "Minimálně 3 roky zkušeností s PPC kampaněmi",
-            "Znalost platforem Google Ads, Meta Ads a analytických nástrojů",
-            "Schopnost pracovat s daty a vytvářet actionable insighty",
-            "Certifikace Google Ads (Search, Display, Video)",
-            "Zkušenosti s rozpočty nad 500 000 CZK měsíčně",
-            "Samostatnost, proaktivní přístup a orientace na výsledky",
+            "Máš pokročilé znalosti META a už jsi někomu reálně vydělal/a peníze",
+            "Umíš si vytvořit / vygenerovat kreativu a dokážeš si sestříhat ShortForm video",
+            "Kontroluješ kampaně, protože tě reálně zajímá jak se jim daří",
+            "Máš byznysové myšlení, vidíš celý kontext, dokážeš navrhnout vlastní řešení a nové nápady",
+            "Vyznačuješ se vysokou mírou samostatnosti, neseš plnou zodpovědnost za svěřené rozpočty a jsi striktně orientovaný na plnění stanovených KPIs",
+            "Jsi silný v analytice a dokážeš interpretovat data v širším byznysovém kontextu",
+            "Baví tě hledat nová řešení a cesty k efektivitě a lepším výsledkům",
         ],
     },
     {
@@ -63,8 +63,10 @@ export const jobPositions: JobPosition[] = [
         title: "Senior Data Analyst",
         department: "Data & Analytics",
         tags: ["Plný úvazek", "Hybrid", "Senior"],
-        description:
+        shortDescription:
             "Hledáme zkušeného datového analytika, který dokáže přeměnit surová data na strategická rozhodnutí ...",
+        fullDescription:
+            "Hledáme zkušeného datového analytika, který dokáže přeměnit surová data na strategická rozhodnutí. Budeš analyzovat rozsáhlé datové sady, vytvářet přehledné dashboardy a pomáhat týmu i klientům činit lepší rozhodnutí založená na datech.",
         salary: "80 000 - 110 000 CZK/měsíc",
         borderClass: "border-2 border-[#a038b6] md:border-l-0",
         location: "Plně vzdáleně / STRAT3X, 11000 Praha, Nové Město",

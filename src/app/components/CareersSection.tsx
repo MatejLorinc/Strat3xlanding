@@ -86,7 +86,7 @@ export function CareersSection() {
           {/* Left: Job Cards + CTA */}
           <div className="flex flex-col gap-[60px] items-start w-full xl:w-[1004px] shrink-0">
             {/* Job Cards Row */}
-            <div className="flex flex-col md:flex-row items-center w-full">
+            <div className="flex flex-col md:flex-row items-stretch w-full">
               {jobPositions.map((job) => (
                 <JobCard key={job.id} job={job} />
               ))}
@@ -286,14 +286,14 @@ function JobCard({
   const detailHref = `/kariera/${job.slug}`;
   return (
     <div
-      className={`bg-white flex flex-col gap-[20px] h-auto md:h-[348px] items-center justify-center relative shrink-0 w-full md:w-1/2 p-[40px]`}
+      className={`bg-white flex flex-col gap-[20px] h-auto md:min-h-[348px] items-center relative shrink-0 w-full md:w-1/2 p-[40px]`}
     >
       <div
         aria-hidden="true"
         className={`absolute ${job.borderClass} border-solid inset-0 pointer-events-none`}
       />
       {/* Urgent badge + content */}
-      <div className="flex flex-col items-end w-[422px] max-w-full pb-[12px]">
+      <div className="flex flex-col items-end w-[422px] max-w-full pb-[12px] flex-1">
         {job.urgent && (
           <div className="bg-[#bf5456] flex items-center justify-center mb-[-12px] px-[10px] py-[4px]">
             <p className="font-['Sora'] font-semibold leading-[12px] text-[11px] text-white tracking-[-0.11px]">
@@ -304,7 +304,7 @@ function JobCard({
         <div className="flex flex-col gap-[14px] items-start mb-[-12px] w-full">
           {/* Title + Department */}
           <div className="flex flex-col gap-[4px] items-start text-black w-full">
-            <p className="font-['Sora'] font-bold leading-[38px] text-[22px] tracking-[-0.22px] underline decoration-solid w-full">
+            <p className="font-['Sora'] font-bold leading-[38px] text-[22px] tracking-[-0.22px] underline decoration-solid w-[80%]">
               {job.title}
             </p>
             <p className="font-['Sora'] font-semibold leading-[17px] text-[11px] tracking-[2.2px] uppercase w-full">
@@ -334,7 +334,7 @@ function JobCard({
             className="font-['Noto_Sans'] leading-[24px] text-[15px] text-black w-full max-w-[422px]"
             style={{ fontVariationSettings: "'CTGR' 0, 'wdth' 100" }}
           >
-            {job.description}
+            {job.shortDescription}
           </p>
         </div>
       </div>

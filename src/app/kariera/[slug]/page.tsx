@@ -63,7 +63,7 @@ export default async function JobDetail({
                     <div className="flex-1 flex flex-col gap-[60px]">
                         {/* Intro */}
                         <p className="font-['Noto_Sans'] text-[17px] leading-[32px] text-black">
-                            {jobParams.description} A mnohem více. Přidej se k nám a pomáhej klientům škálovat jejich business pomocí
+                            {jobParams.fullDescription} A mnohem více. Přidej se k nám a pomáhej klientům škálovat jejich business pomocí
                             odborných znalostí, špičkových technologií a unikátního know-how, které tě u nás naučíme.
                             Jsme tým nadšenců do e-commerce a baví nás posouvat projekty kupředu.
                         </p>
@@ -71,7 +71,7 @@ export default async function JobDetail({
                         {/* Co vám nabídneme */}
                         <div className="flex flex-col gap-[24px]">
                             <h2 className="font-['Sora'] text-[24px] font-bold tracking-[-0.24px]">
-                                Co vám nabídneme
+                                Co ti můžeme nabídnout?v
                             </h2>
                             <div className="flex flex-col gap-[16px]">
                                 {jobParams.offerItems.map((item, i) => (
@@ -88,7 +88,7 @@ export default async function JobDetail({
                         {/* Co u nás budete dělat */}
                         <div className="flex flex-col gap-[24px]">
                             <h2 className="font-['Sora'] text-[24px] font-bold tracking-[-0.24px]">
-                                Co u nás budete dělat
+                                Co u nás budeš dělat?
                             </h2>
                             <div className="flex flex-col gap-[16px]">
                                 {jobParams.responsibilities.map((item, i) => (
@@ -105,7 +105,7 @@ export default async function JobDetail({
                         {/* Co od vás očekáváme */}
                         <div className="flex flex-col gap-[24px]">
                             <h2 className="font-['Sora'] text-[24px] font-bold tracking-[-0.24px]">
-                                Co od vás očekáváme
+                                Jaký by měl být tvůj profil?
                             </h2>
                             <div className="flex flex-col gap-[16px]">
                                 {jobParams.expectations.map((item, i) => (

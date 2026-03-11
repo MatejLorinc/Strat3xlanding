@@ -49,7 +49,7 @@ export function RelatedJobCard({ job }: { job: JobPosition }) {
                         className="font-['Noto_Sans'] leading-[24px] text-[14px] text-black w-full opacity-80"
                         style={{ fontVariationSettings: "'CTGR' 0, 'wdth' 100" }}
                     >
-                        {job.description}
+                        {job.shortDescription}
                     </p>
                 </div>
             </div>

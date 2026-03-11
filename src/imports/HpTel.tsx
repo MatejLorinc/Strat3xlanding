@@ -2089,12 +2089,12 @@ function Group205() {
 function Group108() {
   return (
     <div className="absolute contents left-[50.59px] top-[21374px]">
-      <p className="absolute decoration-solid font-['Sora:Bold',sans-serif] font-bold inset-[81.68%_24.52%_18.17%_13.14%] leading-[38px] text-[22px] text-black tracking-[-0.22px] underline">Senior PPC Specialist</p>
+      <p className="absolute decoration-solid font-['Sora:Bold',sans-serif] font-bold inset-[81.68%_24.52%_18.17%_13.14%] leading-[38px] text-[22px] text-black tracking-[-0.22px] underline">Meta Ads Specialist</p>
       <p className="absolute font-['Noto_Sans:Regular',sans-serif] font-normal leading-[24px] left-[calc(50%-141.5px)] text-[15px] text-black top-[21500px] w-[281px] whitespace-pre-wrap" style={{ fontVariationSettings: "'CTGR' 0, 'wdth' 100" }}>
-        Hledáme zkušeného PPC specialistu pro správu kampaní našich klientů. Budeš mít na starosti Google Ads ...
+        Do týmu hledáme zkušeného specialistu na výkonnostní marketing, pro kterého jsou Meta Ads přirozeným prostředím.
       </p>
       <p className="absolute font-['Noto_Sans:Bold',sans-serif] font-bold leading-[24px] left-[calc(50%-141.5px)] text-[16px] text-black top-[21591px] w-[401px] whitespace-pre-wrap" style={{ fontVariationSettings: "'CTGR' 0, 'wdth' 100" }}>
-        55 000 - 75 000 CZK/měsíc
+        65 000 - 80 000 CZK/měsíc
       </p>
       <p className="absolute font-['Noto_Sans:Regular',sans-serif] font-normal leading-[24px] left-[calc(50%-141.5px)] text-[14px] text-black top-[21654px] w-[168px] whitespace-pre-wrap" style={{ fontVariationSettings: "'CTGR' 0, 'wdth' 100" }}>
         12 uchazečů
