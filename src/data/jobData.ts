@@ -41,7 +41,7 @@ export const jobPositions: JobPosition[] = [
             "Transparentní firemní kulturu bez zbytečné byrokracie v týmu seniorních profesionálů",
         ],
         responsibilities: [
-            "Tvořit, řídit a optimalizovat komplexní výkonnostní kampaně primárně v Meta Ads, s přesahem do Google Ads a TikTok Ads",
+            "Tvořit, řídit a optimalizovat výkonnostní kampaně primárně v Meta Ads, s přesahem do Google Ads a TikTok Ads",
             "Přinášet nápady a kreativy pro sale, ale i lead gen kampaně",
             "Vyhodnocovat výkonnost, řešit atribuci a hledat maxima",
             "Zajišťovat kontinuitu a kvalitu kampaní",
