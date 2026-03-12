@@ -1,25 +1,13 @@
 import svgPaths from "../../imports/svg-59wapeqsll";
-import imgRectangle from "@/assets/320b8c287414bc6a4263c44fb04247eb957ea265.png";
 import imgRectangle4 from "@/assets/1f7cbf18e91bd11d865e7e7dd625df2af6bb157d.png";
 import { imgRectangle3, imgVector } from "../../imports/svg-76oh5";
+import { AnimatedHeroGradient } from "./AnimatedHeroGradient";
 
 export function HeroSection() {
   return (
     <section className="relative w-full">
-      {/* Background gradient */}
-      <div className="absolute inset-[3.38%_-1.63%_8.04%_-28.8%] flex items-center justify-center pointer-events-none">
-        <div className="-scale-y-100 flex-none h-[760px] w-[2504.229px]">
-          <div className="opacity-70 relative size-full">
-            <div className="absolute inset-0 overflow-hidden pointer-events-none">
-              <img
-                alt=""
-                className="absolute left-0 max-w-none size-full top-0"
-                src={(typeof imgRectangle === 'object' && imgRectangle !== null && 'src' in imgRectangle) ? (imgRectangle as any).src : imgRectangle}
-              />
-            </div>
-          </div>
-        </div>
-      </div>
+      {/* Animated background gradient */}
+      <AnimatedHeroGradient />
 
 
       {/* Content */}
