@@ -25,42 +25,42 @@ export default function App() {
       {/* Background decorative elements */}
       <div className="hidden lg:block">
         <div className="absolute inset-[86.22%_9.78%_9.67%_-3.02%] opacity-50 pointer-events-none">
-          <div className="absolute inset-0 overflow-hidden">
+          <div className="absolute inset-0 overflow-visible">
             <img alt="" className="absolute left-0 max-w-none size-full top-0" src={(typeof imgRectangle === 'object' && imgRectangle !== null && 'src' in imgRectangle) ? (imgRectangle as any).src : imgRectangle} />
           </div>
         </div>
       </div>
       <div className="hidden lg:block">
         <div className="absolute inset-[72.84%_29.52%_23.04%_-22.76%] opacity-50 pointer-events-none">
-          <div className="absolute inset-0 overflow-hidden">
+          <div className="absolute inset-0 overflow-visible">
             <img alt="" className="absolute left-0 max-w-none size-full top-0" src={(typeof imgRectangle === 'object' && imgRectangle !== null && 'src' in imgRectangle) ? (imgRectangle as any).src : imgRectangle} />
           </div>
         </div>
       </div>
       <div className="hidden lg:block">
         <div className="absolute inset-[61.9%_1.67%_33.99%_3.23%] opacity-50 pointer-events-none">
-          <div className="absolute inset-0 overflow-hidden">
+          <div className="absolute inset-0 overflow-visible">
             <img alt="" className="absolute left-0 max-w-none size-full top-0" src={(typeof imgRectangle === 'object' && imgRectangle !== null && 'src' in imgRectangle) ? (imgRectangle as any).src : imgRectangle} />
           </div>
         </div>
       </div>
       <div className="hidden lg:block">
         <div className="absolute inset-[67.66%_-7.92%_26.68%_-20.42%] opacity-50 pointer-events-none">
-          <div className="absolute inset-0 overflow-hidden">
+          <div className="absolute inset-0 overflow-visible">
             <img alt="" className="absolute left-0 max-w-none size-full top-0" src={(typeof imgRectangle === 'object' && imgRectangle !== null && 'src' in imgRectangle) ? (imgRectangle as any).src : imgRectangle} />
           </div>
         </div>
       </div>
       <div className="hidden lg:block">
         <div className="absolute inset-[28.86%_4.9%_67.03%_0] opacity-50 pointer-events-none">
-          <div className="absolute inset-0 overflow-hidden">
+          <div className="absolute inset-0 overflow-visible">
             <img alt="" className="absolute left-0 max-w-none size-full top-0" src={(typeof imgRectangle === 'object' && imgRectangle !== null && 'src' in imgRectangle) ? (imgRectangle as any).src : imgRectangle} />
           </div>
         </div>
       </div>
       <div className="hidden lg:block">
         <div className="absolute inset-[47.13%_22.08%_48.76%_-17.19%] opacity-50 pointer-events-none">
-          <div className="absolute inset-0 overflow-hidden">
+          <div className="absolute inset-0 overflow-visible">
             <img alt="" className="absolute left-0 max-w-none size-full top-0" src={(typeof imgRectangle === 'object' && imgRectangle !== null && 'src' in imgRectangle) ? (imgRectangle as any).src : imgRectangle} />
           </div>
         </div>

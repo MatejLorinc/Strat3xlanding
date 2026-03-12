@@ -47,7 +47,7 @@ export function AnimatedHeroGradient() {
           }
         }
       `}</style>
-      <div className="absolute inset-[3.38%_-1.63%_8.04%_-28.8%] pointer-events-none overflow-hidden">
+      <div className="absolute inset-[3.38%_-1.63%_8.04%_-28.8%] pointer-events-none overflow-visible">
         <div className="-scale-y-100 relative w-[2504.229px] h-[760px] opacity-70">
           {/* Blue/lavender blob */}
           <div
