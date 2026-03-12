@@ -1,6 +1,6 @@
 import svgPaths from "../../imports/svg-59wapeqsll";
 import imgRectangle5 from "@/assets/3ad0cbf86082bb5c0deed567f95b0ba4f3a3b0bb.png";
-import { imgRectangle6138, imgEllipse1 } from "../../imports/svg-76oh5";
+import { imgRectangle6138 } from "../../imports/svg-76oh5";
 import rainbowS from "../../assets/RainbowS.png";
 
 export function ComparisonSection() {
@@ -10,7 +10,7 @@ export function ComparisonSection() {
       <img
         alt=""
         src={(typeof rainbowS === 'object' && rainbowS !== null && 'src' in rainbowS) ? (rainbowS as any).src : rainbowS}
-        className="absolute left-[20%] lg:left-1/2 top-[70%] lg:top-1/2 -translate-x-1/2 -translate-y-1/2 w-[200%] lg:w-[50%] max-w-none opacity-100 pointer-events-none"
+        className="absolute left-[20%] lg:left-1/2 top-[70%] lg:top-1/2 -translate-x-1/2 -translate-y-1/2 w-[400%] lg:w-[100%] max-w-none opacity-100 pointer-events-none"
         style={{ maskImage: "radial-gradient(ellipse at center, black 50%, transparent 85%)", WebkitMaskImage: "radial-gradient(ellipse at center, black 50%, transparent 85%)" }}
       />
       <div className="max-w-[1400px] mx-auto px-6 lg:px-8 relative">
@@ -63,7 +63,7 @@ const kdoNejsmeItems = [
 
 function KdoJsmeCard() {
   return (
-    <div className="relative min-h-[344px] lg:h-[344px] rounded-[9px] w-full max-w-[400px] lg:max-w-none lg:flex-1 shadow-[0px_0px_15px_0px_rgba(0,0,0,0.25)]">
+    <div className="relative min-h-[344px] lg:h-[344px] rounded-[9px] w-full max-w-[400px] lg:max-w-none lg:flex-1 shadow-[0px_0px_15px_0px_rgba(0,0,0,0.25)] overflow-hidden">
       {/* Background with glassmorphism */}
       <div className="absolute inset-0 rounded-[9px] overflow-hidden">
         {/* Gray base - Mobile */}
@@ -97,14 +97,14 @@ function KdoJsmeCard() {
       </div>
 
       {/* Content */}
-      <div className="absolute inset-0 flex flex-col gap-[24px] lg:gap-[34px] px-[24px] lg:px-0 lg:pl-[50px] pt-[42px] lg:pt-[40px] rounded-[9px] shadow-[0px_0px_6.3px_0px_rgba(0,0,0,0.15)] items-center lg:items-start">
+      <div className="absolute inset-0 flex flex-col gap-[24px] lg:gap-[34px] px-[24px] lg:px-0 lg:pl-[50px] pt-[42px] lg:pt-[40px] rounded-[9px] shadow-[0px_0px_6.3px_0px_rgba(0,0,0,0.15)] items-start">
         <p className="font-['Sora'] font-extrabold text-[23px] text-white tracking-[-0.69px] uppercase w-full">
           kdo jsme
         </p>
         <div className="flex flex-col gap-2">
           {kdoJsmeItems.map((item, index) => (
             <div key={index} className="flex gap-5 items-start">
-              <div className="h-[13px] shrink-0 w-[7px] relative">
+              <div className="h-[13px] mt-[6px] lg:mt-[10px] shrink-0 w-[7px] relative">
                 <div className="absolute inset-[-0.77%_-1.43%]">
                   <svg className="block size-full" fill="none" preserveAspectRatio="none" viewBox="0 0 7.2 13.2">
                     <path d={svgPaths.p8921180} fill="white" stroke="white" strokeWidth="0.1" />
@@ -119,28 +119,12 @@ function KdoJsmeCard() {
         </div>
       </div>
 
-      {/* Green accent circle */}
-      <div className="hidden lg:block absolute left-[516px] top-[175px]">
-        <div
-          className="absolute left-[525px] top-[310px] size-[105px] mask-alpha mask-intersect mask-no-clip mask-no-repeat mask-position-[-9px_-135px] mask-size-[168px_169px]"
-          style={{ maskImage: `url('${imgEllipse1}')` }}
-        >
-          <svg className="absolute block size-full" fill="none" preserveAspectRatio="none" viewBox="0 0 105 105">
-            <circle cx="52.5" cy="52.5" fill="#84D3C5" r="52.5" />
-          </svg>
-        </div>
-        <div
-          className="absolute inset-[62.51%_0.06%_-0.29%_79.55%] mask-alpha mask-intersect mask-no-clip mask-no-repeat mask-position-[-28.151px_-40.027px] mask-size-[168px_169px]"
-          style={{ maskImage: `url('${imgEllipse1}')` }}
-        >
-          <svg className="absolute block size-full" fill="none" preserveAspectRatio="none" viewBox="0 0 139.426 129.973">
-            <g>
-              <path d={svgPaths.p3c021180} fill="white" />
-              <path d={svgPaths.p30105580} fill="white" />
-            </g>
-          </svg>
-        </div>
-      </div>
+      {/* Bottom-right decorative image */}
+      <img
+        alt=""
+        src="/kdo_jsme.svg"
+        className="absolute bottom-0 right-0 w-[140px] lg:w-[168px] pointer-events-none"
+      />
 
       {/* Inner shadow */}
       <div className="absolute inset-0 pointer-events-none rounded-[inherit] shadow-[inset_0_0_4px_2px_rgba(255,255,255,0.35)]" />
@@ -150,18 +134,18 @@ function KdoJsmeCard() {
 
 function KdoNejsmeCard() {
   return (
-    <div className="relative min-h-[344px] lg:min-h-0 lg:h-[344px] rounded-[9px] w-full max-w-[400px] lg:max-w-none lg:flex-1">
+    <div className="relative min-h-[344px] lg:min-h-0 lg:h-[344px] rounded-[9px] w-full max-w-[400px] lg:max-w-none lg:flex-1 overflow-hidden">
       <div aria-hidden="true" className="absolute border-2 border-solid border-white inset-[-2px] pointer-events-none rounded-[11px] shadow-[0px_0px_15px_0px_rgba(0,0,0,0.1)]" />
 
       {/* Dark background content */}
-      <div className="absolute bg-[rgba(110,110,110,0.2)] flex flex-col gap-[24px] lg:gap-[34px] h-full items-center lg:items-start px-[24px] lg:px-0 lg:pl-[50px] pt-[40px] right-0 lg:right-[-1px] rounded-[9px] top-0 w-full">
+      <div className="absolute bg-[rgba(110,110,110,0.2)] flex flex-col gap-[24px] lg:gap-[34px] h-full items-start px-[24px] lg:px-0 lg:pl-[50px] pt-[40px] right-0 lg:right-[-1px] rounded-[9px] top-0 w-full">
         <p className="font-['Sora'] font-extrabold text-[23px] text-white tracking-[-0.69px] uppercase w-full">
           kdo nejsme
         </p>
         <div className="flex flex-col gap-2">
           {kdoNejsmeItems.map((item, index) => (
             <div key={index} className="flex gap-5 items-start">
-              <div className="h-[13px] shrink-0 w-[7px] relative">
+              <div className="h-[13px] mt-[6px] lg:mt-[10px] shrink-0 w-[7px] relative">
                 <div className="absolute inset-[-0.77%_-1.43%]">
                   <svg className="block size-full" fill="none" preserveAspectRatio="none" viewBox="0 0 7.2 13.2">
                     <path d={svgPaths.p8921180} fill="white" stroke="white" strokeWidth="0.1" />
@@ -176,28 +160,12 @@ function KdoNejsmeCard() {
         </div>
       </div>
 
-      {/* Pink/magenta accent circle */}
-      <div className="hidden lg:block absolute left-0 top-0">
-        <div
-          className="absolute left-[525px] top-[310px] size-[105px] mask-alpha mask-intersect mask-no-clip mask-no-repeat mask-position-[-9px_-135px] mask-size-[168px_169px]"
-          style={{ maskImage: `url('${imgEllipse1}')` }}
-        >
-          <svg className="absolute block size-full" fill="none" preserveAspectRatio="none" viewBox="0 0 105 105">
-            <circle cx="52.5" cy="52.5" fill="#D93EB2" r="52.5" />
-          </svg>
-        </div>
-        <div
-          className="absolute inset-[62.51%_-0.08%_-0.29%_79.67%] mask-alpha mask-intersect mask-no-clip mask-no-repeat mask-position-[-28.151px_-40.027px] mask-size-[168px_169px]"
-          style={{ maskImage: `url('${imgEllipse1}')` }}
-        >
-          <svg className="absolute block size-full" fill="none" preserveAspectRatio="none" viewBox="0 0 139.426 129.973">
-            <g>
-              <path d={svgPaths.p3c021180} fill="white" />
-              <path d={svgPaths.p1ccde600} fill="white" />
-            </g>
-          </svg>
-        </div>
-      </div>
+      {/* Bottom-right decorative image */}
+      <img
+        alt=""
+        src="/kdo_nejsme.png"
+        className="absolute bottom-0 right-0 w-[140px] lg:w-[168px] pointer-events-none"
+      />
 
       {/* Inner shadow */}
       <div className="absolute inset-[-2px] pointer-events-none rounded-[inherit] shadow-[inset_2px_2px_4px_0px_rgba(255,255,255,0.35)]" />
